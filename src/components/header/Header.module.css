@@ -1,0 +1,60 @@
+.head {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 1px solid #7f7f7f;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scrolled {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.headerLogo {
+    width: 120px;
+}
+
+.navLinks {
+    color: #fff;
+    font-family: 'Helvetica Neue Interface Regular';
+    font-weight: 400;
+    font-size: 1.15em;
+}
+
+.navLinksScrolled {
+    color: #000;
+}
+
+.active {
+    color: var(--main-blue-color);
+}
+
+.contactDetail {
+    font-family: 'Helvetica Neue Interface Regular' !important;
+    color: #fff;
+    font-size: 1.05em;
+}
+
+.contactDetailScrolled {
+    color: #000;
+}
+
+.contactDetail svg {
+    font-size: inherit;
+}
+
+.navContactBtn {
+    font-family: 'Helvetica Neue Interface Regular' !important;
+    background: #fff !important;
+    font-size: 1.1em !important;
+    padding: 5px 20px !important;
+    border-radius: 25px !important;
+}
+
+.navContactBtnScrolled {
+    background: #418dc9 !important;
+    color: #fff !important;
+}

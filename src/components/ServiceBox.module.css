@@ -1,0 +1,76 @@
+.serviceBox{
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.serviceBox::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #00000054;
+    z-index: 1;
+}
+.serviceImage{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+.serviceBoxContent{
+    z-index: 3;
+}
+.serviceBoxName{
+    font-family: 'Helvetica Neue Interface bold' !important;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+.serviceBoxHeading{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2em;
+    padding: 15px 0px;
+    color: #fff;
+}
+.serviceBoxDescription{
+    font-family: 'Poppins';
+    font-size: 1em;
+    color: #fff;
+    opacity: 0;
+    padding-bottom: 2.5em;
+    transition: all 0.2s;
+}
+.serviceBoxButton{
+    background: none;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #fff;
+}
+.serviceBoxButton::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px ;
+    width: 0%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.serviceBox:hover .serviceImage {
+    filter: blur(8px);
+    transform: scale(1.6);
+}
+.serviceBox:hover .serviceBoxButton::before {
+    width: 100%;
+}
+.serviceBox:hover .serviceBoxDescription {
+    opacity: 1;
+}

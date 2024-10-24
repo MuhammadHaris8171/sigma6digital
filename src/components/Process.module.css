@@ -1,0 +1,99 @@
+.verticleSlider{
+    background-color: #000;
+    color: #f0f0f0;
+}
+.contentArea{
+    width: 50%;
+}
+.steps::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    border-radius: 25px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.progressBar {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    border-radius: 25px;
+    height: 0;
+    background-color: var(--main-blue-color);
+    z-index: 3;
+    transition: height 0.3s ease;
+}
+
+.step{
+    height: 60vh;
+    padding: 0px 50px;
+}
+.stepsCount{
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 2em;
+}
+.stepHeading{
+    font-family: 'Manrope';
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--main-blue-color);
+    padding: 0.3em 0em;
+}
+.stepDescription{
+    font-family: 'Poppins';
+    font-size: 1.3em;
+}
+
+.headingContainer{
+    padding-bottom: 7em;
+}
+.processMainHeading{
+    font-family: 'Manrope';
+        font-size: 3.5em;
+        font-weight: 900;
+        color: #fff;
+        padding: 0.2em 0em;
+}
+.processMainHeading span{
+    color: var(--main-blue-color);
+    font-size: inherit;
+    font-weight: inherit;
+}
+.processView {
+    background: none;
+    color: #fff;
+    border: none;
+    font-family: 'Manrope';
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.processView a{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.processView svg{
+    font-size: inherit;
+    font-weight: inherit;
+    margin-left: 15px;
+}
+
+.imagesArea{
+    width: 50%;
+    height: 100svh;
+}
+.galleryBox{
+    width: 20vw;
+    height: 65vh;
+    border-radius: 160px;
+}
+.stepImage img{
+    object-fit: cover;
+    object-position: center;
+}
