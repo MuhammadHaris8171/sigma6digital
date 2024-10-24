@@ -43,6 +43,8 @@
     color: #fff;
     opacity: 0;
     padding-bottom: 2.5em;
+    position: relative;
+    left: 100%;
     transition: all 0.2s;
 }
 .serviceBoxButton{
@@ -50,7 +52,11 @@
     border: none;
     font-family: 'Poppins';
     font-weight: 700;
+    position: relative;
+    top: 100px;
+    opacity: 0;
     color: #fff;
+    transition: all 0.3s;
 }
 .serviceBoxButton::before{
     content: "";
@@ -72,5 +78,10 @@
     width: 100%;
 }
 .serviceBox:hover .serviceBoxDescription {
+    left: 0px;
+    opacity: 1;
+}
+.serviceBox:hover .serviceBoxButton {
+    top: 0px;
     opacity: 1;
 }
