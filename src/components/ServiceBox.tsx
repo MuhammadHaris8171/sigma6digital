@@ -10,7 +10,7 @@ interface ServiceBoxProps {
 const ServiceBox: React.FC<ServiceBoxProps> = ({ item }) => {
   return (
     <div className={`${styles.serviceBox}`}>
-        <img src={item.imgsrc} alt="" className={`${styles.serviceImage}`} />
+        <img src={item.imgsrc} alt="Sigma 6 Digital" className={`${styles.serviceImage}`} />
         <div className={`${styles.serviceBoxContent} position-relative`}>
             <h5 className={`${styles.serviceBoxName}`}>{item.name}</h5>
             <h3 className={`${styles.serviceBoxHeading}`}>{item.heading}</h3>

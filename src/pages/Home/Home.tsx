@@ -1,4 +1,6 @@
+import AboutFold from '../../components/AboutFold'
 import FeatureSlider from '../../components/FeatureSlider'
+import Industries from '../../components/Industries'
 import Process from '../../components/Process'
 import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
@@ -18,6 +20,12 @@ function Home() {
         </section>
         <section id="process" className={`${styles.processSection} mt-5`}>
           <Process heading="Our product<br><span>development process.</span>"/>
+        </section>
+        <section id="About" className={`${styles.aboutSection} py-5 my-5`}>
+          <AboutFold />
+        </section>
+        <section id="Industries" className={`${styles.aboutSection} py-5 my-5`}>
+          <Industries />
         </section>
     </>
   )

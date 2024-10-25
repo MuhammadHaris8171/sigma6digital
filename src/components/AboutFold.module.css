@@ -1,0 +1,25 @@
+.aboutHeading{
+    font-size: 3.6em;
+    font-family: 'Manrope';
+    font-weight: 800;
+    line-height: 65px;
+}
+.aboutDescription{
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    padding-top: 0.8em;
+}
+.aboutPointsHeading{
+    font-size: 3.6em;
+    font-family: 'Helvetica Neue Interface bold';
+    font-weight: 900;
+    line-height: 60px;
+}
+.aboutPointDescription{
+    font-family: 'Manrope';
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.aboutPoints{
+    padding: 50px 0px;
+}
