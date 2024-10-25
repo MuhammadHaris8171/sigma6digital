@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Header from "./components/header/Header"
 import ScrollToTop from "./components/ScrollToTop"
+import Footer from "./components/Footer/Footer"
 
 
 function Root() {
@@ -11,7 +12,7 @@ function Root() {
     <ScrollToTop />
     {/* <Loader /> */}
     <Outlet />
-    {/* <Footer /> */}
+    <Footer />
     </>
   )
 }

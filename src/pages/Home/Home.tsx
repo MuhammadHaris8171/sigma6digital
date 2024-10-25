@@ -1,4 +1,5 @@
 import AboutFold from '../../components/AboutFold'
+import Cta from '../../components/Cta'
 import FeatureSlider from '../../components/FeatureSlider'
 import Industries from '../../components/Industries'
 import Process from '../../components/Process'
@@ -26,6 +27,9 @@ function Home() {
         </section>
         <section id="Industries" className={`${styles.aboutSection} py-5 my-5`}>
           <Industries />
+        </section>
+        <section id="call-to-action">
+          <Cta />
         </section>
     </>
   )
