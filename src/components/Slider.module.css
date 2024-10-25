@@ -37,3 +37,87 @@
     color: #fff;
     font-weight: 500;
 }
+
+@media (max-width: 1200px) {
+    .heroVideoHeading {
+        font-size: 6.1em;
+    }
+    
+    .heroVideoParagraph {
+        font-size: 1.3em;
+    }
+    .heroCarouselBtn{
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 992px) {
+    .heroVideoContentContainer {
+        left: 36%;
+        right: 18%;
+    }
+    .heroVideoHeading {
+        font-size: 6.7em;
+    }
+    
+    .heroVideoParagraph {
+        font-size: 1.7em;
+    }
+    .heroCarouselBtn{
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 830px) {
+    .heroVideoContentContainer {
+        left: 50%;
+        right: 0%;
+    }
+    .heroVideoHeading {
+        font-size: 7.3em;
+        text-align: center;
+    }
+    
+    .heroVideoParagraph {
+        font-size: 2.4em;
+        text-align: center;
+        padding: 0.5em 0em;
+    }
+    .heroCarouselBtn{
+        font-size: 1.9em;
+        display: flex;
+        justify-self: center;
+    }
+}
+@media (max-width: 620px) {
+    .heroVideoHeading {
+        font-size: 9em;
+    }
+    
+    .heroVideoParagraph {
+        font-size: 2.9em;
+        padding: 0.8em 0em;
+    }
+    .heroCarouselBtn{
+        font-size: 2.3em;
+        display: flex;
+        justify-self: center;
+    }
+}
+@media (max-width: 550px) {
+    .heroVideoContainer {
+        min-height: 80vh;
+    }
+    .heroVideoContentContainer {
+        width: 100%;
+        padding: 0em 8em;
+    }
+    .heroVideoHeading {
+        font-size: 12em;
+    }
+    
+    .heroVideoParagraph {
+        font-size: 4.5em;
+    }
+    .heroCarouselBtn{
+        font-size: 4em;
+    }
+}

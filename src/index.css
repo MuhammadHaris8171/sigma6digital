@@ -2,6 +2,24 @@
     padding: 0px;
     margin: 0px;
     font-size: 1vw;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-blue-color) #f7f7f7;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-blue-color);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darken(var(--main-blue-color), 10%);
 }
 
 :root{
