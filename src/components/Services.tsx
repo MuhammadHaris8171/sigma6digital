@@ -8,7 +8,7 @@ function Services() {
         <div className="container">
             <div className="row">
                 {services.slice(0, 4).map((item, index) => (
-                <div className="col-3" key={index}>
+                <div className={`col-md-6 col-xl-3 mb-sm-4 ${styles.serviceBoxContainer}`} key={index}>
                     <ServiceBox item={item} />
                 </div>
                 ))}

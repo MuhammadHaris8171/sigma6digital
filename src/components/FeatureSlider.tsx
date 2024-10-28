@@ -3,7 +3,6 @@ import styles from './FeatureSlider.module.css';
 import Marquee from "react-fast-marquee";
 import {features} from './data';
 
-// Define the type for each feature item
 interface FeatureItem {
   src: string;
 }

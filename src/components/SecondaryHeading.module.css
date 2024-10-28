@@ -9,3 +9,48 @@
     font-weight: 400;
     font-size: 1.1em;
 }
+.mainBtn svg{
+    font-size: inherit;
+}
+@media screen and (max-width: 1199px) {
+    .mainBtn {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .secondaryHeading {
+        font-size: 4em;
+    }
+
+    .mainBtn {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .secondaryHeading {
+        font-size: 4.6em;
+    }
+    
+    .mainBtn {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .secondaryHeadingContainer{
+        padding: 0em 5em;
+        flex-direction: column;
+        align-items: start !important;
+        margin-bottom: 2.7em;
+    }
+    .secondaryHeading {
+        font-size: 10em;
+        padding-bottom: 0.2em;
+    }
+    
+    .mainBtn {
+        font-size: 5em;
+    }
+}

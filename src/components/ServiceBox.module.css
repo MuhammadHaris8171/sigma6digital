@@ -2,6 +2,7 @@
     padding: 30px;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 .serviceBox::before {
     content: "";
@@ -19,6 +20,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: all 0.2s;
 }
 .serviceBoxContent{
@@ -58,6 +60,9 @@
     color: #fff;
     transition: all 0.3s;
 }
+.serviceBoxButton svg{
+    font-size: inherit;
+}
 .serviceBoxButton::before{
     content: "";
     position: absolute;
@@ -84,4 +89,66 @@
 .serviceBox:hover .serviceBoxButton {
     top: 0px;
     opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+    .serviceBoxName {
+        font-size: 2em;
+    }
+    .serviceBoxHeading {
+        font-size: 2.65em;
+    }
+        
+    .serviceBoxDescription {
+        font-size: 1.3em;
+        padding-bottom: 4em;
+    }
+    .serviceBoxButton {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 992px) {
+    .serviceBoxName {
+        font-size: 2.5em;
+    }
+    .serviceBoxHeading {
+        font-size: 3.6em;
+    }
+        
+    .serviceBoxDescription {
+        font-size: 1.7em;
+    }
+    .serviceBoxButton {
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .serviceBoxName {
+        font-size: 3.5em;
+    }
+    .serviceBoxHeading {
+        font-size: 5em;
+    }
+        
+    .serviceBoxDescription {
+        font-size: 2.2em;
+    }
+    .serviceBoxButton {
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-width: 575px) {
+    .serviceBoxName {
+        font-size: 5.6em;
+    }
+    .serviceBoxHeading {
+        font-size: 8.9em;
+    }
+        
+    .serviceBoxDescription {
+        font-size: 4.4em;
+    }
+    .serviceBoxButton {
+        font-size: 4.4em;
+    }
 }
