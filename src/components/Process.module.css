@@ -97,3 +97,119 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media screen and (max-width: 1199px) {
+    .processMainHeading{
+        font-size: 4em;
+    }
+    .processView{
+        font-size: 1.8em;
+    }
+    .stepsCount{
+        font-size: 2.4em;
+    }
+    .stepHeading{
+        font-size: 4em;
+        padding: 0.15em 0em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .processMainHeading {
+        font-size: 4.5em;
+    }
+    
+    .processView {
+        font-size: 2.2em;
+    }
+    .stepsCount {
+        font-size: 3em;
+    }
+    
+    .stepHeading {
+        font-size: 5em;
+    }
+    .stepDescription{
+        font-size: 1.7em;
+    }
+    .galleryBox{
+        width: 27vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .processMainHeading {
+        font-size: 5.5em;
+    }
+    
+    .processView {
+        font-size: 3em;
+    }
+    .stepsArea{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .imagesArea{
+        width: 100%;
+        height: 60svh;
+    }
+    .galleryBox{
+        width: 100%;
+        height: 280px;
+        display: flex;
+    }
+    .contentArea{
+        width: 100vw;
+        order: 2;
+        height: 40svh;
+    }
+    .steps{
+        display: flex;
+        overflow: hidden;
+        position: absolute;
+    }
+    .step{
+        min-width: 100%;
+        height: auto;
+        padding-right: 40%;
+    }
+    .stepsCount {
+        font-size: 4em;
+    }
+    .stepHeading {
+        font-size: 7em;
+    }
+    .stepDescription {
+        font-size: 2.25em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .verticleSlider{
+        padding: 3em 5em;
+    }
+    .headingContainer{
+        margin-bottom: 4em;
+    }
+    .processMainHeading {
+        font-size: 8em;
+    }
+    
+    .processView {
+        font-size: 5em;
+    }
+        .step {
+            padding-right: 30%;
+        }
+        .stepsCount {
+            font-size: 7em;
+        }
+    
+        .stepHeading {
+            font-size: 11em;
+        }
+        
+        .stepDescription {
+            font-size: 4em;
+        }
+}

@@ -12,38 +12,80 @@ interface ProcessProps {
 }
 
 function Process({ heading }: ProcessProps) {
+  const contentSteps = useRef<HTMLDivElement>(null);
   const stepsAreaRef = useRef<HTMLDivElement>(null);
   const imagesAreaRef = useRef<HTMLDivElement>(null);
-  const progressBarRef = useRef<HTMLDivElement>(null); // Reference for the new progress bar
+  const progressBarRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+useLayoutEffect(() => {
+    const steps = contentSteps.current;
     const stepsArea = stepsAreaRef.current;
     const imagesArea = imagesAreaRef.current;
+    const totalSteps = 6;
+    const isMobile = window.innerWidth <= 767;
 
-    gsap.set(".stepImage:not(:first-child)", { top: "100%" });
-    const animation = gsap.to(".stepImage:not(:first-child)", { top: 0, duration: 1, stagger: 1 });
+    if (isMobile) {
+        const stepWidth = steps ? steps.offsetWidth : 0;
+        const stepDistance = stepWidth * (totalSteps - 1);
 
-    if (stepsArea && imagesArea && progressBarRef.current) {
-      ScrollTrigger.create({
-        trigger: stepsArea,
-        start: "top top",
-        end: "bottom bottom",
-        pin: imagesArea,
-        pinSpacing: true,
-        scrub: true,
-        onUpdate: (self) => {
-          const progress = self.progress;
-          const newHeight = Math.ceil(progress * 100);
-          gsap.set(progressBarRef.current, { height: `${newHeight}%` }); // Target the new div
-        },
-        animation: animation,
-      });
+        gsap.set(".stepImage:not(:first-child)", { left: "100%" });
+        gsap.set(".step:last-child", { x: 0 });
+
+        const timeline = gsap.timeline();
+        timeline
+            .to(".stepImage:not(:first-child)", { left: 0, duration: 1, stagger: 1 }, 0)
+            .to(".step", { x: -stepDistance, duration: totalSteps + 1, stagger: 0 }, 0); 
+
+        if (stepsArea && imagesArea && progressBarRef.current) {
+            ScrollTrigger.create({
+                trigger: stepsArea,
+                start: "top top",
+                end: () => `+=${contentSteps.current?.offsetWidth + "1" || 0}`,
+                pin: true,
+                pinSpacing: true,
+                scrub: true,
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const newWidth = Math.ceil(progress * 100);
+                    gsap.set(progressBarRef.current, { width: `${newWidth}%` });
+                },
+                animation: timeline,
+            });
+        }
+    } else {
+        gsap.set(".stepImage:not(:first-child)", { top: "100%" });
+        gsap.set(".steps:not(:first-child)", { top: "100%" });
+
+        const timeline = gsap.timeline();
+        timeline
+            .to(".stepImage:not(:first-child)", { top: 0, duration: 1, stagger: 1 }, 0) 
+            .to(".steps:not(:first-child)", { top: 0, duration: 1, stagger: 1 }, 0);
+
+        if (stepsArea && imagesArea && progressBarRef.current) {
+            ScrollTrigger.create({
+                trigger: stepsArea,
+                start: "top top",
+                end: "bottom bottom",
+                pin: imagesArea,
+                pinSpacing: true,
+                scrub: true,
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const newHeight = Math.ceil(progress * 100);
+                    gsap.set(progressBarRef.current, { height: `${newHeight}%` });
+                },
+                animation: timeline,
+            });
+        }
     }
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-  }, []);
+}, []);
+
+
+
 
   return (
     <>
@@ -59,12 +101,12 @@ function Process({ heading }: ProcessProps) {
                   <Link to="#" className="text-decoration-none">View More <FaLongArrowAltRight /></Link>
                 </button>
               </div>
-              <div className="stepsArea d-flex" ref={stepsAreaRef}>
+              <div className={`${styles.stepsArea} stepsArea d-flex`} ref={stepsAreaRef}>
                 <div className={styles.contentArea}>
-                  <div className={`${styles.steps} steps position-relative`}>
+                  <div className={`${styles.steps} steps position-relative`} ref={contentSteps}>
                     <div className={`${styles.progressBar} position-absolute`} ref={progressBarRef}></div>
                     {[...Array(6)].map((_, index) => (
-                      <div className={`${styles.step}`} key={index}>
+                      <div className={`${styles.step} step`} key={index}>
                         <h4 className={styles.stepsCount}>{`0${index + 1}/06`}</h4>
                         <h3 className={styles.stepHeading}>Ideate</h3>
                         <p className={styles.stepDescription}>
