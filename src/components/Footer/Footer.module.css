@@ -63,3 +63,68 @@
 .creatorLink:hover::before{
     width: 100%;
 }
+
+@media screen and (max-width: 1199px) {
+    .footerHeading{
+        font-size: 2.2em;
+    }
+    .footerlistLink{
+        font-size: 1.35em;
+    }
+    .copyrightClaim{
+        font-size: 1.4em;
+    }
+    .copyrightClaim span{
+        font-size: inherit;
+    }
+    .copyrightClaim a{
+        font-size: inherit;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footerHeading {
+        font-size: 2.6em;
+    }
+    
+    .footerlistLink {
+        font-size: 1.5em;
+    }
+    
+    .copyrightClaim {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footerHeading {
+        font-size: 3.5em;
+    }
+    
+    .footerlistLink {
+        font-size: 2.1em;
+    }
+    
+    .copyrightClaim {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        padding: 4em 5em;
+    }
+    .footerHeading {
+        font-size: 7em;
+        font-weight: 700;
+        margin-bottom: .5em;
+    }
+    
+    .footerlistLink {
+        font-size: 4.3em;
+    }
+    
+    .copyrightClaim {
+        font-size: 3.6em;
+    }
+}

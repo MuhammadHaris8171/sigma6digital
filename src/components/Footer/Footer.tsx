@@ -9,24 +9,24 @@ function Footer() {
         <footer className={`${styles.footer}`}>
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-md-3">
-                      <h5 className={`${styles.footerHeading} mb-4`}>Services</h5>
+                    <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
+                      <h5 className={`${styles.footerHeading} mb-sm-4`}>Services</h5>
                       <ul className="list-unstyled">
                         {services.map((item, index) => (
                           <li className={`${styles.footerlist}`} key={ `${item.name}-${index}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>{item.name} <FaArrowRightLong /></Link></li>
                         ))}
                       </ul>
                     </div>
-                    <div className="col-md-3">
-                      <h5 className={`${styles.footerHeading} mb-4`}>Industries</h5>
+                    <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
+                      <h5 className={`${styles.footerHeading} mb-sm-4`}>Industries</h5>
                       <ul className="list-unstyled">
                         {industriesData.map((item, index) => (
                           <li className={`${styles.footerlist}`} key={ `${item.heading}-${index}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>{item.heading} <FaArrowRightLong /></Link></li>
                         ))}
                       </ul>
                     </div>
-                    <div className="col-md-3">
-                      <h5 className={`${styles.footerHeading} mb-4`}>Socials</h5>
+                    <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
+                      <h5 className={`${styles.footerHeading} mb-sm-4`}>Socials</h5>
                       <ul className="list-unstyled">
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Facebook <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Instagram <FaArrowRightLong /></Link></li>
@@ -36,8 +36,8 @@ function Footer() {
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Tiktok <FaArrowRightLong /></Link></li>
                       </ul>
                     </div>
-                    <div className="col-md-3">
-                      <h5 className={`${styles.footerHeading} mb-4`}>Quick Links</h5>
+                    <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
+                      <h5 className={`${styles.footerHeading} mb-sm-4`}>Quick Links</h5>
                       <ul className="list-unstyled">
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>About Us <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Services <FaArrowRightLong /></Link></li>
