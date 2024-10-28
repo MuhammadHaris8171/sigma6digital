@@ -194,22 +194,19 @@
     .processMainHeading {
         font-size: 8em;
     }
-    
     .processView {
         font-size: 5em;
     }
-        .step {
-            padding-right: 30%;
-        }
-        .stepsCount {
-            font-size: 7em;
-        }
-    
-        .stepHeading {
-            font-size: 11em;
-        }
-        
-        .stepDescription {
-            font-size: 4em;
-        }
+    .step {
+        padding-right: 30%;
+    }
+    .stepsCount {
+        font-size: 7em;
+    }
+    .stepHeading {
+        font-size: 11em;
+    }
+    .stepDescription {
+        font-size: 4em;
+    }
 }

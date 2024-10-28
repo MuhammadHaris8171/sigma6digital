@@ -1,3 +1,10 @@
+.videoContainer{
+    width: 80vw;
+    height: 80svh;
+    border-radius: 35px;
+    overflow: hidden;
+    margin: 10em auto 0em auto;
+}
 .ctaVideo{
     width: 100%;
     height: 100svh;
@@ -29,6 +36,7 @@
 .ctaBtn span{
     position: relative;
     z-index: 2;
+    font: inherit;
 }
 .ctaBtn::before{
     content: "";
@@ -58,4 +66,71 @@
 }
 .ctaContentBox .ctaBtn:hover{
     color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .ctaVideoHeading{
+        font-size: 4em;
+    }
+    .ctaBtn{
+        font-size: 1.5em;
+    }
+    .ctaContentBoxHeading{
+        font-size: 3.7em;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .ctaVideoHeading {
+        font-size: 4.5em;
+        margin-bottom: .5em;
+    }
+    
+    .ctaBtn {
+        font-size: 1.8em;
+    }
+    .ctaContentBoxHeading {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ctaVideoHeading {
+        font-size: 5em;
+    }
+    
+    .ctaBtn {
+        font-size: 2em;
+    }
+    .ctaContentBoxHeading {
+        font-size: 4.7em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .ctaVideo {
+        height: 80svh;
+    }
+    .videoContentContainer{
+        bottom: 30%;
+        padding: 0em 5em;
+    }
+    .ctaVideoHeading {
+        font-size: 9em;
+        text-align: center;
+    }
+    
+    .ctaBtn {
+        font-size: 4em;
+    }
+    .ctaContentBox{
+        padding: 12em 5em;
+    }
+    .ctaContentBoxHeading {
+        font-size: 7em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
 }
