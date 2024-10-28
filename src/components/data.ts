@@ -77,7 +77,7 @@ export const services: Service[] = [
 export const industriesData: IndustryData[] = [
   {
     heading: "Education",
-    description: "We build dynamic e-learning platforms and interactive, engaging digital tools that enhance student engagement and streamline administrative processes for institutions.",
+    description: "We build dynamic e-learning platforms and interactive, engaging digital tools that enhance student engagement and streamline processes for institutions.",
     point_1: "E-learning Platforms",
     point_2: "Learning Management Systems",
   },

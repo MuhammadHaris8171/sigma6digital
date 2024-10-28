@@ -34,7 +34,7 @@ useLayoutEffect(() => {
         const timeline = gsap.timeline();
         timeline
             .to(".stepImage:not(:first-child)", { left: 0, duration: 1, stagger: 1 }, 0)
-            .to(".step", { x: -stepDistance, duration: totalSteps + 1, stagger: 0 }, 0); 
+            .to(".step", { x: -stepDistance, duration: totalSteps + 1, stagger: 0, ease: "none" }, 0); 
 
         if (stepsArea && imagesArea && progressBarRef.current) {
             ScrollTrigger.create({

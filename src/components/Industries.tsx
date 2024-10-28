@@ -41,7 +41,7 @@ function Industries() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-4">
+        <div className="col-sm-6 col-md-5 col-lg-4">
           <div className={`${styles.industriesMainContentBox} position-relative`}>
             <img src="/src/assets/images/it-solutions.webp" alt="Sigma 6 Digital" className={`${styles.industriesMainImage} positon-absolute`} />
             <div className={`${styles.industriesMainContent} position-relative`}>
@@ -57,7 +57,21 @@ function Industries() {
               </button>
           </div>
         </div>
-        <div className="col-8 position-relative multi-carousel">
+        <div className="col-sm-6 col-md-7 col-lg-8 position-relative multi-carousel"> 
+          <div className="row flex-nowrap overflow-hidden" ref={carouselRef}>
+            {industriesData.map((item, index) => (
+              <div className="col-12 col-lg-5 col-xl-4" key={index}>
+                <div className={`${styles.industryBox}`}>
+                  <div className={`${styles.industryBoxContent} position-relative`}>
+                    <h4 className={`${styles.industryHeading}`}>{item.heading}</h4>
+                    <p className={`${styles.industryDescription} mb-5 mb-sm-3 mt-3`}>{item.description}</p>
+                    <p className={`${styles.industrypoint} mb-5 mb-sm-2`}>{item.point_1}</p>
+                    <p className={`${styles.industrypoint} `}>{item.point_2}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
           <div className={`${styles.industrycrouselClient} d-flex align-items-center`}>
             <button 
               className={`btn ${styles.previous} ${styles.industryControlBtn}`} 
@@ -73,20 +87,6 @@ function Industries() {
             >
               <FaArrowRight />
             </button>
-          </div>
-          <div className="row flex-nowrap overflow-hidden" ref={carouselRef}>
-            {industriesData.map((item, index) => (
-              <div className="col-4" key={index}>
-                <div className={`${styles.industryBox}`}>
-                  <div className={`${styles.industryBoxContent} position-relative`}>
-                    <h4 className={`${styles.industryHeading}`}>{item.heading}</h4>
-                    <p className={`${styles.industryDescription} mb-3 mt-3`}>{item.description}</p>
-                    <p className={`${styles.industrypoint} mb-2`}>{item.point_1}</p>
-                    <p className={`${styles.industrypoint} mb-2`}>{item.point_2}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

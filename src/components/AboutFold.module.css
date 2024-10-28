@@ -23,3 +23,79 @@
 .aboutPoints{
     padding: 50px 0px;
 }
+@media screen and (max-width: 1199px) {
+.aboutHeading{
+    font-size: 4.5em;
+}
+.aboutDescription{
+    font-size: 1.5em;
+}
+.aboutPointsHeading{
+    font-size: 4.5em;
+}
+.aboutPointDescription{
+    font-size: 2.2em;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .aboutHeading {
+        font-size: 5.5em;
+        line-height: 1.3em;
+    }
+    
+    .aboutDescription {
+        font-size: 1.8em;
+    }
+    
+    .aboutPointsHeading {
+        font-size: 5em;
+    }
+    
+    .aboutPointDescription {
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aboutHeading {
+        font-size: 6em;
+    }
+    
+    .aboutDescription {
+        font-size: 2.2em;
+    }
+    
+    .aboutPointsHeading {
+        font-size: 6em;
+    }
+    
+    .aboutPointDescription {
+        font-size: 2.7em;
+    }
+    .aboutPoints{
+        padding: 30px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .aboutHeading {
+        font-size: 7.6em;
+    }
+    
+    .aboutDescription {
+        font-size: 4em;
+    }
+    
+    .aboutPointsHeading {
+        font-size: 10em;
+    }
+    
+    .aboutPointDescription {
+        font-size: 4.2em;
+    }
+    
+    .aboutPoints {
+        padding: 30px 0px 0px 0px;
+    }
+}
