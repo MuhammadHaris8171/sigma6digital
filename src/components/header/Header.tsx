@@ -52,7 +52,7 @@ const Header: React.FC = () => {
                   </li>
                   <li>
                     <NavLink 
-                      to="/about" 
+                      to="/about-us" 
                       className={({ isActive }) => 
                         isActive ? `${styles.active} ${scrollHeader ? styles.navLinksScrolled : styles.navLinks} text-decoration-none` 
                                  : `${scrollHeader ? styles.navLinksScrolled : styles.navLinks} text-decoration-none`

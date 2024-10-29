@@ -1,6 +1,6 @@
 import React from "react";
 import { Service } from "./data";
-import styles from "./ServiceBox.module.css"
+import styles from "../styles/ServiceBox.module.css"
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 interface ServiceBoxProps {

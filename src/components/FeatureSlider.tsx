@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FeatureSlider.module.css';
+import styles from '../styles/FeatureSlider.module.css';
 import Marquee from "react-fast-marquee";
 import {features} from './data';
 

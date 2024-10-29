@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./SecondaryHeading.module.css";
+import styles from "../styles/SecondaryHeading.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 interface SecondaryHeadingProps {

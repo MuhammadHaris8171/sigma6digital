@@ -1,5 +1,5 @@
 import ServiceBox from "./ServiceBox";
-import styles from "./Services.module.css"
+import styles from "../styles/Services.module.css"
 import { services } from "./data";
 
 function Services() {

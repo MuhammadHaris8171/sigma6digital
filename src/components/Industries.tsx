@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./Industries.module.css";
+import styles from "../styles/Industries.module.css";
 import { FaArrowLeft, FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
 import { industriesData } from "./data";
 import itSolutionsImg from '../assets/images/it-solutions.webp';

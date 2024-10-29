@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./Process.module.css";
+import styles from "../styles/Process.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

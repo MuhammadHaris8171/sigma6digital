@@ -9,6 +9,11 @@ import Slider from '../../components/Slider'
 import styles from './Home.module.css'
 
 function Home() {
+  const points = [
+    {heading: "99.5%", description: "Client Satisfaction"},
+    {heading: "100+", description: "Project Done"},
+    {heading: "15+", description: "Global Clients"},
+  ]
   return (
     <>
         <Slider />
@@ -23,7 +28,7 @@ function Home() {
           <Process heading="Our product<br><span>development process.</span>"/>
         </section>
         <section id="About" className={`${styles.aboutSection} py-5 my-5`}>
-          <AboutFold />
+          <AboutFold heading="Your Trusted Partner in Digital Transformation" description="At Sigma 6 Digital, we are dedicated to delivering innovative web and app solutions, advanced AI technologies, and reliable IT support. Our client-focused approach ensures that we understand your unique needs and work collaboratively to help your business thrive in the digital age." points={points} />
         </section>
         <section id="Industries" className={`${styles.aboutSection} py-5 my-5`}>
           <Industries />
