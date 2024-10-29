@@ -4,6 +4,7 @@ import lightLogo from '../../assets/images/sigma6_white_logo.webp';
 import darkLogo from '../../assets/images/sigma6_dark_logo.webp';
 import styles from './Header.module.css';
 import { IoMailSharp } from 'react-icons/io5';
+import { FaBarsStaggered } from 'react-icons/fa6';
 
 const Header: React.FC = () => {
   const [scrollHeader, setScrollHeader] = useState(false);
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={`${styles.head} ${scrollHeader ? styles.scrolled : ''} position-fixed py-3`}>
+    <header className={`${styles.head} ${scrollHeader ? styles.scrolled : ''} position-fixed py-5 py-sm-4 py-lg-3`}>
       <div className="container">
         <div className={`${styles.headerRow} d-flex align-items-center justify-content-between`}>
           <div className='d-flex align-items-center gap-5'>
@@ -97,13 +98,18 @@ const Header: React.FC = () => {
               </nav>
             </div>
           </div>
-          <div className={`${styles.contactDetails} d-flex align-items-center gap-4`}>
+          <div className={`${styles.contactDetails}`}>
+            <div className="d-flex align-items-center gap-4">
             <p className={`${scrollHeader ? styles.contactDetailScrolled : styles.contactDetail} mb-0`}>
               <IoMailSharp /> connect@sigma6digital.com
             </p>
             <button className={`${styles.navContactBtn} ${scrollHeader ? styles.navContactBtnScrolled : ''} btn`}>
               Get In Touch
             </button>
+            </div>
+          </div>
+          <div className={`${styles.sidebarOption}`}>
+            <button className={`${scrollHeader ? styles.sidebarBtnScrolled : styles.sidebarBtn}`}><FaBarsStaggered /></button>
           </div>
         </div>
       </div>

@@ -185,6 +185,9 @@
 }
 
 @media screen and (max-width: 575px) {
+    .galleryBox{
+        height: 200px;
+    }
     .verticleSlider{
         padding: 3em 5em;
     }

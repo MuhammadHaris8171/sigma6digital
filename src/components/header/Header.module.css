@@ -58,3 +58,55 @@
     background: #418dc9 !important;
     color: #fff !important;
 }
+.sidebarBtn, .sidebarBtnScrolled{
+    font-size: 2.6em;
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+:where(.sidebarBtn, .sidebarBtnScrolled) svg{
+    font-size: inherit;
+}
+.sidebarBtnScrolled{
+    color: #000;
+}
+@media screen and (max-width: 1199px) {
+    .navLinks{
+        font-size: 1.4em;
+    }
+    .contactDetail{
+        font-size: 1.25em;
+    }
+    .navContactBtn{
+        font-size: 1.4em !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .headerLogo{
+        width: 145px;
+    }
+    .Navbar{
+        display: none;
+    }
+    .contactDetails{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebarBtn, .sidebarBtnScrolled{
+        font-size: 3.2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .head{
+        padding: 0em 5em;
+    }
+    .sidebarBtn, .sidebarBtnScrolled {
+        font-size: 6em;
+    }
+}
