@@ -34,7 +34,7 @@
     height: 100%;
     width: 100%;
     transform: translateX(0px);
-    bottom: 0px;
+    bottom: 0px !important;
 }
 .industriesButton{
     border: none;
