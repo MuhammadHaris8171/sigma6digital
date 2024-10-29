@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Industries.module.css";
 import { FaArrowLeft, FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
 import { industriesData } from "./data";
+import itSolutionsImg from '../assets/images/it-solutions.webp';
 
 function Industries() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +44,7 @@ function Industries() {
       <div className="row">
         <div className="col-sm-6 col-md-5 col-lg-4">
           <div className={`${styles.industriesMainContentBox} position-relative`}>
-            <img src="/src/assets/images/it-solutions.webp" alt="Sigma 6 Digital" className={`${styles.industriesMainImage} positon-absolute`} />
+            <img src={itSolutionsImg} alt="Sigma 6 Digital" className={`${styles.industriesMainImage} positon-absolute`} />
             <div className={`${styles.industriesMainContent} position-relative`}>
               <h2 className={`${styles.industriesHeading} pb-2`}>Industries We Serve</h2>
               <p className={`${styles.industriesDescription}`}>
