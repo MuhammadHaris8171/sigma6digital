@@ -1,4 +1,6 @@
 import AboutFold from "../../components/AboutFold"
+import PagesHero from "../../components/PagesHero"
+import Team from "../../components/Team"
 import styles from "./About.module.css"
 
 function About() {
@@ -9,13 +11,14 @@ function About() {
   ]
   return (
     <>
-    <div id="abouthero" className={`${styles.aboutHero}`}>
-      <video autoPlay muted loop>
-        <source src="https://sigma6digital.com/wp-content/uploads/2024/10/Comp-1-1.m4v" />
-      </video>
+    <section id="abouthero" className={`${styles.aboutHero}`}>
+      <PagesHero />
+    </section>
+    <div id="about" className={`${styles.aboutMain}`}>
+        <AboutFold heading="Enhance Your Business Visibility with Sigma6 Digital" description="At Sigma6 Digital, we focus on providing cutting-edge technology solutions that enable businesses to navigate the digital world with confidence. Our experienced team is dedicated to understanding your unique challenges and offering tailored services that drive growth, efficiency, and success.We utilize the latest technologies and industry best practices to create effective digital strategies. Together, we can turn your vision into reality and achieve lasting success in today’s competitive market." points={points} />
     </div>
-    <div id="about" className={`${styles.aboutHero}`}>
-        <AboutFold heading="Your Trusted Partner in Digital Transformation" description="At Sigma 6 Digital, we are dedicated to delivering innovative web and app solutions, advanced AI technologies, and reliable IT support. Our client-focused approach ensures that we understand your unique needs and work collaboratively to help your business thrive in the digital age." points={points} />
+    <div id="team" className={`${styles.aboutTeam}`}>
+      <Team />
     </div>
     </>
   )

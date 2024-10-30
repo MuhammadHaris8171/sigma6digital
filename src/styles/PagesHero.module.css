@@ -1,0 +1,23 @@
+.pageVideo {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.pageHeroContent {
+    top: 35%;
+    left: 9%;
+    right: 40%;
+    color: #fff;
+}
+
+.pageHeroHeading {
+    font-family: 'Manrope';
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.pageHeroDescription {
+    font-family: 'Poppins';
+    font-size: 0.95em;
+}
