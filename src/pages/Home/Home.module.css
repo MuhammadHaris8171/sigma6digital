@@ -6,7 +6,7 @@
     background-color: #0e0e0e;
 }
 @media screen and (max-width: 575px) {
-    .aboutSection{
+    .aboutSection, .industrySection{
         padding: 8em 5em !important;
     }
 }

@@ -1,0 +1,13 @@
+.headingContainer {
+    padding: 6em 0em 3em 0em;
+}
+.aboutWorkProcess{
+    background-color: #fafafa;
+    padding: 6em 0em;
+}
+@media screen and (max-width: 575px) {
+
+    .serviceIndustrySection{
+        padding: 8em 5em !important;
+    }
+}

@@ -30,7 +30,7 @@ function Home() {
         <section id="About" className={`${styles.aboutSection} py-5 my-5`}>
           <AboutFold heading="Your Trusted Partner in Digital Transformation" description="At Sigma 6 Digital, we are dedicated to delivering innovative web and app solutions, advanced AI technologies, and reliable IT support. Our client-focused approach ensures that we understand your unique needs and work collaboratively to help your business thrive in the digital age." points={points} />
         </section>
-        <section id="Industries" className={`${styles.aboutSection} py-5 my-5`}>
+        <section id="Industries" className={`${styles.industrySection} py-5 my-5`}>
           <Industries />
         </section>
         <section id="call-to-action">

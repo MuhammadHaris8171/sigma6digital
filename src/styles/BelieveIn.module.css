@@ -1,0 +1,24 @@
+.BelieveHeading{
+    font-family: 'Manrope';
+    font-size: 3.5em;
+    font-weight: bold;
+    padding-bottom: 0.6em;
+}
+.believeBox{
+    border: 1px solid #fff;
+    padding: 2em;
+    border-radius: 25px;
+    height: 100%;
+}
+.believeBoxHeading{
+    font-family: 'Manrope';
+    font-size: 2em;
+    font-weight: 800;
+    padding-bottom: 0.5em;
+}
+.believeBoxDescription{
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    line-height: 1.35em;
+    font-weight: 500;
+}

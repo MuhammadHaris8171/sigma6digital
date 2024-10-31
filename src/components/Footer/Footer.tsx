@@ -39,8 +39,8 @@ function Footer() {
                     <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
                       <h5 className={`${styles.footerHeading} mb-sm-4`}>Quick Links</h5>
                       <ul className="list-unstyled">
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>About Us <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Services <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><Link to="/about-us" className={`${styles.footerlistLink} text-decoration-none`}>About Us <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><Link to="/services" className={`${styles.footerlistLink} text-decoration-none`}>Services <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Careers <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Our Team <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Our Clients <FaArrowRightLong /></Link></li>

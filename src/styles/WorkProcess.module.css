@@ -1,0 +1,47 @@
+.workHeading{
+    font-size: 3.6em;
+    font-family: 'Manrope';
+    font-weight: 800;
+    line-height: 65px;
+}
+.workProcessImage{
+    width: 90%;
+    object-fit: cover;
+}
+.faqSection{
+    padding: 3em 5em;
+}
+.faqItem{
+    padding: 0.8em 0em;
+}
+.faqQuestion{
+    font-family: 'Manrope';
+    font-size: 1.75em;
+    font-weight: 800;
+    transition: all 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.workStepOpen{
+    color: var(--main-blue-color);
+}
+.faqAnswer{
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    padding-top: 1.3em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease, opacity .4s ease;
+    opacity: 0;
+}
+
+.answerOpen {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.answerClosed {
+    max-height: 0;
+    opacity: 0;
+}
