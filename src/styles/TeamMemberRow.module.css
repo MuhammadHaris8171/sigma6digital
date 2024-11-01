@@ -10,7 +10,7 @@
 .teamDetail {
     height: 250px;
     font-family: 'Helvetica Neue Interface bold';
-    font-size: 2.4em;
+    font-size: 2.75em;
     text-align: center;
     line-height: 1.1em;
     display: flex;
@@ -43,4 +43,65 @@
 .imageTopZero {
     bottom: 0;
     transition: bottom 0.1s ease;
+}
+@media screen and (max-width: 1199px) {
+    .teamDetail{
+        height: 210px;
+    }
+    .teamImage{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .teamRow{
+        height: auto;
+    }
+    .teamBox{
+        padding-top: 4em;
+    }
+    .teamImage{
+        position: relative !important;
+        margin-bottom: 2.5em;
+        height: 360px;
+        filter: none;
+    }
+    .teamDetail{
+        height: auto;
+    }
+    .teamName{
+        font-size: 3.5em;
+        padding-bottom: 0.15em;
+    }
+    .teamDesignation{
+        font-size: 2.2em;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .teamName{
+        font-size: 4.4em;
+    }
+    .teamDesignation{
+        font-size: 3em;
+    }
+    .teamImage {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .teamBox{
+        padding: 7em 6em 0em 6em;
+    }
+    .teamName {
+        font-size: 7em;
+    }
+    .teamDesignation {
+        font-size: 4.7em;
+    }
+    .teamImage {
+        height: auto;
+    }
 }

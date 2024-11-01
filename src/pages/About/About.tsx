@@ -20,7 +20,7 @@ function About() {
     <section id="about" className={`${styles.aboutMain}`}>
         <AboutFold heading="Enhance Your Business Visibility with Sigma6 Digital" description="At Sigma6 Digital, we focus on providing cutting-edge technology solutions that enable businesses to navigate the digital world with confidence. Our experienced team is dedicated to understanding your unique challenges and offering tailored services that drive growth, efficiency, and success.We utilize the latest technologies and industry best practices to create effective digital strategies. Together, we can turn your vision into reality and achieve lasting success in today’s competitive market." points={points} />
     </section>
-    <section id="About-team" className={`${styles.aboutTeam}`}>
+    <section id="About-team" className={`${styles.aboutTeam} position-relative`}>
       <Team />
     </section>
     <section id="About-Clients" className={`${styles.aboutClient}`}>

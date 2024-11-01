@@ -97,12 +97,12 @@
     .contactDetails{
         display: none;
     }
+    .sidebarOption {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    .sidebarOption{
-        display: block;
-    }
     .sidebarBtn, .sidebarBtnScrolled{
         font-size: 3.2em;
     }

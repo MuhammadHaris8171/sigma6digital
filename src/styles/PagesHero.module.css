@@ -21,3 +21,56 @@
     font-family: 'Poppins';
     font-size: 0.95em;
 }
+@media screen and (max-width: 1199px) {
+    .pageHeroHeading{
+        font-size: 3.7em;
+    }
+    .pageHeroDescription{
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pageHeroContent{
+        right: 30%;
+    }
+    .pageHeroHeading{
+        font-size: 4.6em;
+    }
+    .pageHeroDescription{
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .pageHeroContent {
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        padding: 0em 10em;
+    }
+    
+    .pageHeroHeading {
+        font-size: 5.7em;
+    }
+    
+    .pageHeroDescription {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .pageHeroContent {
+        top: 30%;
+            padding: 0em 7em;
+        }
+    .pageHeroHeading {
+            font-size: 8em;
+            margin-bottom: .31em;
+        }
+    
+        .pageHeroDescription {
+            font-size: 3.3em;
+        }
+}

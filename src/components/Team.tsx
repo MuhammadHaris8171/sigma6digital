@@ -14,15 +14,15 @@ interface TeamMember {
 
 const Team: React.FC = () => {
   const TeamDetailOne: TeamMember[] = [
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
   ];
-
+  
   const TeamDetailTwo: TeamMember[] = [
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/it-solutions.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
   ];
 
   return (
