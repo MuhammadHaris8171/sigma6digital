@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TeamMemberRow from "./TeamMemberRow";
 import styles from "../styles/Team.module.css"
+import rameez_img from "../assets/images/rameez-img.webp"
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -14,15 +15,15 @@ interface TeamMember {
 
 const Team: React.FC = () => {
   const TeamDetailOne: TeamMember[] = [
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
   ];
   
   const TeamDetailTwo: TeamMember[] = [
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
-    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: "/src/assets/images/rameez-img.webp" },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
+    { name: "Muhammad Rameez", Designation: "Sr. Full-Stack Developer", imageSrc: rameez_img },
   ];
 
   return (
