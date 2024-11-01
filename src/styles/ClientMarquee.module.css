@@ -1,0 +1,10 @@
+.aboutClientImg{
+    width: 230px;
+    margin-right: 3em;
+}
+@media screen and (max-width: 575px) {
+    .aboutClientImg {
+        width: 190px;
+        margin-bottom: 0px;
+    }
+}

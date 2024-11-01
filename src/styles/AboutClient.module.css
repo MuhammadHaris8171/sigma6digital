@@ -4,5 +4,25 @@
     font-weight: 800;
 }
 .aboutClientImg{
-    width: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+    .aboutClientHeading{
+        font-size: 4.2em;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .aboutClientHeading{
+        font-size: 5.2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .aboutClientHeading {
+        font-size: 9em;
+    }
 }

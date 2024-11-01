@@ -8,17 +8,31 @@
     padding: 3em 0em;
 }
 .aboutbelieve{
-    background: var(--main-blue-color);
+    background: #000;
     padding: 6em 0em;
     color: #fff;
+}
+@media screen and (max-width: 1199px) {
+    .aboutClient{
+        padding: 9em 0em;
+    }
 }
 @media screen and (max-width: 767px) {
     .aboutTeam{
         padding: 5em 0em;
     }
+    .aboutbelieve {
+        padding: 10em 0em;
+    }
 }
 @media screen and (max-width: 575px) {
+    .aboutClient{
+        padding: 10em 5em;
+    }
     .aboutMain {
         padding: 10em 7em;
+    }
+    .aboutbelieve {
+        padding: 10em 5em;
     }
 }
