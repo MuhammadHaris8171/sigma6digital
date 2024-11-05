@@ -1,0 +1,22 @@
+.globalLocationHeading{
+    font-family: 'Manrope';
+    font-size: 3.5em;
+    font-weight: 900;
+    padding: 0.2em 0em;
+}
+.locationBox{
+    width: 85%;
+    margin: auto;
+}
+.locationBoxImage{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12%;
+}
+.locationBoxHeading{
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 1.5em;
+    padding: 1.4em 0.2em;
+}

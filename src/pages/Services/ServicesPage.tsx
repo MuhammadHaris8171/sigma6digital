@@ -5,6 +5,7 @@ import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
 import WorkProcess from '../../components/WorkProcess'
 import styles from './ServicesPage.module.css'
+import workImg from '../../assets/images/AI-Solutions.webp'
 
 interface WorkItem {
   question: string;
@@ -48,7 +49,7 @@ function ServicesPage() {
           videoLink="https://sigma6digital.com/wp-content/uploads/2024/10/Comp-1-1.m4v" 
         />
       </section>
-      <section id="Main-Services" className="pb-5">
+      <section id="Main-Services" className={`pb-5 ${styles.servicesBox}`}>
         <div className={styles.headingContainer}>
           <SecondaryHeading 
             heading="What We Offer" 
@@ -62,6 +63,7 @@ function ServicesPage() {
         <WorkProcess 
           heading="Here's How We Get Things Done" 
           workSteps={workSteps} 
+          workImg={workImg}
         />
       </section>
       <section id="serviceIndustries" className={`${styles.serviceIndustrySection} py-5 my-5`}>

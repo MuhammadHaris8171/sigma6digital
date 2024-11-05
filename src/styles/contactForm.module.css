@@ -1,0 +1,43 @@
+.contactFormLabel{
+    font-family: 'Manrope';
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.contactFormLabel span{
+    font-size: inherit;
+}
+.contactFormInput{
+    background: #fafafa;
+    font-size: 1.15em;
+    padding: 0.4em 1em;
+    border-radius: 9px;
+    border: 1px solid #b5b5b5;
+}
+.contactFormInput[type="number"]::-webkit-outer-spin-button,
+.contactFormInput[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.contactFormOption{
+    font-family: 'Manrope';
+}
+.contactFormOption:hover{
+    background-color: #000;
+    color: #fff;
+}
+.contactFormSubmitBtn{
+    background: var(--main-blue-color);
+    border: none;
+    color: #fff;
+    padding: 1em 1.6em;
+    font-family: 'Manrope';
+    font-weight: 500;
+    border-radius: 8px;
+    width: 100%;
+}
+.errorText {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}

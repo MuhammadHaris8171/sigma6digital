@@ -10,4 +10,10 @@
     .serviceIndustrySection{
         padding: 8em 5em !important;
     }
+    .servicesBox{
+        padding: 8em 0em;
+    }
+    .aboutWorkProcess{
+        padding: 8em 5em
+    }
 }

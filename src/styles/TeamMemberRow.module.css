@@ -28,11 +28,6 @@
     object-fit: cover;
     position: absolute;
     left: 0px;
-    filter: grayscale(1);
-    transition: filter .3s !important;
-}
-.teamImage:hover{
-    filter: grayscale(0);
 }
 
 .imageBottomZero {

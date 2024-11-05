@@ -10,10 +10,11 @@ interface FaqItem {
 interface WorkProcessProps {
   heading: string;
   workSteps: FaqItem[];
+  workImg?: string;
 }
 
-const WorkProcess: React.FC<WorkProcessProps> = ({ heading, workSteps }) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0); // Set default to the first FAQ
+const WorkProcess: React.FC<WorkProcessProps> = ({ heading, workSteps, workImg }) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -22,16 +23,18 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ heading, workSteps }) => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-9">
-          <h2 className={`${styles.workHeading}`}>{heading}</h2>
+        <div className={`col-md-9 ${!workImg && "m-auto"}`}>
+          <h2 className={`${styles.workHeading} ${!workImg ? styles.workFullHeading : ''}`}>{heading}</h2>
         </div>
         <div className="col-12">
           <div className="row py-5 mt-4">
-            <div className="col-5 d-flex justify-content-center">
-              <img src="/src/assets/images/AI-Solutions.webp" alt="Sigma 6 Digital" className={`${styles.workProcessImage}`} />
+            {workImg && (
+            <div className="col-lg-5 d-none d-lg-flex justify-content-center">
+              <img src={workImg} alt="Sigma 6 Digital" className={`${styles.workProcessImage}`} />
             </div>
-            <div className="col-7">
-              <div className={`${styles.faqSection}`}>
+            )}
+            <div className={workImg ? "col-lg-7" : "col-lg-9 m-auto"}>
+              <div className={`${styles.faqSection} ${!workImg ? styles.faqFullSection : ''}`}>
                 {workSteps.map((faq, index) => (
                   <div key={index} className={`${styles.faqItem}`}>
                     <h4
