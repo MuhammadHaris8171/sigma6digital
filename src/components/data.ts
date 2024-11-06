@@ -4,29 +4,25 @@ import appDevelopmentImg from '../assets/images/Mobile-App-Development.webp';
 import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
 import itSolutionsImg from '../assets/images/it-solutions.webp';
 
-// Define the interface for a feature.
 export interface Feature {
-  src: string; // Image source for the feature.
+  src: string;
 }
 
-// Define the interface for a service.
 export interface Service {
-  name: string;       // Name of the service.
-  imgsrc: string;     // Image source for the service.
-  heading: string;    // Heading/title of the service.
-  description: string; // Description of the service.
-  button: string;     // Button text for the service.
+  name: string;
+  imgsrc: string;
+  heading: string;
+  description: string;
+  button: string;
 }
 
-// Define the interface for an industry.
 export interface IndustryData {
-  heading: string;    // Industry name.
-  description: string; // Description of the industry.
-  point_1: string;    // First key point related to the industry.
-  point_2: string;    // Second key point related to the industry.
+  heading: string;
+  description: string;
+  point_1: string;
+  point_2: string; 
 }
 
-// Sample data for features.
 export const features: Feature[] = [
   { src: featureLogoDelete },
   { src: featureLogoDelete },
@@ -41,7 +37,6 @@ export const features: Feature[] = [
   { src: featureLogoDelete },
 ];
 
-// Sample data for services.
 export const services: Service[] = [
   {
     name: "Web Development",
@@ -80,7 +75,6 @@ export const services: Service[] = [
   },
 ];
 
-// Sample data for industries.
 export const industriesData: IndustryData[] = [
   {
     heading: "Education",

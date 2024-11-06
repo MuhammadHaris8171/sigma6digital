@@ -75,6 +75,23 @@
 .sidebarBtnScrolled{
     color: #000;
 }
+.navDropDownHeaderBox{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    /* top: -100vh; */
+    top: 4.4em;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.navList{
+    cursor: pointer;
+}
+.navList:hover .navDropDownHeaderBox{
+    max-height: 100vh;
+}
+
 @media screen and (max-width: 1199px) {
     .navLinks{
         font-size: 1.4em;

@@ -20,6 +20,7 @@
     margin: 0;
 }
 .contactFormOption{
+    font-size: inherit;
     font-family: 'Manrope';
 }
 .contactFormOption:hover{
@@ -36,8 +37,65 @@
     border-radius: 8px;
     width: 100%;
 }
+.contactFormSubmitBtn svg{
+    font-size: inherit;
+}
 .errorText {
     color: red;
     font-size: 14px;
     margin-top: 4px;
+}
+@media screen and (max-width: 1199px) {
+    .contactFormLabel{
+        font-size: 1.4em;
+    }
+    .contactFormInput{
+        font-size: 1.4em;
+    }
+    .contactFormSubmitBtn{
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactFormLabel {
+        font-size: 1.8em;
+    }
+    
+    .contactFormInput {
+        font-size: 1.8em;
+    }
+    
+    .contactFormSubmitBtn {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contactFormLabel {
+        font-size: 2.2em;
+    }
+    .contactFormInput {
+        font-size: 2.2em;
+    }
+    .contactFormSubmitBtn {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contactFormBox{
+        padding-top: 1.5em;
+    }
+    .contactFormLabel {
+        font-size: 4em;
+    }
+    
+    .contactFormInput {
+        font-size: 4em;
+    }
+    
+    .contactFormSubmitBtn {
+        font-size: 4em;
+    }
 }

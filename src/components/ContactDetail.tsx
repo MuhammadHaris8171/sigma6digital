@@ -10,11 +10,11 @@ function ContactDetail({ heading, description }: ContactDetailProps) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-5 pe-5">
+        <div className="col-lg-5 pe-5">
           <h3 className={`${styles.contactMainHeading}`}>{heading}</h3>
           <p className={`${styles.contactMainPara}`}>{description}</p>
         </div>
-        <div className="col-md-7">
+        <div className="col-lg-7">
             <ContactForm />
         </div>
       </div>

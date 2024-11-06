@@ -5,7 +5,7 @@ import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
 import WorkProcess from '../../components/WorkProcess'
 import styles from './ServicesPage.module.css'
-import workImg from '../../assets/images/AI-Solutions.webp'
+import workImg from '../../assets/images/475x845.webp'
 
 interface WorkItem {
   question: string;

@@ -80,9 +80,9 @@ function ContactForm(): JSX.Element {
   return (
     <div className={styles.contactFormBox}>
       <form onSubmit={handleSubmit} className={styles.contactForm}>
-        <div className="container ps-md-5">
+        <div className="container px-0 ps-lg-5 py-5 py-lg-0">
           <div className="row">
-            <div className="col-md-6 mb-4">
+            <div className="col-sm-6 mb-4">
               <label htmlFor="name" className={styles.contactFormLabel}>
                 Name<span>*</span>
               </label>
@@ -95,7 +95,7 @@ function ContactForm(): JSX.Element {
               />
               {errors.name && <p className={styles.errorText}>{errors.name}</p>}
             </div>
-            <div className="col-md-6 mb-4">
+            <div className="col-sm-6 mb-4">
               <label htmlFor="country" className={styles.contactFormLabel}>
                 Country<span>*</span>
               </label>
@@ -108,7 +108,7 @@ function ContactForm(): JSX.Element {
               />
               {errors.country && <p className={styles.errorText}>{errors.country}</p>}
             </div>
-            <div className="col-md-6 mb-4">
+            <div className="col-sm-6 mb-4">
               <label htmlFor="email" className={styles.contactFormLabel}>
                 Email<span>*</span>
               </label>
@@ -121,7 +121,7 @@ function ContactForm(): JSX.Element {
               />
               {errors.email && <p className={styles.errorText}>{errors.email}</p>}
             </div>
-            <div className="col-md-6 mb-4">
+            <div className="col-sm-6 mb-4">
               <label htmlFor="phone" className={styles.contactFormLabel}>
                 Phone<span>*</span>
               </label>
@@ -134,7 +134,7 @@ function ContactForm(): JSX.Element {
               />
               {errors.phone && <p className={styles.errorText}>{errors.phone}</p>}
             </div>
-            <div className="col-md-12 mb-4">
+            <div className="col-sm-12 mb-4">
               <label htmlFor="service" className={styles.contactFormLabel}>
                 Select Service<span>*</span>
               </label>
@@ -144,7 +144,7 @@ function ContactForm(): JSX.Element {
                 onChange={handleInputChange}
                 className={`${styles.contactFormInput} w-100`}
               >
-                <option value="">Select Service</option>
+                <option value="" className={styles.contactFormOption}>Select Service</option>
                 <option value="web-development" className={styles.contactFormOption}>
                   Website Development
                 </option>
@@ -172,7 +172,7 @@ function ContactForm(): JSX.Element {
               </select>
               {errors.service && <p className={styles.errorText}>{errors.service}</p>}
             </div>
-            <div className="col-md-12 mb-4">
+            <div className="col-sm-12 mb-4">
               <label htmlFor="message" className={styles.contactFormLabel}>
                 Message<span>*</span>
               </label>
@@ -185,7 +185,7 @@ function ContactForm(): JSX.Element {
               ></textarea>
               {errors.message && <p className={styles.errorText}>{errors.message}</p>}
             </div>
-            <div className="col-md-12 mb-4">
+            <div className="col-sm-12 mb-4">
               <button type="submit" className={styles.contactFormSubmitBtn}>
                 Send a Message <BsSendFill className='ms-2' />
               </button>

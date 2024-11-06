@@ -8,3 +8,42 @@
     font-size: 1.25em;
     line-height: 1.4em;
 }
+
+@media screen and (max-width: 1199px) {
+    .contactMainHeading {
+        font-size: 4.35em;
+    }
+    
+    .contactMainPara {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactMainHeading {
+        font-size: 5em;
+    }
+    
+    .contactMainPara {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contactMainHeading {
+        font-size: 6em;
+    }
+    
+    .contactMainPara {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contactMainHeading {
+        font-size: 8.5em;
+    }
+    .contactMainPara {
+        font-size: 3.5em;
+    }
+}

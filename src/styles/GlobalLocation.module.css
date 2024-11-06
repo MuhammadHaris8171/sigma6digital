@@ -9,7 +9,6 @@
     margin: auto;
 }
 .locationBoxImage{
-    height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 12%;
@@ -19,4 +18,58 @@
     font-weight: 800;
     font-size: 1.5em;
     padding: 1.4em 0.2em;
+}
+
+@media screen and (max-width: 1199px) {
+    .globalLocationHeading{
+        font-size: 4em;
+    }
+    .locationBox{
+        width: 90%;
+    }
+    .locationBoxHeading {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .globalLocationHeading {
+        font-size: 4.7em;
+    }
+    .locationBox {
+        width: 80%;
+    }
+    .locationBoxHeading {
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .globalLocationHeading {
+        font-size: 5em;
+    }
+    .locationBox {
+        width: 90%;
+    }
+    
+    .locationBoxHeading {
+        font-size: 2.7em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .globalLocationHeading {
+        font-size: 8em;
+    }
+    
+    .locationBox {
+        width: 100%;
+    }
+    
+    .locationBoxHeading {
+       font-size: 7em;
+    }
+    .locationBoxHeading {
+        padding: 1em 0.2em;
+    }
 }
