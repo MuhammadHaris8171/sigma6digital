@@ -92,6 +92,142 @@
     max-height: 100vh;
 }
 
+.formSidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: #418dc95c;
+    position: absolute;
+    left: 100%;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    transition: all 0.5s;
+}
+.headerFormBox{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.headerContactHeading{
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 2.7em;
+    padding-bottom: 0.6em;
+}
+.headerContactHeading span{
+    font-size: inherit;
+    position: relative;
+}
+.headerContactHeading span::before{
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 20px;
+}
+.closeHeaderFormBox{
+    background-color: var(--main-blue-color);
+    color: #fff;
+    position: absolute;
+    top: 1.5em;
+    right: 1.8em;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.closeHeaderFormBox svg{
+    font-size: inherit;
+}
+.headerMobileSidebar{
+    background: #418dc95c;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0px;
+    bottom: 0px;
+    transition: all 0.5s;
+}
+.navSidebarBox{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 4em 3em;
+    display: none;
+}
+.sidebarHeaderLogo{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+.closeNavSidebar{
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+    background-color: var(--main-blue-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.closeNavSidebar svg{
+    font-weight: inherit;
+    font-size: inherit;
+}
+.sidebarNavList{
+    padding: 0.3em 0em;
+    font-family: 'Manrope';
+    font-size: 2em;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebarNavLink{
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    width: 100%;
+}
+.sidebarNavList svg{
+    font-size: inherit;
+}
+.sidebarBody{
+    padding: 5em 0em;
+}
+.sidebarFooter{
+    position: absolute;
+    bottom: 4em;
+    left: 2em;
+    right: 3em;
+}
+.sidebarFooter button{
+    background-color: var(--main-blue-color);
+    color: #fff;
+    font-size: inherit;
+}
+.sidebarFooter button:hover{
+    background-color: var(--main-blue-color);
+}
+.sidebarFooter a{
+    font-size: 2.3em;
+    color: #fff;
+}
 @media screen and (max-width: 1199px) {
     .navLinks{
         font-size: 1.4em;
@@ -117,19 +253,73 @@
     .sidebarOption {
         display: block;
     }
+    .head{
+        padding: 1em 0em;
+    }
+    .navSidebarBox{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .sidebarBtn, .sidebarBtnScrolled{
         font-size: 3.2em;
     }
+    .sidebarHeaderLogo{
+        width: 22%;
+    }
+    .sidebarNavList{
+        font-size: 3em;
+    }
+    .closeNavSidebar {
+        width: 40px;
+        height: 40px;
+        font-size: 2.5em;
+    }
+    .sidebarFooter a {
+        font-size: 3em;
+    }
+    .sidebarFooter button {
+        padding: 0.4em 0em;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .head{
-        padding: 0em 5em;
+        padding: 3.5em 5em;
     }
     .sidebarBtn, .sidebarBtnScrolled {
         font-size: 6em;
+    }
+    .sidebarHeaderLogo {
+        width: 35%;
+    } 
+    .sidebarNavList {
+        font-size: 4.5em;
+        border-bottom: 1px solid #dbdbdb;
+        padding: .8em 0em;
+        font-weight: 600;
+    }
+    .closeNavSidebar {
+        font-size: 3.3em;
+    }
+    .navSidebarBox{
+        padding: 6em 4em;
+    }
+    .sidebarBody{
+        height: 100%;
+    }
+    .sidebarBodyUL{
+        padding-top: 5em;
+    }
+    .sidebarFooter{
+        bottom: 12%;
+    }
+    .sidebarFooter a {
+        font-size: 4.65em;
+    }
+    .sidebarFooter button {
+        padding: 0.6em 0em;
+        font-weight: 500;
     }
 }

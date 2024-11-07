@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import lightLogo from '../../assets/images/sigma6_white_logo.webp';
 import darkLogo from '../../assets/images/sigma6_dark_logo.webp';
 import styles from './Header.module.css';
 import { IoMailSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import NavDropdown from '../NavDropdown';
+import ContactForm from '../ContactForm';
+import { RxCross2 } from 'react-icons/rx';
+import { TiArrowSortedDown } from 'react-icons/ti';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const Header: React.FC = () => {
   const [scrollHeader, setScrollHeader] = useState(false);
+  const [isFormSidebarVisible, setFormSidebarVisible] = useState(false);
+  const [isMobileSidebarVisible, setMobileSidebarVisible] = useState(false);
+
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -117,8 +124,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header
-      className={`${styles.head} ${
+    <header className={`${styles.head} ${
         scrollHeader ? styles.scrolled : ''
       } position-fixed`}
     >
@@ -168,25 +174,14 @@ const Header: React.FC = () => {
                             } text-decoration-none`
                       }
                     >
-                      Services
+                      Services<sup><TiArrowSortedDown /> </sup>
                     </NavLink>
                     <div className={`${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={serviceDropDown} />
                     </div>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList} ${scrollHeader? styles.navLinksScrolled: styles.navLinks}`}>
-                    {/* <NavLink
-                      to="/#Industries"
-                      className={({ isActive }) => isActive? `${styles.active}  text-decoration-none`
-                          : `${
-                              scrollHeader
-                                ? styles.navLinksScrolled
-                                : styles.navLinks
-                            } text-decoration-none`
-                      }
-                    > */}
-                      Industries
-                    {/* </NavLink> */}
+                      Industries<sup><TiArrowSortedDown /> </sup>
                     <div className={`${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={industriesDropDown} />
                     </div>
@@ -264,21 +259,65 @@ const Header: React.FC = () => {
               >
                 <IoMailSharp /> connect@sigma6digital.com
               </p>
-              <button
-                className={`${styles.navContactBtn} ${
+              <button className={`${styles.navContactBtn} ${
                   scrollHeader ? styles.navContactBtnScrolled : ''
-                } btn`}
+                } btn`} onClick={() => setFormSidebarVisible(true)}
               >
                 Get In Touch
               </button>
+              <div className={`${styles.formSidebar}`} style={{ left: isFormSidebarVisible ? '0%' : '100%' }}>
+                <div className="container-fluid h-100">
+                  <div className="row h-100">
+                    <div className="col-5 h-100 p-0 ms-auto">
+                      <div className={`${styles.headerFormBox} d-flex flex-column justify-content-center positon-relative`}>
+                        <div className={`${styles.closeHeaderFormBox}`} onClick={() => setFormSidebarVisible(false)}>
+                          <RxCross2 />
+                        </div>
+                        <h3 className={`${styles.headerContactHeading} px-lg-5 d-inline`}><span>Get In Touch</span></h3>
+                        <div className={`${styles.headerForm} pe-lg-5`}>
+                          <ContactForm />
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
           <div className={`${styles.sidebarOption}`}>
             <button
-              className={`${scrollHeader ? styles.sidebarBtnScrolled : styles.sidebarBtn}`}
-            >
+              className={`${scrollHeader ? styles.sidebarBtnScrolled : styles.sidebarBtn} ${styles.sidebarOpenBtn}`} onClick={() => setMobileSidebarVisible(true)}>
               <FaBarsStaggered />
             </button>
+            <div className={`${styles.headerMobileSidebar}`}  style={{ left: isMobileSidebarVisible ? '0%' : '-100%' }}>
+              <div className="container-fluid p-0 h-100">
+                <div className="row h-100">
+                  <div className="col-md-5 h-100">
+                    <div className={`${styles.navSidebarBox} position-relative`}>
+                        <div className={`${styles.sidebarHeader} d-flex justify-content-between align-items-center`}>
+                          <img src={darkLogo} alt="Sigma6Digital" className={`${styles.sidebarHeaderLogo}`} />
+                          <button className={`${styles.closeNavSidebar} border-0 position-relative`} onClick={() => setMobileSidebarVisible(false)}>
+                            <RxCross2 />
+                          </button>
+                        </div>
+                        <div className={`${styles.sidebarBody}`}>
+                          <ul className={`list-unstyled ${styles.sidebarBodyUL}`}>
+                            <li className={`${styles.sidebarNavList}`}><NavLink to="/" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Home</NavLink></li>
+                            <li className={`${styles.sidebarNavList}`}><NavLink to="/services" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Services <MdKeyboardArrowRight /></NavLink></li>
+                            <li className={`${styles.sidebarNavList}`}>Industries <MdKeyboardArrowRight /></li>
+                            <li className={`${styles.sidebarNavList}`}><NavLink to="/about-us" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>About</NavLink></li>
+                            <li className={`${styles.sidebarNavList}`}><NavLink to="/faq" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Faq</NavLink></li>
+                          </ul>
+                        </div>
+                        <div className={`${styles.sidebarFooter}`}>
+                          <Link to="/contact/" className='text-decoration-none' onClick={() => setMobileSidebarVisible(false)}><button className="btn w-100">Get In Touch</button></Link>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
