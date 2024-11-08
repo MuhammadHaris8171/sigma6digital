@@ -5,6 +5,9 @@
     scrollbar-width: thin;
     scrollbar-color: var(--main-blue-color) #f7f7f7;
 }
+:root{
+    --main-blue-color: #418dc9;
+}
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -22,9 +25,6 @@
     background: darken(var(--main-blue-color), 10%);
 }
 
-:root{
-    --main-blue-color: #418dc9;
-}
 @font-face {
     font-family: 'Helvetica Neue Interface Regular';
     src: url('./assets/fonts/_H_HelveticaNeueInterface_2.ttf') format('truetype');

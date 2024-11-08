@@ -134,11 +134,13 @@ const Header: React.FC = () => {
         >
           <div className="d-flex align-items-center gap-5">
             <div className={styles.logoBox}>
+              <Link to="/">
               <img
                 src={scrollHeader ? darkLogo : lightLogo}
                 alt="Sigma 6 Digital Logo"
                 className={styles.headerLogo}
-              />
+                />
+              </Link>
             </div>
             <div className={styles.Navbar}>
               <nav className="d-flex justify-content-center align-items-center">
@@ -174,14 +176,14 @@ const Header: React.FC = () => {
                             } text-decoration-none`
                       }
                     >
-                      Services<sup><TiArrowSortedDown /> </sup>
+                      Services <TiArrowSortedDown />
                     </NavLink>
                     <div className={`${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={serviceDropDown} />
                     </div>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList} ${scrollHeader? styles.navLinksScrolled: styles.navLinks}`}>
-                      Industries<sup><TiArrowSortedDown /> </sup>
+                      Industries <TiArrowSortedDown />
                     <div className={`${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={industriesDropDown} />
                     </div>

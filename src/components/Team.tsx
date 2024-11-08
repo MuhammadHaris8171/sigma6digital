@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TeamMemberRow from "./TeamMemberRow";
 import styles from "../styles/Team.module.css"
-import rameez_img from "../assets/images/rameez-img.webp"
+import rameez_img from "../assets/images/415x380.webp"
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../styles/Cta.module.css";
+import { Link } from "react-router-dom";
 
 function Cta() {
   useEffect(() => {
@@ -63,7 +64,7 @@ function Cta() {
             Digitize Your Business for Success!
           </h3>
           <button className={`btn ${styles.ctaBtn} overflow-hidden`}>
-            <span>Contact Us Now</span>
+            <Link to="/contact" className="text-decoration-none"><span>Contact Us Now</span></Link>
           </button>
         </div>
       </div>

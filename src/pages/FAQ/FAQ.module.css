@@ -2,3 +2,9 @@
     padding: 4em 0em;
     background: #fafafa;
 }
+
+@media screen and (max-width: 575px){
+    .faqWorkProcess{
+        padding: 10em 6em;
+    }
+}
