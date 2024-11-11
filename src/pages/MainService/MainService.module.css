@@ -1,0 +1,25 @@
+.mainServiceHero{
+    height: 100vh;
+    background: #f7f7f7;
+}
+.mainServiceHeroContentBox{
+    padding-right: 3em;
+}
+.mainServiceHeroHeading{
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 3em;
+}
+.mainServiceHeroDescription{
+    font-family: 'Poppins';
+    font-size: 1.05em;
+    margin-top: 1.1em;
+}
+.mainServiceHeroImage{width: 100%;}
+.subServices{
+    background: #f7f7f7;
+    padding: 5em 0em;
+}
+.headingContainer {
+    padding-bottom: 3em;
+}

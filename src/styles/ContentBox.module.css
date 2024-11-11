@@ -1,0 +1,32 @@
+.contentBoxContainer{
+    padding: 5.5em 0em;
+}
+.ContentBox{
+    padding-right: 4em;
+}
+.contentLast .ContentBox{
+    padding-right: 0em;
+    padding-left: 4em;
+}
+.contentBoxHeading{
+    font-size: 3em;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+.contentBoxDescription{
+    font-family: 'Poppins';
+    font-size: 1.13em;
+}
+.contentBoxImageBox{
+    padding-left: 4em;
+}
+.imageFirst .contentBoxImageBox{
+    padding-left: 0em;
+    padding-right: 0em;
+}
+.contentBoxImage{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+}

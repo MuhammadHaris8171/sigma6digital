@@ -11,7 +11,11 @@ import { RxCross2 } from 'react-icons/rx';
 import { TiArrowSortedDown } from 'react-icons/ti';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  theme?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({theme}) => {
   const [scrollHeader, setScrollHeader] = useState(false);
   const [isFormSidebarVisible, setFormSidebarVisible] = useState(false);
   const [isMobileSidebarVisible, setMobileSidebarVisible] = useState(false);
@@ -124,9 +128,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.head} ${
+    <header className={`${theme ? styles.themeDark : ''} ${styles.head} ${
         scrollHeader ? styles.scrolled : ''
-      } position-fixed`}
+      } position-fixed `}
     >
       <div className="container">
         <div
@@ -136,7 +140,7 @@ const Header: React.FC = () => {
             <div className={styles.logoBox}>
               <Link to="/">
               <img
-                src={scrollHeader ? darkLogo : lightLogo}
+                src={scrollHeader || theme ? darkLogo : lightLogo}
                 alt="Sigma 6 Digital Logo"
                 className={styles.headerLogo}
                 />
@@ -283,7 +287,6 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

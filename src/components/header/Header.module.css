@@ -37,6 +37,9 @@
     color: #fff;
     font-size: 1.05em;
 }
+.themeDark :where(.navLinks, .contactDetail) {
+    color: #000;
+}
 
 .contactDetailScrolled {
     color: #000;
@@ -79,7 +82,6 @@
     position: absolute;
     width: 100%;
     left: 0px;
-    /* top: -100vh; */
     top: 4.4em;
     max-height: 0px;
     overflow: hidden;

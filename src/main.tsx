@@ -10,6 +10,7 @@ import About from './pages/About/About';
 import ServicesPage from './pages/Services/ServicesPage';
 import FAQ from './pages/FAQ/FAQ';
 import Contact from './pages/Contact/Contact';
+import MainService from './pages/MainService/MainService';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/main-service",
+        element: <MainService />,
       },
     ],
   },
