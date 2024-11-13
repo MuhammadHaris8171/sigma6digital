@@ -35,7 +35,7 @@
 .serviceBoxHeading{
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.9em;
     padding: 15px 0px;
     color: #fff;
 }
@@ -59,6 +59,10 @@
     opacity: 0;
     color: #fff;
     transition: all 0.3s;
+}
+.serviceBoxButton a{
+    font-size: inherit;
+    color: inherit;
 }
 .serviceBoxButton svg{
     font-size: inherit;

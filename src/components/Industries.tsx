@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Industries.module.css";
 import { FaArrowLeft, FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
@@ -7,11 +7,29 @@ import itSolutionsImg from '../assets/images/it-solutions.webp';
 
 function Industries() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(2);
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
-  const itemsPerPage = 2;
   const totalItems = industriesData.length;
   const maxIndex = Math.ceil(totalItems / itemsPerPage) - 1;
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      if (window.innerWidth <= 1199) {
+        setItemsPerPage(1);
+      } else {
+        setItemsPerPage(2);
+      }
+    };
+
+    // Initial call to set the items per page based on the current window size
+    updateItemsPerPage();
+
+    // Add event listener to handle window resize
+    window.addEventListener("resize", updateItemsPerPage);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const scrollTo = (index: number) => {
     if (carouselRef.current) { 

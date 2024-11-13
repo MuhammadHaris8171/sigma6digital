@@ -30,3 +30,52 @@
     object-fit: cover;
     border-radius: 40px;
 }
+
+@media screen and (max-width: 1199px) {
+    .contentBoxHeading{
+        font-size: 3.3em;
+    }
+    .contentBoxDescription {
+        font-size: 1.35em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ContentBox {
+        padding-right: 1em;
+    }
+    .contentBoxHeading{
+        font-size: 3.6em;
+    }
+    .contentBoxDescription {
+        font-size: 1.55em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contentBoxHeading{
+        font-size: 5em;
+    }
+    .contentBoxDescription {
+        font-size: 2.1em;
+        margin: 1em 0em;
+    }
+    .contentBoxImageBox{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contentBoxHeading {
+        font-size: 8em;
+    }
+    
+    .contentBoxDescription {
+        font-size: 3.5em;
+        margin-bottom: 2em;
+    }
+    
+    .contentBoxImage {
+        height: 300px;
+    }
+}

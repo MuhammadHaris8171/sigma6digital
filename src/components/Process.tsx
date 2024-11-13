@@ -6,14 +6,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
 import itSolutionsImg from '../assets/images/it-solutions.webp';
+import { DevelopmentProcess } from "./data";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface ProcessProps {
   heading: string;
+  developmentProcess: DevelopmentProcess[];
 }
 
-function Process({ heading }: ProcessProps) {
+function Process({ heading, developmentProcess }: ProcessProps) {
   const contentSteps = useRef<HTMLDivElement>(null);
   const stepsAreaRef = useRef<HTMLDivElement>(null);
   const imagesAreaRef = useRef<HTMLDivElement>(null);
@@ -107,12 +109,12 @@ useLayoutEffect(() => {
                 <div className={styles.contentArea}>
                   <div className={`${styles.steps} steps position-relative`} ref={contentSteps}>
                     <div className={`${styles.progressBar} position-absolute`} ref={progressBarRef}></div>
-                    {[...Array(6)].map((_, index) => (
+                    {developmentProcess.map((item, index) => (
                       <div className={`${styles.step} step`} key={index}>
-                        <h4 className={styles.stepsCount}>{`0${index + 1}/06`}</h4>
-                        <h3 className={styles.stepHeading}>Ideate</h3>
+                        <h4 className={styles.stepsCount}>{`0${index + 1}/0${developmentProcess.length}`}</h4>
+                        <h3 className={styles.stepHeading}>{item.heading}</h3>
                         <p className={styles.stepDescription}>
-                          We analyze your vision thoroughly to ensure the roadmap is perfectly aligned with your end goals, setting the stage for product success.
+                          {item.description}
                         </p>
                       </div>
                     ))}

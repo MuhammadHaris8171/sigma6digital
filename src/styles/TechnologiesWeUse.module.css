@@ -1,0 +1,98 @@
+.technologiesHeading{
+    font-family: "Manrope", sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+}
+.technologiesPara{
+    font-family: 'Poppins';
+    font-size: 1.1em;
+}
+.technologyHeading{
+    font-family: "Manrope", sans-serif;
+    font-size: 1.7em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+    padding: 1em 0em;
+}
+.technologyBox{
+    background: #f3f4f6;
+    padding: 16px 40px;
+    border-radius: 50px;
+}
+.technologyBox p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 1199px) {
+    .technologiesHeading {
+        font-size: 3.5em;
+    }
+    .technologiesPara {
+        font-size: 1.4em;
+    }
+    .technologyHeading{
+        font-size: 2em;
+    }
+    .technologyBox{
+        font-size: 1.5em;
+    }
+    .technologyBox p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .technologiesHeading {
+        font-size: 4em;
+    }
+    
+    .technologiesPara {
+        font-size: 1.7em;
+    }
+    .technologyHeading {
+        font-size: 2.4em;
+    }
+        
+    .technologyBox {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .technologiesHeading {
+            font-size: 5em;
+        }
+    
+        .technologiesPara {
+            font-size: 1.9em;
+        }
+    
+        .technologyHeading {
+            font-size: 2.7em;
+        }
+    
+        .technologyBox {
+            font-size: 2.1em;
+        }
+}
+
+@media screen and (max-width: 575px) {
+    .technologiesHeading {
+        font-size: 7em;
+    }
+
+    .technologiesPara {
+        font-size: 3.2em;
+    }
+
+    .technologyHeading {
+        font-size: 5em;
+    }
+
+    .technologyBox {
+        font-size: 4em;
+    }
+}

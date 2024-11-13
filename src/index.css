@@ -5,6 +5,12 @@
     scrollbar-width: thin;
     scrollbar-color: var(--main-blue-color) #f7f7f7;
 }
+@media screen and (min-width: 1500px) {
+    *{
+        font-size: 16px;
+    }
+    
+}
 :root{
     --main-blue-color: #418dc9;
 }

@@ -11,6 +11,7 @@ import ServicesPage from './pages/Services/ServicesPage';
 import FAQ from './pages/FAQ/FAQ';
 import Contact from './pages/Contact/Contact';
 import MainService from './pages/MainService/MainService';
+import { webDevelopmentPageContent } from './components/data';
 
 
 const router = createBrowserRouter([
@@ -39,8 +40,8 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/main-service",
-        element: <MainService />,
+        path: "/website-development",
+        element: <MainService content={webDevelopmentPageContent} />,
       },
     ],
   },

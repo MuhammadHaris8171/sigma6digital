@@ -9,7 +9,7 @@ interface Service {
 
 interface Category {
   heading: string;
-  service?: Service[]; // Making this optional as industriesDropDown does not include it
+  service?: Service[];
 }
 
 interface ServiceDropDownProps {

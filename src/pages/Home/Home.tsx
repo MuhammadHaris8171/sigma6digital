@@ -7,6 +7,7 @@ import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
 import Slider from '../../components/Slider'
 import styles from './Home.module.css'
+import { developmentProcess, services } from "../../components/data";
 
 function Home() {
   const points = [
@@ -22,10 +23,10 @@ function Home() {
           <div className={`${styles.headingContainer}`}>
             <SecondaryHeading heading="What We Offer" buttonText="View All Services" buttonsrc="/services/" />
           </div>
-        <Services />
+        <Services services={services} displayAmount={4} />
         </section>
         <section id="process" className={`${styles.processSection} mt-5`}>
-          <Process heading="Our product<br><span>development process.</span>"/>
+          <Process heading="Our product<br><span>development process.</span>" developmentProcess={developmentProcess}/>
         </section>
         <section id="About" className={`${styles.aboutSection} py-5 my-5`}>
           <AboutFold heading="Your Trusted Partner in Digital Transformation" description="At Sigma 6 Digital, we are dedicated to delivering innovative web and app solutions, advanced AI technologies, and reliable IT support. Our client-focused approach ensures that we understand your unique needs and work collaboratively to help your business thrive in the digital age." points={points} />

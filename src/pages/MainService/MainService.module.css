@@ -1,6 +1,6 @@
 .mainServiceHero{
     height: 100vh;
-    background: #f7f7f7;
+    background: linear-gradient(#418dc9 0%, #fff 50%);
 }
 .mainServiceHeroContentBox{
     padding-right: 3em;
@@ -22,4 +22,55 @@
 }
 .headingContainer {
     padding-bottom: 3em;
+}
+.technologiesWeUse{
+    padding: 5em 0em;
+}
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 992px) {
+    .mainServiceHeroHeading {
+        font-size: 4em;
+    }
+    .mainServiceHeroDescription{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainServiceHeroHeading {
+        font-size: 5em;
+    }
+    
+    .mainServiceHeroDescription {
+        font-size: 1.8em;
+    }
+    .mainServiceHeroImage {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .technologiesWeUse{
+        padding: 10em 5em;
+    }
+    .mainServiceHero{
+        padding: 10em 5em;
+    }
+    .mainServiceHeroHeading {
+        font-size: 7.3em;
+    }
+    
+    .mainServiceHeroDescription {
+        font-size: 3.3em;
+        margin-bottom: 4em;
+    }
+    
+    .mainServiceHeroImage {
+        width: 100%;
+    }
+    .mainServiceContentBox{
+        padding: 8em 5em;
+    }
 }

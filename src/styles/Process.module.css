@@ -39,14 +39,14 @@
 }
 .stepHeading{
     font-family: 'Manrope';
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
     color: var(--main-blue-color);
     padding: 0.3em 0em;
 }
 .stepDescription{
     font-family: 'Poppins';
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .headingContainer{

@@ -6,6 +6,7 @@ import Services from '../../components/Services'
 import WorkProcess from '../../components/WorkProcess'
 import styles from './ServicesPage.module.css'
 import workImg from '../../assets/images/475x845.webp'
+import { services } from "../../components/data";
 
 interface WorkItem {
   question: string;
@@ -57,7 +58,7 @@ function ServicesPage() {
             buttonsrc="/services/" 
           />
         </div>
-        <Services />
+        <Services services={services} displayAmount={-1} />
       </section>
       <section id="work" className={styles.aboutWorkProcess}>
         <WorkProcess 
