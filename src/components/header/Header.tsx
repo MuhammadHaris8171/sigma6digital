@@ -19,6 +19,15 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   const [scrollHeader, setScrollHeader] = useState(false);
   const [isFormSidebarVisible, setFormSidebarVisible] = useState(false);
   const [isMobileSidebarVisible, setMobileSidebarVisible] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  const handleMouseEnter = (dropdownName: string) => {
+    setActiveDropdown(dropdownName);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveDropdown(null);
+  };
 
 
   const handleScroll = () => {
@@ -46,59 +55,59 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
         heading: "Development",
         service: [
           { name: "Web Development", src: "/website-development" },
-          { name: "App Development", src: "#" },
-          { name: "E-commerce Development", src: "#" },
-          { name: "CRM Development", src: "#" },
+          { name: "App Development", src: "/app-development" },
+          { name: "E-commerce Development", src: "/ecommerce-development" },
+          { name: "CRM Development", src: "/crm-development" },
         ],
       },
       {
         heading: "IT Solutions",
         service: [
-          { name: "Network Management", src: "#" },
-          { name: "Cloud Solutions", src: "#" },
-          { name: "Data Security", src: "#" },
-          { name: "IT Consulting", src: "#" },
-          { name: "Virtualization", src: "#" },
+          { name: "Network Management", src: "/network-management" },
+          { name: "Cloud Solutions", src: "/cloud-solutions" },
+          { name: "Data Security", src: "/data-security" },
+          { name: "IT Consulting", src: "/it-consulting" },
+          { name: "Virtualization", src: "/virtualization" },
         ],
       },
       {
         heading: "AI & Automation",
         service: [
-          { name: "Machine Learning Models", src: "#" },
-          { name: "Chatbot Development", src: "#" },
-          { name: "Predictive Analytics", src: "#" },
-          { name: "Computer Vision", src: "#" },
-          { name: "NLP Solutions", src: "#" },
+          { name: "Machine Learning Models", src: "/machine-learning" },
+          { name: "Chatbot Development", src: "/chatbot-development" },
+          { name: "Predictive Analytics", src: "/predicitve-analytics" },
+          { name: "Computer Vision", src: "/computer-vision" },
+          { name: "NLP Solutions", src: "/nlp-solutions" },
         ],
       },
       {
         heading: "Maintenance & Support",
         service: [
-          { name: "Software Maintenance", src: "#" },
-          { name: "Bug Fixing", src: "#" },
-          { name: "Security Patching", src: "#" },
-          { name: "Performance Optimization", src: "#" },
-          { name: "Data Backup & Recovery", src: "#" },
+          { name: "Software Maintenance", src: "/software-maintenance" },
+          { name: "Bug Fixing", src: "/bug-fixing" },
+          { name: "Security Patching", src: "/security-patching" },
+          { name: "Performance Optimization", src: "/performance-optimization" },
+          { name: "Data Backup & Recovery", src: "/data-backup" },
         ],
       },
       {
         heading: "Digital Marketing",
         service: [
-          { name: "SEO Optimization", src: "#" },
-          { name: "Social Media Marketing", src: "#" },
-          { name: "Content Creation", src: "#" },
-          { name: "PPC Campaigns", src: "#" },
-          { name: "Email Marketing", src: "#" },
+          { name: "SEO Optimization", src: "/seo-optimization" },
+          { name: "Social Media Marketing", src: "/social-media-marketing" },
+          { name: "Content Creation", src: "/content-creation" },
+          { name: "PPC Campaigns", src: "/ppc-campaigns" },
+          { name: "Email Marketing", src: "/email-marketing" },
         ],
       },
       {
         heading: "Creative Design",
         service: [
-          { name: "Graphic Design", src: "#" },
-          { name: "Logo & Branding", src: "#" },
-          { name: "UI/UX Design", src: "#" },
-          { name: "Motion Graphics", src: "#" },
-          { name: "Product Design", src: "#" },
+          { name: "Graphic Design", src: "/graphic-design" },
+          { name: "Logo & Branding", src: "/logo-and-branding" },
+          { name: "UI/UX Design", src: "/ui-ux-design" },
+          { name: "Motion Graphics", src: "/motion-graphics" },
+          { name: "Product Design", src: "/product-design" },
         ],
       },
     ],
@@ -169,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                       Home
                     </NavLink>
                   </li>
-                  <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>
+                  <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`} onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={handleMouseLeave}>
                     <NavLink
                       to="/services"
                       className={({ isActive }) => isActive? `${styles.active} ${scrollHeader? styles.navLinksScrolled: styles.navLinks} text-decoration-none`
@@ -179,17 +188,17 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                                 : styles.navLinks
                             } text-decoration-none`
                       }
-                    >
-                      Services <TiArrowSortedDown />
+                      onClick={() => setActiveDropdown(null)}
+                    > Services <TiArrowSortedDown />
                     </NavLink>
-                    <div className={`${styles.navDropDownHeaderBox}`}>
-                      <NavDropdown navDropDown={serviceDropDown} />
+                    <div className={`${activeDropdown === 'services' ? styles.openDropdown : ''} ${styles.navDropDownHeaderBox}`}>
+                      <NavDropdown navDropDown={serviceDropDown} onLinkClick={handleMouseLeave} />
                     </div>
                   </li>
-                  <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList} ${scrollHeader? styles.navLinksScrolled: styles.navLinks}`}>
+                  <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList} ${scrollHeader? styles.navLinksScrolled: styles.navLinks}`}  onMouseEnter={() => handleMouseEnter('industries')} onMouseLeave={handleMouseLeave}>
                       Industries <TiArrowSortedDown />
-                    <div className={`${styles.navDropDownHeaderBox}`}>
-                      <NavDropdown navDropDown={industriesDropDown} />
+                    <div className={`${activeDropdown === 'industries' ? styles.openDropdown : ''} ${styles.navDropDownHeaderBox}`}>
+                      <NavDropdown navDropDown={industriesDropDown} onLinkClick={handleMouseLeave} />
                     </div>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>

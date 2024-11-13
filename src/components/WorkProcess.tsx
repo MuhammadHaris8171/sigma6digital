@@ -3,8 +3,8 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 import styles from '../styles/WorkProcess.module.css';
 
 interface FaqItem {
-  question: string;
-  answer: string;
+  heading: string;
+  description: string;
 }
 
 interface WorkProcessProps {
@@ -46,7 +46,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ heading, workSteps, workImg }
                         {index + 1}.
                       </span>
                       <span style={{ width: '85%', fontSize: 'inherit', fontFamily: 'inherit' }}>
-                        {faq.question}
+                        {faq.heading}
                       </span>
                       <span style={{ width: '10%', textAlign: 'right', fontSize: 'inherit', fontFamily: 'inherit' }}>
                         {openIndex === index ? <FiMinus /> : <FiPlus />}
@@ -55,7 +55,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({ heading, workSteps, workImg }
                     <p
                       className={`${styles.faqAnswer} ${openIndex === index ? styles.answerOpen : styles.answerClosed}`}
                     >
-                      {faq.answer}
+                      {faq.description}
                     </p>
                   </div>
                 ))}

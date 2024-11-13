@@ -90,10 +90,9 @@
 .navList{
     cursor: pointer;
 }
-.navList:hover .navDropDownHeaderBox{
+.openDropdown {
     max-height: 100vh;
 }
-
 .formSidebar{
     width: 100%;
     height: 100vh;

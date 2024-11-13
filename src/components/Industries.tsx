@@ -21,13 +21,10 @@ function Industries() {
       }
     };
 
-    // Initial call to set the items per page based on the current window size
     updateItemsPerPage();
 
-    // Add event listener to handle window resize
     window.addEventListener("resize", updateItemsPerPage);
 
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener("resize", updateItemsPerPage);
   }, []);
 

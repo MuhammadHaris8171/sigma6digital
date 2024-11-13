@@ -12,7 +12,7 @@ function SecondaryHeading({ heading, buttonText, buttonsrc }: SecondaryHeadingPr
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-12">
         <div className={`d-flex justify-content-between align-items-end ${styles.secondaryHeadingContainer}`}>
           <h2 className={`${styles.secondaryHeading} mb-0`}>{heading}</h2>
           {buttonText && (

@@ -4,8 +4,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
-import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
-import itSolutionsImg from '../assets/images/it-solutions.webp';
 import { DevelopmentProcess } from "./data";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -122,24 +120,11 @@ useLayoutEffect(() => {
                 </div>
                 <div className={`${styles.imagesArea} d-flex align-items-center justify-content-center`} ref={imagesAreaRef}>
                   <div className={`${styles.galleryBox} position-relative overflow-hidden`}>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={itSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={aiSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={itSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={aiSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={itSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
-                    <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`}>
-                        <img src={aiSolutionsImg} alt="Sigma 6 Digital" className="w-100 h-100" />
-                    </div>
+                    {developmentProcess.map((item, index) => (
+                      <div className={`${styles.stepImage} stepImage position-absolute w-100 h-100`} key={index}>
+                          <img src={item.image} alt="Sigma 6 Digital" className="w-100 h-100" />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

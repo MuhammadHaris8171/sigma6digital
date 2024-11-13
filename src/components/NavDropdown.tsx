@@ -21,9 +21,10 @@ interface ServiceDropDownProps {
 
 interface NavDropdownProps {
   navDropDown: ServiceDropDownProps;
+  onLinkClick: () => void;
 }
 
-const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown }) => {
+const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) => {
   return (
     <div className={`${styles.navHoverDropdown}`}>
       <div className="container">
@@ -69,6 +70,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown }) => {
                               <Link
                                 to={service.src}
                                 className={`${styles.navCategoryListLink} text-decoration-none`}
+                                 onClick={onLinkClick}
                               >
                                 {service.name} <FaArrowRightLong />
                               </Link>
