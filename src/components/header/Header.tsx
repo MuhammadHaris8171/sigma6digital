@@ -49,10 +49,11 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
     heading: "Services",
     image: "/src/assets/images/360x185.webp",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe iure, minima earum adipisci sed error labore consequuntur maxime doloribus, alias libero.",
+      "At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below.",
     categories: [
       {
         heading: "Development",
+        headingSrc: "/development",
         service: [
           { name: "Web Development", src: "/website-development" },
           { name: "App Development", src: "/app-development" },
@@ -62,6 +63,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
       },
       {
         heading: "IT Solutions",
+        headingSrc: "/it-solutions",
         service: [
           { name: "Network Management", src: "/network-management" },
           { name: "Cloud Solutions", src: "/cloud-solutions" },
@@ -72,6 +74,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
       },
       {
         heading: "AI & Automation",
+        headingSrc: "/ai-automation",
         service: [
           { name: "Machine Learning Models", src: "/machine-learning" },
           { name: "Chatbot Development", src: "/chatbot-development" },
@@ -82,6 +85,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
       },
       {
         heading: "Maintenance & Support",
+        headingSrc: "/maintenance-support",
         service: [
           { name: "Software Maintenance", src: "/software-maintenance" },
           { name: "Bug Fixing", src: "/bug-fixing" },
@@ -92,6 +96,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
       },
       {
         heading: "Digital Marketing",
+        headingSrc: "/digital-marketing",
         service: [
           { name: "SEO Optimization", src: "/seo-optimization" },
           { name: "Social Media Marketing", src: "/social-media-marketing" },
@@ -102,6 +107,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
       },
       {
         heading: "Creative Design",
+        headingSrc: "/creative-design",
         service: [
           { name: "Graphic Design", src: "/graphic-design" },
           { name: "Logo & Branding", src: "/logo-and-branding" },
@@ -115,8 +121,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   const industriesDropDown = {
     heading: "Industries",
     image: "/src/assets/images/360x185.webp",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe iure, minima earum adipisci sed error labore consequuntur maxime doloribus, alias libero.",
+    description: "We work with a diverse range of industries, providing customised digital solutions that address each sector’s unique challenges. Whether you’re in education, legal services, technology, healthcare, or real estate, our expert team is dedicated to delivering impactful results that drive growth, streamline operations, and enhance customer engagement.",
     categories: [
       {
         heading: "Education",

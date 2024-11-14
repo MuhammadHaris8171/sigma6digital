@@ -9,6 +9,7 @@ interface Service {
 
 interface Category {
   heading: string;
+  headingSrc?: string;
   service?: Service[];
 }
 
@@ -60,7 +61,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) 
                     <div className={`${styles.navCategoryBox}`}>
                       {category.heading && (
                         <h4 className={`${styles.navCategoryHeading}`}>
-                          {category.heading}
+                          <Link to={`${category.headingSrc}`} onClick={onLinkClick}>{category.heading}</Link>
                         </h4>
                       )}
                       {category.service && (

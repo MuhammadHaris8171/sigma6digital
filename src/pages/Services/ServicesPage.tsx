@@ -14,7 +14,7 @@ function ServicesPage() {
       <section id="abouthero" className={styles.aboutHero}>
         <PagesHero 
           heading="Explore our wide range of services" 
-          description="At Sigma6 Digital, we offer a comprehensive range of services designed to help your business thrive in the digital landscape. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below." 
+          description="At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below." 
           videoLink="https://sigma6digital.com/wp-content/uploads/2024/10/Comp-1-1.m4v" 
         />
       </section>

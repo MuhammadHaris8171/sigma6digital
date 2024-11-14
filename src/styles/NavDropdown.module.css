@@ -44,7 +44,12 @@
     font-weight: 700;
     padding-bottom: 0.25em;
 }
-
+.navCategoryHeading a{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
 .navCategoryListLink {
     color: #000;
     font-family: 'Poppins';

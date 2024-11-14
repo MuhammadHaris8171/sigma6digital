@@ -11,7 +11,7 @@ import ServicesPage from './pages/Services/ServicesPage';
 import FAQ from './pages/FAQ/FAQ';
 import Contact from './pages/Contact/Contact';
 import MainService from './pages/MainService/MainService';
-import { appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, eCommerceDevelopmentPageContent, emailMarketingPageContent, graphicDesignPageContent, itConsultingPageContent, logoBrandingPageContent, machineLearningPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
+import { aiAutomationPageContent, appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, creativeDesignPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, developmentPageContent, digitalMarketingPageContent, eCommerceDevelopmentPageContent, emailMarketingPageContent, graphicDesignPageContent, itConsultingPageContent, itSolutionsPageContent, logoBrandingPageContent, machineLearningPageContent, maintenanceSupportPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
 
 
 const router = createBrowserRouter([
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: "/development",
+        element: <MainService content={developmentPageContent} />,
+      },
+      {
         path: "/website-development",
         element: <MainService content={webDevelopmentPageContent} />,
       },
@@ -54,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "/crm-development",
         element: <MainService content={crmDevelopmentPageContent} />,
+      },
+      {
+        path: "/it-solutions",
+        element: <MainService content={itSolutionsPageContent} />,
       },
       {
         path: "/network-management",
@@ -76,6 +84,10 @@ const router = createBrowserRouter([
         element: <MainService content={virtualizationPageContent} />,
       },
       {
+        path: "/ai-automation",
+        element: <MainService content={aiAutomationPageContent} />,
+      },
+      {
         path: "/machine-learning",
         element: <MainService content={machineLearningPageContent} />,
       },
@@ -94,6 +106,10 @@ const router = createBrowserRouter([
       {
         path: "/nlp-solutions",
         element: <MainService content={nlpPageContent} />,
+      },
+      {
+        path: "/maintenance-support",
+        element: <MainService content={maintenanceSupportPageContent} />,
       },
       {
         path: "/software-maintenance",
@@ -116,6 +132,10 @@ const router = createBrowserRouter([
         element: <MainService content={dataBackupPageContent} />,
       },
       {
+        path: "/digital-marketing",
+        element: <MainService content={digitalMarketingPageContent} />,
+      },
+      {
         path: "/seo-optimization",
         element: <MainService content={seoOptimizationPageContent} />,
       },
@@ -134,6 +154,10 @@ const router = createBrowserRouter([
       {
         path: "/email-marketing",
         element: <MainService content={emailMarketingPageContent} />,
+      },
+      {
+        path: "/creative-design",
+        element: <MainService content={creativeDesignPageContent} />,
       },
       {
         path: "/graphic-design",

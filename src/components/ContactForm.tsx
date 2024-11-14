@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BsSendFill } from 'react-icons/bs';
 import styles from '../styles/contactForm.module.css';
+import Swal from 'sweetalert2'
 
 function ContactForm(): JSX.Element {
   const [formData, setFormData] = useState({
@@ -33,53 +34,98 @@ function ContactForm(): JSX.Element {
     }));
   };
 
-    const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+const onSubmit = async (event: React.FormEvent) => {
+  event.preventDefault();
 
-    // Initialize newErrors with default fields
-    const newErrors = {
-        name: '',
-        country: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-    };
+  const newErrors = {
+    name: '',
+    country: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  };
 
-    // Loop through formData to check for empty fields
-    Object.keys(formData).forEach((field) => {
-        if (!formData[field as keyof typeof formData]) {
-        newErrors[field as keyof typeof newErrors] = 'This field is required.';
-        }
+  Object.keys(formData).forEach((field) => {
+    if (!formData[field as keyof typeof formData]) {
+      newErrors[field as keyof typeof newErrors] = 'This field is required.';
+    }
+  });
+
+  if (Object.values(newErrors).some((error) => error)) {
+    setErrors(newErrors);
+    return;
+  }
+
+  const formDataToSend = {
+    ...formData,
+    access_key: "9ad0defb-0430-48c3-83a1-9350eb652d57"
+  };
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(formDataToSend)
     });
 
-    if (Object.values(newErrors).some((error) => error)) {
-        setErrors(newErrors);
+    const result = await res.json();
+    if (result.success) {
+      Swal.fire({
+        title: "Good job!",
+        text: "Your message has been sent successfully!",
+        icon: "success"
+      });
+
+      await fetch("https://script.google.com/macros/s/AKfycbzCXrjZRsoNX7Lh-wayh7rh7ru5cZJIGXoRdO2PNeUwozhD0ZjLtFrqjOZTlmm_jaZamg/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        mode: 'no-cors',
+        body: JSON.stringify(formData)
+      });
+
+      setFormData({
+        name: '',
+        country: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
+      setErrors({
+        name: '',
+        country: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: ''
+      });
     } else {
-        console.log('Form submitted successfully:', formData);
-        setFormData({
-        name: '',
-        country: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-        });
-        setErrors({
-        name: '',
-        country: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-        });
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!"
+      });
     }
-    };
+  } catch (error) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!"
+    });
+    console.error("Error:", error);
+  }
+};
 
 
   return (
     <div className={styles.contactFormBox}>
-      <form onSubmit={handleSubmit} className={styles.contactForm}>
+      <form onSubmit={onSubmit} className={styles.contactForm}>
         <div className="container px-0 ps-lg-5 py-5 py-lg-0">
           <div className="row">
             <div className="col-sm-6 mb-4">

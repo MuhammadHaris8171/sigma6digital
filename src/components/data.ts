@@ -152,47 +152,54 @@ export const features: Feature[] = [
   { src: featureLogoDelete },
   { src: featureLogoDelete },
 ];
-
 export const services: Service[] = [
   {
-    name: "Web Development",
+    name: "Development",
     imgsrc: webDevelopmentImg,
-    heading: "Building High-Performance Websites",
-    description: "We create visually appealing, high-performing, and user-friendly websites that drive engagement and deliver seamless experiences across all devices.",
-    button: "Discover More",
-    buttonSrc: "/website-development",
-  },
-  {
-    name: "App Development",
-    imgsrc: appDevelopmentImg,
-    heading: "Bringing Ideas to Life with Apps",
-    description: "Our app development services focus on creating robust mobile and web applications that enhance user experience and meet your business goals.",
-    button: "Explore Our Apps",
-    buttonSrc: "/app-development",
-  },
-  {
-    name: "AI Solutions",
-    imgsrc: aiSolutionsImg,
-    heading: "Innovating with Intelligent AI",
-    description: "We deliver advanced AI solutions that optimize processes, enhance decision-making, and accelerate innovation across various industries.",
-    button: "Learn About AI Solutions",
-    buttonSrc: "/website-development",
+    heading: "Crafting Engaging Digital Experiences",
+    description: "Our development team builds reliable, high-performance websites and applications, tailored to enhance user engagement and achieve your business goals.",
+    button: "Read More",
+    buttonSrc: "/development",
   },
   {
     name: "IT Solutions",
     imgsrc: itSolutionsImg,
-    heading: "Custom Solutions for Your Needs",
-    description: "Our IT solutions are expertly designed to meet your unique and specific requirements, helping you streamline operations and drive sustainable innovation.",
-    button: "See IT Solutions",
-    buttonSrc: "/website-development",
+    heading: "Complete IT Solutions for Modern Businesses",
+    description: "We deliver end-to-end IT solutions that cater to your unique requirements, streamlining operations and fostering sustainable growth.",
+    button: "Read More",
+    buttonSrc: "/it-solutions",
   },
   {
-    name: "Maintenance",
+    name: "AI & Automation",
+    imgsrc: aiSolutionsImg,
+    heading: "Advancing Business with AI & Automation",
+    description: "Our AI and automation solutions are designed to optimize processes, improve efficiency, and drive data-informed decisions across industries.",
+    button: "Read More",
+    buttonSrc: "/ai-automation",
+  },
+  {
+    name: "Maintenance & Support",
     imgsrc: webDevelopmentImg,
-    heading: "Ensuring Smooth Operations for Your Business",
-    description: "We provide ongoing maintenance and support services to keep your systems running efficiently and securely, allowing you to focus on your core business activities.",
-    button: "Get Maintenance Support",
-    buttonSrc: "/website-development",
+    heading: "Reliable Maintenance for Seamless Operations",
+    description: "With our ongoing maintenance and support, ensure your systems remain secure, efficient, and ready to support your business 24/7.",
+    button: "Read More",
+    buttonSrc: "/maintenance-support",
+  },
+  {
+    name: "Digital Marketing",
+    imgsrc: webDevelopmentImg,
+    heading: "Strategies to Elevate Your Brand",
+    description: "Our digital marketing services encompass SEO, social media, content creation, and PPC to boost your brand's online visibility and engagement.",
+    button: "Read More",
+    buttonSrc: "/digital-marketing",
+  },
+  {
+    name: "Creative Design",
+    imgsrc: webDevelopmentImg,
+    heading: "Bringing Ideas to Life Through Design",
+    description: "Our creative team specializes in graphic design, branding, and UI/UX, creating visually stunning designs that align with your brand’s identity.",
+    button: "Read More",
+    buttonSrc: "/creative-design",
   },
 ];
 
@@ -1015,6 +1022,250 @@ export const productDesignServices: Service[] = [
     buttonSrc: "/contact",
   },
 ];
+export const developmentServices: Service[] = [
+  {
+    name: "Web Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Building Modern, Scalable Websites",
+    description: "Our web development services provide customized, responsive, and SEO-friendly websites to help you stand out in the digital world.",
+    button: "Read More",
+    buttonSrc: "/website-development",
+  },
+  {
+    name: "App Development",
+    imgsrc: appDevelopmentImg,
+    heading: "Turning Ideas into Mobile Experiences",
+    description: "We develop powerful, user-friendly mobile applications that engage users and offer seamless functionality.",
+    button: "Read More",
+    buttonSrc: "/app-development",
+  },
+  {
+    name: "E-commerce Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Crafting Profitable Online Stores",
+    description: "Our e-commerce solutions are built to enhance user experience, optimize conversions, and support your business growth.",
+    button: "Read More",
+    buttonSrc: "/ecommerce-development",
+  },
+  {
+    name: "CRM Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Custom CRM Solutions",
+    description: "From managing customer interactions to enhancing productivity, our CRM solutions are designed to streamline your operations.",
+    button: "Read More",
+    buttonSrc: "/crm-development",
+  },
+];
+export const itSolutionsServices: Service[] = [
+  {
+    name: "Network Management",
+    imgsrc: webDevelopmentImg,
+    heading: "Optimizing Your Network for Reliability",
+    description: "We manage and maintain your network infrastructure to ensure smooth operations, minimizing downtime and maximizing performance.",
+    button: "Read More",
+    buttonSrc: "/network-management",
+  },
+  {
+    name: "Cloud Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Flexible Cloud Solutions for Modern Business",
+    description: "Our cloud services provide scalable storage and computing power, making it easy for your team to collaborate and access data securely from anywhere.",
+    button: "Read More",
+    buttonSrc: "/cloud-solutions",
+  },
+  {
+    name: "Data Security",
+    imgsrc: webDevelopmentImg,
+    heading: "Protecting Your Valuable Data",
+    description: "From encryption to threat monitoring, we offer comprehensive data security solutions to keep your information safe and your business compliant.",
+    button: "Read More",
+    buttonSrc: "/data-security",
+  },
+  {
+    name: "IT Consulting",
+    imgsrc: webDevelopmentImg,
+    heading: "Strategic Guidance for IT Success",
+    description: "Our expert consultants help you align IT strategy with business goals, ensuring technology is a driver of growth, not a roadblock.",
+    button: "Read More",
+    buttonSrc: "/it-consulting",
+  },
+  {
+    name: "Virtualization",
+    imgsrc: webDevelopmentImg,
+    heading: "Enhancing Efficiency with Virtualization",
+    description: "We help you optimize resources and reduce costs through virtualization, enabling flexible, efficient management of your IT environment.",
+    button: "Read More",
+    buttonSrc: "/virtualization",
+  },
+];
+export const aiAutomationServices: Service[] = [
+  {
+    name: "Machine Learning Models",
+    imgsrc: webDevelopmentImg,
+    heading: "Transforming Data into Actionable Insights",
+    description: "We build custom machine learning models that analyse complex data, helping you make informed, data-driven decisions.",
+    button: "Read more",
+    buttonSrc: "/machine-learning",
+  },
+  {
+    name: "Chatbot Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Engage Customers with Smart Chatbots",
+    description: "Our chatbots provide instant, personalized interactions, enhancing customer experience and streamlining support operations.",
+    button: "Read more",
+    buttonSrc: "/chatbot-development",
+  },
+  {
+    name: "Predictive Analytics",
+    imgsrc: webDevelopmentImg,
+    heading: "Anticipate Trends and Plan Ahead",
+    description: "Using predictive analytics, we help you forecast trends, manage risks, and stay a step ahead in your industry.",
+    button: "Read more",
+    buttonSrc: "/predictive-analytics",
+  },
+  {
+    name: "Computer Vision",
+    imgsrc: webDevelopmentImg,
+    heading: "Empowering Automation with Visual Data",
+    description: "Our computer vision solutions enable automated image and video analysis, enhancing efficiency and accuracy in your operations.",
+    button: "Read more",
+    buttonSrc: "/computer-vision",
+  },
+  {
+    name: "NLP Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Turning Text into Insights with NLP",
+    description: "From sentiment analysis to language understanding, our NLP solutions transform unstructured text into valuable insights.",
+    button: "Read more",
+    buttonSrc: "/nlp-solutions",
+  },
+];
+export const maintenanceSupportServices: Service[] = [
+  {
+    name: "Software Maintenance",
+    imgsrc: webDevelopmentImg,
+    heading: "Keeping Your Software Running Smoothly",
+    description: "We provide ongoing software maintenance to ensure your applications remain up-to-date, secure, and fully functional.",
+    button: "Read more",
+    buttonSrc: "/software-maintenance",
+  },
+  {
+    name: "Bug Fixing",
+    imgsrc: webDevelopmentImg,
+    heading: "Swift Solutions for Software Issues",
+    description: "Our team is dedicated to identifying and fixing bugs quickly, minimising downtime and ensuring a seamless user experience.",
+    button: "Read more",
+    buttonSrc: "/bug-fixing",
+  },
+  {
+    name: "Security Patching",
+    imgsrc: webDevelopmentImg,
+    heading: "Keeping Your Systems Secure",
+    description: "We offer timely security patching to safeguard your software against vulnerabilities, protecting your data and users.",
+    button: "Read more",
+    buttonSrc: "/security-patching",
+  },
+  {
+    name: "Performance Optimization",
+    imgsrc: webDevelopmentImg,
+    heading: "Enhancing System Performance",
+    description: "Our optimisation services ensure your software operates at peak efficiency, providing a fast and responsive experience for users.",
+    button: "Read more",
+    buttonSrc: "/performance-optimization",
+  },
+  {
+    name: "Data Backup & Recovery",
+    imgsrc: webDevelopmentImg,
+    heading: "Protecting and Restoring Your Data",
+    description: "We provide reliable backup and recovery solutions to secure your critical data and ensure quick recovery in case of any data loss.",
+    button: "Read more",
+    buttonSrc: "/data-backup-recovery",
+  },
+];
+export const digitalMarketingServices: Service[] = [
+  {
+    name: "SEO Optimization",
+    imgsrc: webDevelopmentImg,
+    heading: "Boost Your Online Visibility",
+    description: "Our SEO services help your website rank higher, driving organic traffic and increasing your online presence effectively.",
+    button: "Read more",
+    buttonSrc: "/seo-optimization",
+  },
+  {
+    name: "Social Media Marketing",
+    imgsrc: webDevelopmentImg,
+    heading: "Engage and Grow Your Audience",
+    description: "We create targeted social media strategies to build brand awareness, engage followers, and foster a loyal online community.",
+    button: "Read more",
+    buttonSrc: "/social-media-marketing",
+  },
+  {
+    name: "Content Creation",
+    imgsrc: webDevelopmentImg,
+    heading: "Crafting Content That Connects",
+    description: "Our team produces high-quality content that resonates with your audience, elevates your brand, and supports your marketing goals.",
+    button: "Read more",
+    buttonSrc: "/content-creation",
+  },
+  {
+    name: "PPC Campaigns",
+    imgsrc: webDevelopmentImg,
+    heading: "Drive Results with Paid Ads",
+    description: "We design and manage pay-per-click campaigns to generate immediate traffic and maximise return on ad spend.",
+    button: "Read more",
+    buttonSrc: "/ppc-campaigns",
+  },
+  {
+    name: "Email Marketing",
+    imgsrc: webDevelopmentImg,
+    heading: "Nurture Leads with Targeted Emails",
+    description: "Our email marketing services help you engage your audience, retain customers, and boost conversions through personalised campaigns.",
+    button: "Read more",
+    buttonSrc: "/email-marketing",
+  },
+];
+export const creativeDesignServices: Service[] = [
+  {
+    name: "Graphic Design",
+    imgsrc: webDevelopmentImg,
+    heading: "Creating Visual Impact",
+    description: "Our graphic design services bring your brand to life with visuals that capture attention and convey your message effectively.",
+    button: "Read more",
+    buttonSrc: "/graphic-design",
+  },
+  {
+    name: "Logo & Branding",
+    imgsrc: webDevelopmentImg,
+    heading: "Building Memorable Brands",
+    description: "We create distinctive logos and branding elements that represent your business identity and resonate with your audience.",
+    button: "Read more",
+    buttonSrc: "/logo-branding",
+  },
+  {
+    name: "UI/UX Design",
+    imgsrc: webDevelopmentImg,
+    heading: "Designing User-Centric Experiences",
+    description: "Our UI/UX design services focus on crafting intuitive and engaging interfaces that provide a seamless user experience.",
+    button: "Read more",
+    buttonSrc: "/ui-ux-design",
+  },
+  {
+    name: "Motion Graphics",
+    imgsrc: webDevelopmentImg,
+    heading: "Animating Your Story",
+    description: "We create motion graphics that add life to your brand’s story, making complex ideas more accessible and engaging.",
+    button: "Read more",
+    buttonSrc: "/motion-graphics",
+  },
+  {
+    name: "Product Design",
+    imgsrc: webDevelopmentImg,
+    heading: "Innovative Product Solutions",
+    description: "Our product design services take your ideas from concept to reality, blending functionality with aesthetic appeal.",
+    button: "Read more",
+    buttonSrc: "/product-design",
+  },
+];
 
 
 export const webDevelopmentPageContent: WebDevelopmentPageContent = {
@@ -1748,4 +1999,135 @@ export const productDesignPageContent: WebDevelopmentPageContent = {
     },
   ]
 };
-
+export const developmentPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Expert Development Services for Digital Growth",
+  heroSectionDescription: "At Sigma 6 Digital, we specialise in delivering robust, scalable, and innovative digital solutions. Our development services encompass everything from web and app development to tailored CRM and e-commerce solutions.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Bringing Your Vision to Life",
+      contentBoxDescription: "Our development services cover a wide range of platforms and technologies, ensuring your digital presence is both impactful and scalable. We build with your growth in mind, so your site or app stays strong as your needs evolve. Plus, we focus on making everything easy to use and reliable from day one.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Development Services",
+  featureServices: developmentServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We leverage industry-leading technologies and frameworks to deliver reliable and high-performance solutions.",
+  technologiesBoxes: [
+    {
+      heading: "Development Frameworks & Tools",
+      services: ["React", "Angular", "Node.js", "Python", "Ruby on Rails"],
+    },
+  ],
+};
+export const itSolutionsPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "IT Solutions to Empower Your Business",
+  heroSectionDescription: "At Sigma 6 Digital, our IT solutions are designed to support your business goals, from secure data management to seamless network performance.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Reliable IT Solutions for Every Challenge",
+      contentBoxDescription: "Our team delivers tailored IT solutions, including network management, cloud integration, and data security, to ensure your business stays connected, secure, and efficient. With our expertise, we keep you ahead of tech challenges and ready for the future.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our IT Solutions Services",
+  featureServices: itSolutionsServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We leverage top-tier IT tools and software to deliver reliable, high-performance solutions for our clients.",
+  technologiesBoxes: [
+    {
+      heading: "Core IT Tools & Platforms",
+      services: ["Cisco", "AWS", "Azure", "VMware", "Fortinet"],
+    },
+  ],
+};
+export const aiAutomationPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "AI & Automation Solutions for Smarter Business",
+  heroSectionDescription: "At Sigma 6 Digital, we harness the power of AI and automation to streamline operations, unlock insights, and drive innovation for your business.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Driving Innovation with AI and Automation",
+      contentBoxDescription: "Our AI & Automation services range from machine learning models to NLP solutions, enabling your business to make smarter decisions and automate complex tasks. With these cutting-edge solutions, you can reduce manual effort, increase accuracy, and gain insights that give you a competitive edge.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our AI & Automation Services",
+  featureServices: aiAutomationServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We use state-of-the-art AI frameworks and tools to deliver robust, scalable solutions tailored to your needs.",
+  technologiesBoxes: [
+    {
+      heading: "AI & Automation Platforms",
+      services: ["TensorFlow", "PyTorch", "OpenAI", "Google Cloud AI", "AWS Machine Learning"],
+    },
+  ],
+};
+export const maintenanceSupportPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Comprehensive Maintenance & Support Services",
+  heroSectionDescription: "At Sigma 6 Digital, we offer full-spectrum maintenance and support to keep your systems stable, secure, and performing at their best.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Ensuring Stability and Security",
+      contentBoxDescription: "Our maintenance and support services cover everything from regular software updates to emergency bug fixes, data recovery, and security patching. With our proactive approach, we help prevent issues before they arise and keep your business running smoothly.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Maintenance & Support Services",
+  featureServices: maintenanceSupportServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We utilise the latest tools and technologies to provide reliable maintenance and support for diverse software environments.",
+  technologiesBoxes: [
+    {
+      heading: "Maintenance & Support Tools",
+      services: ["JIRA", "GitLab", "Nagios", "AWS Backup", "Splunk"],
+    },
+  ],
+};
+export const digitalMarketingPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Effective Digital Marketing Solutions for Your Brand",
+  heroSectionDescription: "At Sigma 6 Digital, we provide comprehensive digital marketing services to increase your brand's reach, engage your audience, and drive measurable results.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Driving Growth Through Digital Marketing",
+      contentBoxDescription: "Our digital marketing services cover every channel—from SEO and social media to PPC and email marketing. We’re here to build a strategy that connects with your audience and aligns with your business goals. With a results-driven approach, we help your brand stand out in the digital landscape.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Digital Marketing Services",
+  featureServices: digitalMarketingServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We use advanced tools and platforms to deliver data-driven digital marketing strategies and optimise performance.",
+  technologiesBoxes: [
+    {
+      heading: "Digital Marketing Tools",
+      services: ["Google Analytics", "SEMrush", "Hootsuite", "Mailchimp", "Ahrefs"],
+    },
+  ],
+};
+export const creativeDesignPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Creative Design Solutions for Unique Brand Identity",
+  heroSectionDescription: "At Sigma 6 Digital, our creative design services enhance your brand’s visual presence, from logo design to full product development.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Crafting Designs That Speak",
+      contentBoxDescription: "Our creative design services cover everything from logo and branding to UI/UX and motion graphics, helping your brand make a lasting impression. With our expertise, we transform ideas into visually engaging experiences that connect with your audience and elevate your brand.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Creative Design Services",
+  featureServices: creativeDesignServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We use industry-leading design tools and software to deliver polished and professional creative solutions.",
+  technologiesBoxes: [
+    {
+      heading: "Creative Design Tools",
+      services: ["Adobe Photoshop", "Illustrator", "Figma", "After Effects", "Sketch"],
+    },
+  ],
+};
