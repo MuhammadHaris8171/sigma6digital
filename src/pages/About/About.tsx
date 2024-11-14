@@ -3,7 +3,7 @@ import AboutFold from "../../components/AboutFold"
 import BelieveIn from "../../components/BelieveIn"
 import Cta from "../../components/Cta"
 import PagesHero from "../../components/PagesHero"
-import Team from "../../components/Team"
+// import Team from "../../components/Team"
 import styles from "./About.module.css"
 
 function About() {

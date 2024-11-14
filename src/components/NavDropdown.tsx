@@ -61,7 +61,14 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) 
                     <div className={`${styles.navCategoryBox}`}>
                       {category.heading && (
                         <h4 className={`${styles.navCategoryHeading}`}>
-                          <Link to={`${category.headingSrc}`} onClick={onLinkClick}>{category.heading}</Link>
+                          {category.headingSrc ? (
+                              <Link to={category.headingSrc} onClick={onLinkClick}>
+                                  {category.heading}
+                              </Link>
+                          ) : (
+                              <span>{category.heading}</span>
+                          )}
+
                         </h4>
                       )}
                       {category.service && (
