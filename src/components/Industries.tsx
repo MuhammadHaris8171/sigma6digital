@@ -67,7 +67,7 @@ function Industries() {
               </p>
             </div>
               <button className={`${styles.industriesButton} btn bg-transparent position-absolute`}>
-                <Link to="#" className={`${styles.industriesButtonLink} text-decoration-none`}>
+                <Link to="/industries" className={`${styles.industriesButtonLink} text-decoration-none`}>
                   View More <FaLongArrowAltRight />
                 </Link>
               </button>

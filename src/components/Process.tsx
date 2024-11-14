@@ -10,10 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface ProcessProps {
   heading: string;
+  buttonSrc: string;
   developmentProcess: DevelopmentProcess[];
 }
 
-function Process({ heading, developmentProcess }: ProcessProps) {
+function Process({ heading, buttonSrc, developmentProcess }: ProcessProps) {
   const contentSteps = useRef<HTMLDivElement>(null);
   const stepsAreaRef = useRef<HTMLDivElement>(null);
   const imagesAreaRef = useRef<HTMLDivElement>(null);
@@ -100,7 +101,7 @@ useLayoutEffect(() => {
                   dangerouslySetInnerHTML={{ __html: heading }}
                 />
                 <button className={styles.processView}>
-                  <Link to="#" className="text-decoration-none">View More <FaLongArrowAltRight /></Link>
+                  <Link to={buttonSrc && buttonSrc} className="text-decoration-none">View More <FaLongArrowAltRight /></Link>
                 </button>
               </div>
               <div className={`${styles.stepsArea} stepsArea d-flex`} ref={stepsAreaRef}>

@@ -1,12 +1,27 @@
 .contactMainHeading{
     font-family: 'Manrope';
-    font-size: 3.35em;
+    font-size: 2.9em;
     font-weight: 800;
     line-height: 1.3em;
 }
 .contactMainPara{
-    font-size: 1.25em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 28px;
+}
+.contactBox{
+    border: 1px solid #d3d2d2;
+    padding: 20px 25px;
+    border-radius: 25px;
+    height: 100%;
+}
+.contactBoxHeading{
+    font-family: 'Manrope';
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.contactBoxDescription{
+    font-family: 'Poppins';
+    font-size: 1.05em;
 }
 
 @media screen and (max-width: 1199px) {
@@ -16,6 +31,15 @@
     
     .contactMainPara {
         font-size: 1.5em;
+    }
+    .contactBox{
+        padding: 18px;
+    }
+    .contactBoxHeading{
+        font-size: 1.7em;
+    }
+    .contactBoxDescription {
+        font-size: 1.3em;
     }
 }
 
@@ -27,6 +51,13 @@
     .contactMainPara {
         font-size: 2em;
     }
+    .contactBoxHeading{
+        font-size: 2.1em;
+        padding-bottom: 0.3em;
+    }
+    .contactBoxDescription{
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -37,6 +68,13 @@
     .contactMainPara {
         font-size: 2.2em;
     }
+    .contactBoxHeading {
+        font-size: 3em;
+    }
+    
+    .contactBoxDescription {
+        font-size: 2.1em;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -45,5 +83,15 @@
     }
     .contactMainPara {
         font-size: 3.5em;
+    }
+    .contactBoxHeading {
+        font-size: 5.5em;
+    }
+    
+    .contactBoxDescription {
+        font-size: 4em;
+    }
+    .contactBox {
+        padding: 30px 20px;
     }
 }

@@ -13,6 +13,7 @@ import Contact from './pages/Contact/Contact';
 import MainService from './pages/MainService/MainService';
 import { aiAutomationPageContent, appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, creativeDesignPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, developmentPageContent, digitalMarketingPageContent, eCommerceDevelopmentPageContent, emailMarketingPageContent, graphicDesignPageContent, itConsultingPageContent, itSolutionsPageContent, logoBrandingPageContent, machineLearningPageContent, maintenanceSupportPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
 import IndustriesPage from './pages/Industries/IndustriesPage';
+import Notfound from './pages/404/Notfound';
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "*",
+        element: <Notfound />,
       },
       {
         path: "/about-us",

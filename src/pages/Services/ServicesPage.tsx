@@ -7,6 +7,7 @@ import WorkProcess from '../../components/WorkProcess'
 import styles from './ServicesPage.module.css'
 import workImg from '../../assets/images/475x845.webp'
 import { developmentProcess, services } from "../../components/data";
+import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
 
 function ServicesPage() {
   return (
@@ -15,7 +16,7 @@ function ServicesPage() {
         <PagesHero 
           heading="Explore our wide range of services" 
           description="At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below." 
-          videoLink="https://sigma6digital.com/wp-content/uploads/2024/10/Comp-1-1.m4v" 
+          videoLink={heroBackground1}
         />
       </section>
       <section id="Main-Services" className={`pb-5 ${styles.servicesBox}`}>

@@ -35,9 +35,12 @@
     padding: 10px 30px;
     border-radius: 10px;
     color: #fff;
-    font-weight: 500;
 }
-
+.heroCarouselBtn a{
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
 @media (max-width: 1200px) {
     .heroVideoHeading {
         font-size: 6.1em;

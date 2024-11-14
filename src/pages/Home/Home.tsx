@@ -26,7 +26,7 @@ function Home() {
         <Services services={services} displayAmount={4} />
         </section>
         <section id="process" className={`${styles.processSection} mt-5`}>
-          <Process heading="Our product<br><span>development process.</span>" developmentProcess={developmentProcess}/>
+          <Process heading="Our product<br><span>development process.</span>" buttonSrc="/about" developmentProcess={developmentProcess}/>
         </section>
         <section id="About" className={`${styles.aboutSection} py-5 my-5`}>
           <AboutFold heading="Your Trusted Partner in Digital Transformation" description="At Sigma 6 Digital, we are dedicated to delivering innovative web and app solutions, advanced AI technologies, and reliable IT support. Our client-focused approach ensures that we understand your unique needs and work collaboratively to help your business thrive in the digital age." points={points} />

@@ -1,0 +1,35 @@
+.notFoundPage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#418dc9 0%, #fff 50%);
+}
+.notFoundImg{
+    width: 300px;
+}
+.notFoundHeading{
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 3em;
+}
+.notFoundDescription{
+    font-family: 'Poppins';
+}
+.notFoundBtn{
+    background: var(--main-blue-color);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+.notFoundBtn{
+    background: var(--main-blue-color);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.notFoundBtn:hover{
+    background: #2778b6;
+    color: #fff;
+}
