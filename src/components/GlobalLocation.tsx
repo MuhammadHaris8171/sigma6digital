@@ -1,6 +1,11 @@
 import styles from '../styles/GlobalLocation.module.css'
+import type { GlobalLocation } from './data';
 
-function GlobalLocation() {
+interface GlobalLocationProps {
+  locations: GlobalLocation[];
+}
+
+function GlobalLocation({ locations }: GlobalLocationProps) {
   return (
     <>
         <div className="container">
@@ -10,30 +15,18 @@ function GlobalLocation() {
                 </div>
                 <div className="col-12">
                     <div className="row py-5 mt-4">
-                        <div className="col-sm-6 col-lg-3">
-                            <div className={`${styles.locationBox}`}>
-                                <img src="/src/assets/images/260x300.webp" alt="Sigma 6 Digital Location" className={`${styles.locationBoxImage}`} />
-                                <h4 className={`${styles.locationBoxHeading}`}>United Kingdom</h4>
+                        {locations.map((location, index) => (
+                            <div key={index} className="col-sm-6 col-lg-3">
+                                <div className={`${styles.locationBox}`}>
+                                <img
+                                    src={location.image}
+                                    alt={`${location.heading} Location`}
+                                    className={`${styles.locationBoxImage}`}
+                                />
+                                <h4 className={`${styles.locationBoxHeading}`}>{location.heading}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                            <div className={`${styles.locationBox}`}>
-                                <img src="/src/assets/images/260x300.webp" alt="Sigma 6 Digital Location" className={`${styles.locationBoxImage}`} />
-                                <h4 className={`${styles.locationBoxHeading}`}>United States</h4>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                            <div className={`${styles.locationBox}`}>
-                                <img src="/src/assets/images/260x300.webp" alt="Sigma 6 Digital Location" className={`${styles.locationBoxImage}`} />
-                                <h4 className={`${styles.locationBoxHeading}`}>Saudi Arabia</h4>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                            <div className={`${styles.locationBox}`}>
-                                <img src="/src/assets/images/260x300.webp" alt="Sigma 6 Digital Location" className={`${styles.locationBoxImage}`} />
-                                <h4 className={`${styles.locationBoxHeading}`}>United Arab Emirates</h4>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

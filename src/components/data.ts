@@ -3,6 +3,7 @@ import webDevelopmentImg from '../assets/images/web-development.webp';
 import appDevelopmentImg from '../assets/images/Mobile-App-Development.webp';
 import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
 import itSolutionsImg from '../assets/images/it-solutions.webp';
+import globalLocationImage from '../assets/images/260x300.webp';
 import webdevelopmentService from '../assets/images/main-service-delete.webp';
 
 export interface DevelopmentProcess {
@@ -22,6 +23,11 @@ export interface Service {
   description: string;
   button: string;
   buttonSrc: string;
+}
+
+export interface GlobalLocation {
+  image: string;
+  heading: string;
 }
 
 export interface IndustryData {
@@ -235,6 +241,26 @@ export const industriesData: IndustryData[] = [
     point_2: "Virtual Tours",
   },
 ];
+
+export const globalLocation: GlobalLocation[] = [
+  {
+    image: globalLocationImage,
+    heading: "United Kingdom",
+  },
+  {
+    image: globalLocationImage,
+    heading: "United States",
+  },
+  {
+    image: globalLocationImage,
+    heading: "Saudi Arabia",
+  },
+  {
+    image: globalLocationImage,
+    heading: "United Arab Emirates",
+  },
+]
+
 
 export const WebDevelopmentServices: Service[] = [
   {

@@ -3,6 +3,7 @@ import Cta from '../../components/Cta'
 import GlobalLocation from '../../components/GlobalLocation'
 import PagesHero from '../../components/PagesHero'
 import styles from './Contact.module.css'
+import { globalLocation } from '../../components/data'
 
 function Contact() {
   return (
@@ -21,7 +22,7 @@ function Contact() {
             />
         </section>
         <section id="contactGlobal" className={styles.contactDetailGlobal}>
-            <GlobalLocation />
+            <GlobalLocation locations={globalLocation} />
         </section>
         <Cta />
     </>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import lightLogo from '../../assets/images/sigma6_white_logo.webp';
 import darkLogo from '../../assets/images/sigma6_dark_logo.webp';
+import dropDownServiceImage from '../../assets/images/360x185.webp';
 import styles from './Header.module.css';
 import { IoMailSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
@@ -47,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
 
   const serviceDropDown = {
     heading: "Services",
-    image: "/src/assets/images/360x185.webp",
+    image: dropDownServiceImage,
     description:
       "At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below.",
     categories: [
@@ -120,7 +121,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   };
   const industriesDropDown = {
     heading: "Industries",
-    image: "/src/assets/images/360x185.webp",
+    image: dropDownServiceImage,
     description: "We work with a diverse range of industries, providing customised digital solutions that address each sector’s unique challenges. Whether you’re in education, legal services, technology, healthcare, or real estate, our expert team is dedicated to delivering impactful results that drive growth, streamline operations, and enhance customer engagement.",
     categories: [
       {
