@@ -13,7 +13,7 @@ function Footer() {
                       <h5 className={`${styles.footerHeading} mb-sm-4`}>Services</h5>
                       <ul className="list-unstyled">
                         {services.map((item, index) => (
-                          <li className={`${styles.footerlist}`} key={ `${item.name}-${index}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>{item.name} <FaArrowRightLong /></Link></li>
+                          <li className={`${styles.footerlist}`} key={ `${item.name}-${index}`}><Link to={item.buttonSrc} className={`${styles.footerlistLink} text-decoration-none`}>{item.name} <FaArrowRightLong /></Link></li>
                         ))}
                       </ul>
                     </div>

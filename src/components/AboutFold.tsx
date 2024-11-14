@@ -10,8 +10,7 @@ function AboutFold({heading, description, points}:any) {
           </div>
           <div className="col-12 pt-4">
             <div className="row">
-              {
-                points.map((item:any, index:number) => (
+              { points && points.map((item:any, index:number) => (
                   <div className="col-6 col-md-4" key={index}>
                     <div className={`${styles.aboutPoints}`}>
                       <h4 className={`${styles.aboutPointsHeading}`}>{item.heading}</h4>

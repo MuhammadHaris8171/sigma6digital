@@ -15,6 +15,7 @@ interface Category {
 
 interface ServiceDropDownProps {
   heading?: string; 
+  headingSrc?: string;
   description?: string;
   image?: string;
   categories?: Category[];
@@ -35,7 +36,13 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) 
               <div className={`${styles.navImageBox}`}>
                 {navDropDown.heading && (
                   <h3 className={`${styles.navDropdownMainHeading}`}>
-                    {navDropDown.heading}
+                    {navDropDown.headingSrc ? (
+                      <Link to={navDropDown.headingSrc} onClick={onLinkClick} className='text-decoration-none'>
+                        {navDropDown.heading}
+                      </Link>
+                      ) : (
+                        <>{navDropDown.heading}</>
+                    )}
                   </h3>
                 )}
                 {navDropDown.image && (
@@ -62,11 +69,11 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) 
                       {category.heading && (
                         <h4 className={`${styles.navCategoryHeading}`}>
                           {category.headingSrc ? (
-                              <Link to={category.headingSrc} onClick={onLinkClick}>
+                              <Link to={category.headingSrc} onClick={onLinkClick} className='text-decoration-none'>
                                   {category.heading}
                               </Link>
                           ) : (
-                              <span>{category.heading}</span>
+                              <>{category.heading}</>
                           )}
 
                         </h4>

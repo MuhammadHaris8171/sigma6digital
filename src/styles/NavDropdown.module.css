@@ -15,6 +15,11 @@
     font-weight: 600;
     font-size: 1.6em;
 }
+.navDropdownMainHeading a{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
 
 .navDropdownMainImg {
     width: 100%;
@@ -45,7 +50,6 @@
     padding-bottom: 0.25em;
 }
 .navCategoryHeading a{
-    text-decoration: none;
     color: inherit;
     font-size: inherit;
     font-family: inherit;

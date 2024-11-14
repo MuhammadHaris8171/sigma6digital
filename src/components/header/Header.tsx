@@ -48,6 +48,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
 
   const serviceDropDown = {
     heading: "Services",
+    headingSrc: "/services",
     image: dropDownServiceImage,
     description:
       "At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below.",
@@ -121,6 +122,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   };
   const industriesDropDown = {
     heading: "Industries",
+    headingSrc: "/industries",
     image: dropDownServiceImage,
     description: "We work with a diverse range of industries, providing customised digital solutions that address each sector’s unique challenges. Whether you’re in education, legal services, technology, healthcare, or real estate, our expert team is dedicated to delivering impactful results that drive growth, streamline operations, and enhance customer engagement.",
     categories: [
@@ -202,7 +204,19 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                     </div>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList} ${scrollHeader? styles.navLinksScrolled: styles.navLinks}`}  onMouseEnter={() => handleMouseEnter('industries')} onMouseLeave={handleMouseLeave}>
+                      <NavLink
+                        to="/industries"
+                        className={({ isActive }) => isActive? `${styles.active} ${scrollHeader? styles.navLinksScrolled: styles.navLinks} text-decoration-none`
+                            : `${
+                                scrollHeader
+                                  ? styles.navLinksScrolled
+                                  : styles.navLinks
+                              } text-decoration-none`
+                        }
+                        onClick={() => setActiveDropdown(null)}
+                      >
                       Industries <TiArrowSortedDown />
+                      </NavLink>
                     <div className={`${activeDropdown === 'industries' ? styles.openDropdown : ''} ${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={industriesDropDown} onLinkClick={handleMouseLeave} />
                     </div>
