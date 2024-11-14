@@ -80,7 +80,7 @@ const onSubmit = async (event: React.FormEvent) => {
         icon: "success"
       });
 
-      await fetch("https://script.google.com/macros/s/AKfycbzCXrjZRsoNX7Lh-wayh7rh7ru5cZJIGXoRdO2PNeUwozhD0ZjLtFrqjOZTlmm_jaZamg/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

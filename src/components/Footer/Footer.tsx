@@ -28,23 +28,23 @@ function Footer() {
                     <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
                       <h5 className={`${styles.footerHeading} mb-sm-4`}>Socials</h5>
                       <ul className="list-unstyled">
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Facebook <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Instagram <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Linkedin <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Youtube <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Twitter (x) <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Tiktok <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><a href="https://www.facebook.com/people/Sigma6-Digital/61566837885730/" className={`${styles.footerlistLink} text-decoration-none`}>Facebook <FaArrowRightLong /></a></li>
+                        <li className={`${styles.footerlist}`}><a href="https://www.instagram.com/sigma6.digital/" className={`${styles.footerlistLink} text-decoration-none`}>Instagram <FaArrowRightLong /></a></li>
+                        <li className={`${styles.footerlist}`}><a href="https://www.linkedin.com/company/sigma6digital/ " className={`${styles.footerlistLink} text-decoration-none`}>Linkedin <FaArrowRightLong /></a></li>
+                        <li className={`${styles.footerlist}`}><a href="https://www.youtube.com/channel/UCflORopOAXUUB10ymxE4TXA" className={`${styles.footerlistLink} text-decoration-none`}>Youtube <FaArrowRightLong /></a></li>
+                        <li className={`${styles.footerlist}`}><a href="https://x.com/Sigma6Digital" className={`${styles.footerlistLink} text-decoration-none`}>Twitter (x) <FaArrowRightLong /></a></li>
+                        <li className={`${styles.footerlist}`}><a href="https://www.tiktok.com/@sigma6digitalofficial" className={`${styles.footerlistLink} text-decoration-none`}>Tiktok <FaArrowRightLong /></a></li>
                       </ul>
                     </div>
                     <div className="col-sm-6 col-md-3 mb-5 mb-sm-3 mb-md-0">
                       <h5 className={`${styles.footerHeading} mb-sm-4`}>Quick Links</h5>
                       <ul className="list-unstyled">
+                        <li className={`${styles.footerlist}`}><Link to="/" className={`${styles.footerlistLink} text-decoration-none`}>Home <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="/about-us" className={`${styles.footerlistLink} text-decoration-none`}>About Us <FaArrowRightLong /></Link></li>
                         <li className={`${styles.footerlist}`}><Link to="/services" className={`${styles.footerlistLink} text-decoration-none`}>Services <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Careers <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Our Team <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Our Clients <FaArrowRightLong /></Link></li>
-                        <li className={`${styles.footerlist}`}><Link to="#" className={`${styles.footerlistLink} text-decoration-none`}>Contact <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><Link to="/faq" className={`${styles.footerlistLink} text-decoration-none`}>FAQ's <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><Link to="/Industries" className={`${styles.footerlistLink} text-decoration-none`}>Industries <FaArrowRightLong /></Link></li>
+                        <li className={`${styles.footerlist}`}><Link to="/contact" className={`${styles.footerlistLink} text-decoration-none`}>Contact <FaArrowRightLong /></Link></li>
                       </ul>
                     </div>
                 </div>
