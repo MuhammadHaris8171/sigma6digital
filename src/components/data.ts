@@ -31,6 +31,13 @@ import securityPatchingServiceImage from '../assets/images/security-patching-ser
 import performanceOptimizationServiceImage from '../assets/images/performance-optimization-service.webp';
 import dataBackupServiceImage from '../assets/images/backup-recovery-service.webp';
 
+import growthThroughDigitalMarketing from '../assets/images/growth-through-digital-marketing.webp';
+import seoOptimizationServiceImage from '../assets/images/seo-optimization-service.webp';
+import socialMediaMarketingServiceImage from '../assets/images/social-media-marketing-service.webp';
+import contentCreationServiceImage from '../assets/images/content-creation-service.webp';
+import ppcCampaignServiceImage from '../assets/images/ppc-campaign-service.webp';
+import emailMarketingServiceImage from '../assets/images/email- marketing-service.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1260,7 +1267,7 @@ export const maintenanceSupportServices: Service[] = [
 export const digitalMarketingServices: Service[] = [
   {
     name: "SEO Optimization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: seoOptimizationServiceImage,
     heading: "Boost Your Online Visibility",
     description: "Our SEO services help your website rank higher, driving organic traffic and increasing your online presence effectively.",
     button: "Read more",
@@ -1268,7 +1275,7 @@ export const digitalMarketingServices: Service[] = [
   },
   {
     name: "Social Media Marketing",
-    imgsrc: webDevelopmentImg,
+    imgsrc: socialMediaMarketingServiceImage,
     heading: "Engage and Grow Your Audience",
     description: "We create targeted social media strategies to build brand awareness, engage followers, and foster a loyal online community.",
     button: "Read more",
@@ -1276,7 +1283,7 @@ export const digitalMarketingServices: Service[] = [
   },
   {
     name: "Content Creation",
-    imgsrc: webDevelopmentImg,
+    imgsrc: contentCreationServiceImage,
     heading: "Crafting Content That Connects",
     description: "Our team produces high-quality content that resonates with your audience, elevates your brand, and supports your marketing goals.",
     button: "Read more",
@@ -1284,7 +1291,7 @@ export const digitalMarketingServices: Service[] = [
   },
   {
     name: "PPC Campaigns",
-    imgsrc: webDevelopmentImg,
+    imgsrc: ppcCampaignServiceImage,
     heading: "Drive Results with Paid Ads",
     description: "We design and manage pay-per-click campaigns to generate immediate traffic and maximise return on ad spend.",
     button: "Read more",
@@ -1292,7 +1299,7 @@ export const digitalMarketingServices: Service[] = [
   },
   {
     name: "Email Marketing",
-    imgsrc: webDevelopmentImg,
+    imgsrc: emailMarketingServiceImage,
     heading: "Nurture Leads with Targeted Emails",
     description: "Our email marketing services help you engage your audience, retain customers, and boost conversions through personalised campaigns.",
     button: "Read more",
@@ -2379,7 +2386,7 @@ export const digitalMarketingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Driving Growth Through Digital Marketing",
       contentBoxDescription: "Our digital marketing services cover every channel—from SEO and social media to PPC and email marketing. We’re here to build a strategy that connects with your audience and aligns with your business goals. With a results-driven approach, we help your brand stand out in the digital landscape.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: growthThroughDigitalMarketing,
     },
   ],
   servicesHeading: "Our Digital Marketing Services",
