@@ -59,14 +59,6 @@ function Cta() {
         </div>
       </div>
       <div className={`${styles.ctaContentBox}`}>
-        {/* <div className="container d-flex flex-column align-items-center justify-content-center gap-3">
-          <h3 className={`${styles.ctaContentBoxHeading}`}>
-            Digitize Your Business for Success!
-          </h3>
-          <button className={`btn ${styles.ctaBtn} overflow-hidden`}>
-            <Link to="/contact" className="text-decoration-none"><span>Contact Us Now</span></Link>
-          </button>
-        </div> */}
         <div className="container">
           <div className="row">
             <div className="col-md-7 m-auto">

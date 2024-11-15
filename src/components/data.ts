@@ -5,6 +5,13 @@ import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
 import itSolutionsImg from '../assets/images/it-solutions.webp';
 import globalLocationImage from '../assets/images/260x300.webp';
 import webdevelopmentService from '../assets/images/main-service-delete.webp';
+import maintenanceServiceImage from '../assets/images/maintenance-background.webp';
+import consultationProcessImg from '../assets/images/consultation-process.webp';
+import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
+import planningProcessImg from '../assets/images/planning-process.webp';
+import developmentProcessImg from '../assets/images/development-process.webp';
+import qualityAssuranceProcessImg from '../assets/images/quality-assurance-process.webp';
+import developmentLaunchProcessImg from '../assets/images/development-launch-process.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -65,47 +72,44 @@ export interface faqsItem {
   description: string;
 }
 
-
-
 export const developmentProcess: DevelopmentProcess[] = [
   {
     heading: "Consultation",
     description:
       "We begin with an initial consultation to understand your ideas and objectives. This conversation helps us get a clear picture of your vision and sets the foundation for the entire project.",
-      image: aiSolutionsImg,
+      image: consultationProcessImg,
   },
   {
     heading: "Requirement Gathering",
     description:
       "In this step, we dive deeper into the specifics of what your project needs. We gather detailed requirements to ensure that we understand every aspect and feature you want in your final product.",
-      image: itSolutionsImg,
+      image: requirementGatheringProcessImg,
   },
   {
     heading: "Planning & Strategy",
     description:
       "After gathering requirements, we move into planning. Here, we outline a strategy that maps out each phase of development, setting clear timelines and goals to keep everything on track.",
-      image: aiSolutionsImg,
+      image: planningProcessImg,
   },
   {
     heading: "Development & Testing",
     description:
       "With a solid plan in place, our development team gets to work. We start building the product, coding each feature carefully, and performing initial testing to ensure quality at every step.",
-      image: itSolutionsImg,
+      image: developmentProcessImg,
   },
   {
     heading: "Quality Assurance",
     description:
       "Before final delivery, our quality assurance team rigorously tests the product to ensure it meets our high standards. We identify and resolve any issues so that you receive a polished, ready-to-use solution.",
-      image: aiSolutionsImg,
+      image: qualityAssuranceProcessImg,
   },
   {
     heading: "Final Delivery & Support",
     description:
       "Once the product has passed all tests, we deliver it to you, fully prepared for launch. Our commitment doesn’t end here; we provide post-delivery support to assist with any queries or adjustments as you get started.",
-      image: itSolutionsImg,
+      image: developmentLaunchProcessImg,
   },
 ];
-
 export  const faqs: faqsItem[] = [
   {
     heading: "What services does Sigma 6 Digital offer?",
@@ -144,7 +148,6 @@ export  const faqs: faqsItem[] = [
     description: "We follow a rigorous development process that includes regular testing, code reviews, and client feedback at various stages of the project. Our focus on quality assurance ensures that we deliver reliable and high-performing solutions."
   },
 ];
-
 export const features: Feature[] = [
   { src: featureLogoDelete },
   { src: featureLogoDelete },
@@ -185,7 +188,7 @@ export const services: Service[] = [
   },
   {
     name: "Maintenance & Support",
-    imgsrc: webDevelopmentImg,
+    imgsrc: maintenanceServiceImage,
     heading: "Reliable Maintenance for Seamless Operations",
     description: "With our ongoing maintenance and support, ensure your systems remain secure, efficient, and ready to support your business 24/7.",
     button: "Read More",
@@ -1292,6 +1295,217 @@ export const creativeDesignServices: Service[] = [
     buttonSrc: "/product-design",
   },
 ];
+export const educationIndustryServices: Service[] = [
+  {
+    name: "eLearning Platforms",
+    imgsrc: webDevelopmentImg,
+    heading: "Creating Immersive Learning Experiences",
+    description: "We design eLearning platforms that allow educational institutions to deliver online courses, track student progress, and engage students through interactive content.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Student Portal Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Connecting Students with Resources",
+    description: "Our student portal solutions help institutions streamline academic information, manage schedules, and provide a single access point for all student services.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Learning Management Systems (LMS)",
+    imgsrc: webDevelopmentImg,
+    heading: "Streamlining Educational Content Delivery",
+    description: "We develop custom Learning Management Systems (LMS) that allow educators to organize course materials, assess students, and track progress in a secure and scalable platform.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Virtual Classroom Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Bringing Classrooms to Life Online",
+    description: "We create virtual classroom solutions that enable interactive lessons, live video streaming, and collaboration, enhancing the online learning experience for both teachers and students.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "School Administration Software",
+    imgsrc: webDevelopmentImg,
+    heading: "Optimizing School Management",
+    description: "Our administrative solutions simplify school management, including enrollment, grading, scheduling, and communication with parents, all through one centralized system.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+];
+export const legalServicesIndustryServices: Service[] = [
+  {
+    name: "Legal Case Management Systems",
+    imgsrc: webDevelopmentImg,
+    heading: "Streamlining Case Management",
+    description: "We provide custom case management systems to help law firms track case progress, manage client data, and collaborate effectively with legal teams.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Client Portal Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Enhancing Client Communication",
+    description: "We build secure client portals that allow clients to track case updates, review documents, and communicate directly with their legal team.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Document Management Systems",
+    imgsrc: webDevelopmentImg,
+    heading: "Secure Document Storage",
+    description: "Our document management systems ensure the secure storage, organization, and retrieval of legal documents, improving efficiency and compliance.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Compliance Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Ensuring Legal Compliance",
+    description: "We design digital solutions that help law firms stay compliant with industry regulations, ensuring secure handling of sensitive client information.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Legal Billing & Invoicing Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Simplifying Legal Billing",
+    description: "Our legal billing and invoicing solutions automate the billing process, allowing law firms to manage time-tracking and invoicing efficiently.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+];
+export const technologyIndustryServices: Service[] = [
+  {
+    name: "AI & Machine Learning Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Unlocking the Power of AI",
+    description: "We create custom AI solutions that help businesses automate processes, gain insights from data, and enhance decision-making.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Cloud Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Scalable & Secure Cloud Infrastructure",
+    description: "We provide cloud solutions that allow businesses to scale efficiently, reduce costs, and maintain high levels of security and performance.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Custom Software Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Tailored Software Solutions",
+    description: "We develop custom software to meet your unique business needs, from CRM systems to enterprise-level applications.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Blockchain Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Innovating with Blockchain",
+    description: "Our blockchain development services help businesses implement secure, decentralized solutions for everything from payment systems to supply chain tracking.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Cybersecurity Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Protecting Your Digital Assets",
+    description: "We design cybersecurity solutions that protect businesses from digital threats, ensuring data security and regulatory compliance.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+];
+export const healthcareIndustryServices: Service[] = [
+  {
+    name: "Telemedicine Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Connecting Doctors & Patients",
+    description: "We design telemedicine platforms that allow healthcare providers to consult with patients remotely, ensuring better accessibility and timely care.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Healthcare App Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Empowering Healthcare on the Go",
+    description: "Our mobile healthcare apps help patients track their health, book appointments, and access medical resources, all from the convenience of their smartphones.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Electronic Health Records (EHR) Systems",
+    imgsrc: webDevelopmentImg,
+    heading: "Streamlining Patient Data Management",
+    description: "We provide custom EHR solutions that integrate patient data securely and efficiently, making it easier for healthcare providers to deliver quality care.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Healthcare Analytics Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Data-Driven Decisions for Better Care",
+    description: "Our analytics solutions help healthcare organizations harness the power of data to make informed decisions, improve patient outcomes, and optimize operational efficiency.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Patient Portal Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Enhancing Patient Engagement",
+    description: "We build secure patient portals that enable easy access to medical records, appointment scheduling, and communication with healthcare providers.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+];
+export const realEstateIndustryServices: Service[] = [
+  {
+    name: "Real Estate Website Development",
+    imgsrc: webDevelopmentImg,
+    heading: "Building Real Estate Digital Presence",
+    description: "We create user-friendly, visually appealing websites for real estate agencies, enabling easy property listings, client interactions, and market insights.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Property Management Solutions",
+    imgsrc: webDevelopmentImg,
+    heading: "Streamlining Property Management",
+    description: "Our property management solutions simplify tenant management, lease tracking, and maintenance requests, all through an easy-to-use digital platform.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Real Estate CRM Systems",
+    imgsrc: webDevelopmentImg,
+    heading: "Optimizing Client Relations",
+    description: "We design custom CRM systems for real estate professionals to manage leads, clients, and property listings more effectively and increase sales.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Real Estate Mobile Apps",
+    imgsrc: webDevelopmentImg,
+    heading: "Real Estate in Your Pocket",
+    description: "We develop mobile apps that allow real estate buyers, sellers, and agents to browse properties, schedule appointments, and communicate seamlessly.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+  {
+    name: "Virtual Property Tours",
+    imgsrc: webDevelopmentImg,
+    heading: "Bringing Properties to Life",
+    description: "Our virtual tour technology allows potential buyers and renters to explore properties from the comfort of their homes, enhancing the buying experience.",
+    button: "Read more",
+    buttonSrc: "/contact",
+  },
+];
+
 
 
 export const webDevelopmentPageContent: WebDevelopmentPageContent = {
@@ -2154,6 +2368,116 @@ export const creativeDesignPageContent: WebDevelopmentPageContent = {
     {
       heading: "Creative Design Tools",
       services: ["Adobe Photoshop", "Illustrator", "Figma", "After Effects", "Sketch"],
+    },
+  ],
+};
+export const educationIndustryPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Innovative Digital Solutions for Education",
+  heroSectionDescription: "At Sigma 6 Digital, we create digital solutions that enhance learning experiences, empower educators, and streamline administrative processes for educational institutions.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Empowering Education with Technology",
+      contentBoxDescription: "We offer a range of services tailored for the education sector, from eLearning platforms to student portals, designed to improve engagement, accessibility, and administration. Our solutions help educational institutions stay ahead in the digital age.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Education Industry Services",
+  featureServices: educationIndustryServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We leverage cutting-edge technology and platforms to build scalable, secure, and user-friendly solutions for the education industry.",
+  technologiesBoxes: [
+    {
+      heading: "Key Technologies",
+      services: ["React", "Node.js", "WordPress", "Moodle", "AWS"],
+    },
+  ],
+};
+export const legalServicesIndustryPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Transforming Legal Practices with Technology",
+  heroSectionDescription: "We provide digital solutions for law firms that streamline case management, enhance client communication, and ensure regulatory compliance. Our services help legal professionals focus on what matters most.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Elevating Legal Services Through Innovation",
+      contentBoxDescription: "From custom case management systems to secure client portals, our services are designed to improve efficiency, reduce administrative burden, and ensure compliance in the legal industry.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Legal Services Industry Services",
+  featureServices: legalServicesIndustryServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We utilize robust technologies to create secure, scalable, and compliant solutions for the legal industry.",
+  technologiesBoxes: [
+    {
+      heading: "Legal Technology Tools",
+      services: ["Python", "Ruby on Rails", "SQL", "AWS", "Django"],
+    },
+  ],
+};
+export const technologyIndustryPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Innovating the Future with Technology",
+  heroSectionDescription: "We offer cutting-edge technology solutions designed to help businesses scale, automate, and integrate AI, machine learning, and cloud systems. Empowering the technology industry with innovative tools and services.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Transforming Business with Technology",
+      contentBoxDescription: "We create custom software solutions, from AI and machine learning applications to cloud and blockchain platforms, enabling businesses to leverage technology for competitive advantage.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Technology Industry Services",
+  featureServices: technologyIndustryServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We are experts in a wide range of technologies that allow us to build future-proof solutions for businesses across industries.",
+  technologiesBoxes: [
+    {
+      heading: "Core Technologies",
+      services: ["Java", "Spring Boot", "Node.js", "Docker", "Kubernetes", "AWS", "Blockchain", "TensorFlow"],
+    },
+  ],
+};
+export const healthcareIndustryPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Digital Solutions for Healthcare Excellence",
+  heroSectionDescription: "Our healthcare solutions are designed to improve patient care, enhance operational efficiency, and ensure compliance. We provide everything from telemedicine platforms to patient portal solutions.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Advancing Healthcare with Technology",
+      contentBoxDescription: "We help healthcare providers offer better care through telemedicine solutions, mobile health apps, and secure patient data management systems, enhancing both patient experience and operational efficiency.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Healthcare Industry Services",
+  featureServices: healthcareIndustryServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "Our healthcare solutions are powered by secure, HIPAA-compliant technologies that ensure patient privacy while delivering seamless digital experiences.",
+  technologiesBoxes: [
+    {
+      heading: "Healthcare Tech Stack",
+      services: ["JavaScript", "React", "FHIR", "Node.js", "AWS", "HIPAA Compliance Tools"],
+    },
+  ],
+};
+export const realEstateIndustryPageContent: WebDevelopmentPageContent = {
+  heroSectionHeading: "Empowering Real Estate with Technology",
+  heroSectionDescription: "We create digital solutions for the real estate industry that streamline property management, enhance buyer experiences, and optimize client relations.",
+  heroSectionImage: webdevelopmentService,
+  contentBoxesContent: [
+    {
+      contentBoxheading: "Digital Solutions for Modern Real Estate",
+      contentBoxDescription: "From custom property management software to virtual property tours and CRM systems, our solutions enable real estate professionals to stay competitive and provide top-notch services to clients.",
+      contentBoxImage: aiSolutionsImg,
+    },
+  ],
+  servicesHeading: "Our Real Estate Industry Services",
+  featureServices: realEstateIndustryServices,
+  technologiesHeading: "Technologies We Use",
+  technologiesDescription: "We use the latest technologies to build secure, scalable, and innovative solutions for the real estate market.",
+  technologiesBoxes: [
+    {
+      heading: "Real Estate Tech Tools",
+      services: ["React", "Node.js", "MongoDB", "WordPress", "AWS", "Mapbox"],
     },
   ],
 };

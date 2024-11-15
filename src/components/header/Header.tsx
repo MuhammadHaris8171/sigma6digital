@@ -128,18 +128,23 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
     categories: [
       {
         heading: "Education",
+        headingSrc: "/education-industry",
       },
       {
         heading: "Legal Services",
+        headingSrc: "/legal-industry",
       },
       {
-        heading: "Technology"
+        heading: "Technology",
+        headingSrc: "/technology-industry",
       },
       {
         heading: "Healthcare",
+        headingSrc: "/healthcare-industry",
       },
       {
         heading: "Real Estate",
+        headingSrc: "/realestate-industry",
       },
     ],
   };

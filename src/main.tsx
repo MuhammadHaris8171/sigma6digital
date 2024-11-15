@@ -11,7 +11,7 @@ import ServicesPage from './pages/Services/ServicesPage';
 import FAQ from './pages/FAQ/FAQ';
 import Contact from './pages/Contact/Contact';
 import MainService from './pages/MainService/MainService';
-import { aiAutomationPageContent, appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, creativeDesignPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, developmentPageContent, digitalMarketingPageContent, eCommerceDevelopmentPageContent, emailMarketingPageContent, graphicDesignPageContent, itConsultingPageContent, itSolutionsPageContent, logoBrandingPageContent, machineLearningPageContent, maintenanceSupportPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
+import { aiAutomationPageContent, appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, creativeDesignPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, developmentPageContent, digitalMarketingPageContent, eCommerceDevelopmentPageContent, educationIndustryPageContent, emailMarketingPageContent, graphicDesignPageContent, healthcareIndustryPageContent, itConsultingPageContent, itSolutionsPageContent, legalServicesIndustryPageContent, logoBrandingPageContent, machineLearningPageContent, maintenanceSupportPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, realEstateIndustryPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, technologyIndustryPageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
 import IndustriesPage from './pages/Industries/IndustriesPage';
 import Notfound from './pages/404/Notfound';
 
@@ -188,6 +188,26 @@ const router = createBrowserRouter([
       {
         path: "/product-design",
         element: <MainService content={productDesignPageContent} />,
+      },
+      {
+        path: "/education-industry",
+        element: <MainService content={educationIndustryPageContent} />,
+      },
+      {
+        path: "/legal-industry",
+        element: <MainService content={legalServicesIndustryPageContent} />,
+      },
+      {
+        path: "/technology-industry",
+        element: <MainService content={technologyIndustryPageContent} />,
+      },
+      {
+        path: "/healthcare-industry",
+        element: <MainService content={healthcareIndustryPageContent} />,
+      },
+      {
+        path: "/realestate-industry",
+        element: <MainService content={realEstateIndustryPageContent} />,
       },
     ],
   },
