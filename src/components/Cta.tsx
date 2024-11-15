@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../styles/Cta.module.css";
-import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 function Cta() {
   useEffect(() => {
@@ -59,13 +59,25 @@ function Cta() {
         </div>
       </div>
       <div className={`${styles.ctaContentBox}`}>
-        <div className="container d-flex flex-column align-items-center justify-content-center gap-3">
+        {/* <div className="container d-flex flex-column align-items-center justify-content-center gap-3">
           <h3 className={`${styles.ctaContentBoxHeading}`}>
             Digitize Your Business for Success!
           </h3>
           <button className={`btn ${styles.ctaBtn} overflow-hidden`}>
             <Link to="/contact" className="text-decoration-none"><span>Contact Us Now</span></Link>
           </button>
+        </div> */}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7 m-auto">
+              <h3 className={`${styles.ctaContentBoxHeading} text-center mb-5`}>
+                We're Just a Click Away!
+              </h3>
+              <div className={`${styles.ctaForm}`}>
+                <ContactForm />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

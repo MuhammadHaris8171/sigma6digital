@@ -126,7 +126,7 @@ const onSubmit = async (event: React.FormEvent) => {
   return (
     <div className={styles.contactFormBox}>
       <form onSubmit={onSubmit} className={styles.contactForm}>
-        <div className="container px-0 ps-lg-5 py-5 py-lg-0">
+        <div className="container px-0 py-5 py-lg-0">
           <div className="row">
             <div className="col-sm-6 mb-4">
               <label htmlFor="name" className={styles.contactFormLabel}>

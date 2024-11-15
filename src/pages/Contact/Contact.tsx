@@ -1,5 +1,4 @@
 import ContactDetail from '../../components/ContactDetail'
-import Cta from '../../components/Cta'
 import GlobalLocation from '../../components/GlobalLocation'
 import PagesHero from '../../components/PagesHero'
 import styles from './Contact.module.css'
@@ -35,7 +34,6 @@ function Contact() {
         <section id="contactGlobal" className={styles.contactDetailGlobal}>
             <GlobalLocation locations={globalLocation} />
         </section>
-        <Cta />
     </>
   )
 }

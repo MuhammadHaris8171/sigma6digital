@@ -309,7 +309,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                           <RxCross2 />
                         </div>
                         <h3 className={`${styles.headerContactHeading} px-lg-5 d-inline`}><span>Get In Touch</span></h3>
-                        <div className={`${styles.headerForm} pe-lg-5`}>
+                        <div className={`${styles.headerForm} px-lg-5`}>
                           <ContactForm />
                         </div>
                       </div> 
