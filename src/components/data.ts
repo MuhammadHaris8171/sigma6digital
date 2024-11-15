@@ -12,6 +12,11 @@ import planningProcessImg from '../assets/images/planning-process.webp';
 import developmentProcessImg from '../assets/images/development-process.webp';
 import qualityAssuranceProcessImg from '../assets/images/quality-assurance-process.webp';
 import developmentLaunchProcessImg from '../assets/images/development-launch-process.webp';
+import educationIndustryImg from '../assets/images/education-industry.webp';
+import legalIndustryImg from '../assets/images/legal-industry.webp';
+import techIndustryImg from '../assets/images/tech-industry.webp';
+import healthcareIndustryImg from '../assets/images/healthcare-industry.webp';
+import realestateIndustryImg from '../assets/images/realestate-industry.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -38,10 +43,12 @@ export interface GlobalLocation {
 }
 
 export interface IndustryData {
+  imgSrc: string;
   heading: string;
   description: string;
   point_1: string;
   point_2: string; 
+  headingSrc? : string;
 }
 
 export interface ContentBox {
@@ -214,34 +221,44 @@ export const services: Service[] = [
 
 export const industriesData: IndustryData[] = [
   {
+    imgSrc: educationIndustryImg,
     heading: "Education",
     description: "We build dynamic e-learning platforms and interactive, engaging digital tools that enhance student engagement and streamline processes for institutions.",
     point_1: "E-learning Platforms",
     point_2: "Learning Management Systems",
+    headingSrc: "/education-industry",
   },
   {
+    imgSrc: legalIndustryImg,
     heading: "Legal Services",
     description: "Our digital solutions help law firms and legal professionals manage cases, enhance client communication, and streamline documentation with secure, efficient systems.",
     point_1: "Case Management",
     point_2: "Document Automation",
+    headingSrc: "/legal-industry",
   },
   {
+    imgSrc: techIndustryImg,
     heading: "Technology",
     description: "From startups to established tech companies, we provide cutting-edge development services that accelerate innovation, improve productivity, and deliver scalable, reliable solutions.",
     point_1: "Custom Software",
     point_2: "Web Applications",
+    headingSrc: "/technology-industry",
   },
   {
+    imgSrc: healthcareIndustryImg,
     heading: "Healthcare",
     description: "We create secure, HIPAA-compliant applications that support healthcare providers in improving patient care, optimizing operations, and managing data effectively.",
     point_1: "Telehealth Solutions",
     point_2: "Patient Management",
+    headingSrc: "/healthcare-industry",
   },
   {
+    imgSrc: realestateIndustryImg,
     heading: "Real Estate",
     description: "We support real estate professionals with digital tools for property management, virtual tours, and transaction automation, enhancing client interactions and sales.",
     point_1: "Property Management",
     point_2: "Virtual Tours",
+    headingSrc: "/realestate-industry",
   },
 ];
 
