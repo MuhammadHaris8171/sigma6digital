@@ -5,7 +5,7 @@ import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
 import WorkProcess from '../../components/WorkProcess'
 import styles from './ServicesPage.module.css'
-import workImg from '../../assets/images/475x845.webp'
+import serviceWorkProcessImg from '../../assets/images/serviceWorkProcessImage.webp'
 import { developmentProcess, services } from "../../components/data";
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
 
@@ -23,8 +23,6 @@ function ServicesPage() {
         <div className={styles.headingContainer}>
           <SecondaryHeading 
             heading="What We Offer" 
-            buttonText="View All Services" 
-            buttonsrc="/services/" 
           />
         </div>
         <Services services={services} displayAmount={-1} />
@@ -33,7 +31,7 @@ function ServicesPage() {
         <WorkProcess 
           heading="Here's How We Get Things Done" 
           workSteps={developmentProcess} 
-          workImg={workImg}
+          workImg={serviceWorkProcessImg}
         />
       </section>
       <section id="serviceIndustries" className={`${styles.serviceIndustrySection} py-5 my-5`}>

@@ -6,6 +6,8 @@ import itSolutionsImg from '../assets/images/it-solutions.webp';
 import globalLocationImage from '../assets/images/260x300.webp';
 import webdevelopmentService from '../assets/images/main-service-delete.webp';
 import maintenanceServiceImage from '../assets/images/maintenance-background.webp';
+import digitalMarketingServiceImage from '../assets/images/digital-marketing-service.webp';
+import creativeDesignServiceImage from '../assets/images/creative-design-service.webp';
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -17,6 +19,10 @@ import legalIndustryImg from '../assets/images/legal-industry.webp';
 import techIndustryImg from '../assets/images/tech-industry.webp';
 import healthcareIndustryImg from '../assets/images/healthcare-industry.webp';
 import realestateIndustryImg from '../assets/images/realestate-industry.webp';
+import unitedKingdomImg from '../assets/images/united-kingdom.webp';
+import unitedStateImg from '../assets/images/united-state.webp';
+import saudiarabiaImg from '../assets/images/saudi-arabia.webp';
+import unitedArabEmiratesImg from '../assets/images/united-arab-emirates.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -203,7 +209,7 @@ export const services: Service[] = [
   },
   {
     name: "Digital Marketing",
-    imgsrc: webDevelopmentImg,
+    imgsrc: digitalMarketingServiceImage,
     heading: "Strategies to Elevate Your Brand",
     description: "Our digital marketing services encompass SEO, social media, content creation, and PPC to boost your brand's online visibility and engagement.",
     button: "Read More",
@@ -211,7 +217,7 @@ export const services: Service[] = [
   },
   {
     name: "Creative Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: creativeDesignServiceImage,
     heading: "Bringing Ideas to Life Through Design",
     description: "Our creative team specializes in graphic design, branding, and UI/UX, creating visually stunning designs that align with your brand’s identity.",
     button: "Read More",
@@ -264,19 +270,19 @@ export const industriesData: IndustryData[] = [
 
 export const globalLocation: GlobalLocation[] = [
   {
-    image: globalLocationImage,
+    image: unitedKingdomImg,
     heading: "United Kingdom",
   },
   {
-    image: globalLocationImage,
+    image: unitedStateImg,
     heading: "United States",
   },
   {
-    image: globalLocationImage,
+    image: saudiarabiaImg,
     heading: "Saudi Arabia",
   },
   {
-    image: globalLocationImage,
+    image: unitedArabEmiratesImg,
     heading: "United Arab Emirates",
   },
 ]

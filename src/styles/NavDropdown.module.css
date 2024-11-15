@@ -53,6 +53,35 @@
     color: inherit;
     font-size: inherit;
     font-family: inherit;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+}
+.navCategoryHeading a::before{
+    content: "";
+    width: 30%;
+    height: 2px ;
+    background: var(--main-blue-color);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s;
+}
+.navCategoryHeading a svg{
+    font-size: inherit;
+    transition: all 0.3s;
+    position: relative;
+    left: 0px;
+}
+.navCategoryHeading a:hover {
+    color: var(--main-blue-color);
+}
+.navCategoryHeading a:hover::before {
+    width: 100%;
+}
+.navCategoryHeading a:hover svg {
+    left: 10px;
 }
 .navCategoryListLink {
     color: #000;

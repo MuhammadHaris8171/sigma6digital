@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from '../styles/NavDropdown.module.css';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 interface Service {
   name: string;
@@ -70,7 +71,8 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ navDropDown, onLinkClick  }) 
                         <h4 className={`${styles.navCategoryHeading}`}>
                           {category.headingSrc ? (
                               <Link to={category.headingSrc} onClick={onLinkClick} className='text-decoration-none'>
-                                  {category.heading}
+                                  {category.heading} <MdOutlineKeyboardArrowRight />
+
                               </Link>
                           ) : (
                               <>{category.heading}</>

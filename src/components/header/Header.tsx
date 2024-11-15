@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import lightLogo from '../../assets/images/sigma6_white_logo.webp';
 import darkLogo from '../../assets/images/sigma6_dark_logo.webp';
-import dropDownServiceImage from '../../assets/images/360x185.webp';
+import dropDownServiceImage from '../../assets/images/services-dropdown.webp';
+import dropDownIndustryeImage from '../../assets/images/industry-dropdown.webp';
 import styles from './Header.module.css';
 import { IoMailSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
@@ -123,7 +124,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   const industriesDropDown = {
     heading: "Industries",
     headingSrc: "/industries",
-    image: dropDownServiceImage,
+    image: dropDownIndustryeImage,
     description: "We work with a diverse range of industries, providing customised digital solutions that address each sector’s unique challenges. Whether you’re in education, legal services, technology, healthcare, or real estate, our expert team is dedicated to delivering impactful results that drive growth, streamline operations, and enhance customer engagement.",
     categories: [
       {
