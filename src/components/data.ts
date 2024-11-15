@@ -24,6 +24,13 @@ import predectiveAnalyticsServiceImage from '../assets/images/predective-analyti
 import computerVisionServiceImage from '../assets/images/computer-vision-service.webp';
 import nlpSolutionsServiceImage from '../assets/images/nlp-solutions-image.webp';
 
+import securityAndScalability from '../assets/images/security-and-scalability.webp';
+import softwareMaintenanceServiceImage from '../assets/images/software-maintenance-service.webp';
+import bugFixingServiceImage from '../assets/images/bug-fixing-service.webp';
+import securityPatchingServiceImage from '../assets/images/security-patching-service.webp';
+import performanceOptimizationServiceImage from '../assets/images/performance-optimization-service.webp';
+import dataBackupServiceImage from '../assets/images/backup-recovery-service.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1211,7 +1218,7 @@ export const aiAutomationServices: Service[] = [
 export const maintenanceSupportServices: Service[] = [
   {
     name: "Software Maintenance",
-    imgsrc: webDevelopmentImg,
+    imgsrc: softwareMaintenanceServiceImage,
     heading: "Keeping Your Software Running Smoothly",
     description: "We provide ongoing software maintenance to ensure your applications remain up-to-date, secure, and fully functional.",
     button: "Read more",
@@ -1219,7 +1226,7 @@ export const maintenanceSupportServices: Service[] = [
   },
   {
     name: "Bug Fixing",
-    imgsrc: webDevelopmentImg,
+    imgsrc: bugFixingServiceImage,
     heading: "Swift Solutions for Software Issues",
     description: "Our team is dedicated to identifying and fixing bugs quickly, minimising downtime and ensuring a seamless user experience.",
     button: "Read more",
@@ -1227,7 +1234,7 @@ export const maintenanceSupportServices: Service[] = [
   },
   {
     name: "Security Patching",
-    imgsrc: webDevelopmentImg,
+    imgsrc: securityPatchingServiceImage,
     heading: "Keeping Your Systems Secure",
     description: "We offer timely security patching to safeguard your software against vulnerabilities, protecting your data and users.",
     button: "Read more",
@@ -1235,7 +1242,7 @@ export const maintenanceSupportServices: Service[] = [
   },
   {
     name: "Performance Optimization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: performanceOptimizationServiceImage,
     heading: "Enhancing System Performance",
     description: "Our optimisation services ensure your software operates at peak efficiency, providing a fast and responsive experience for users.",
     button: "Read more",
@@ -1243,7 +1250,7 @@ export const maintenanceSupportServices: Service[] = [
   },
   {
     name: "Data Backup & Recovery",
-    imgsrc: webDevelopmentImg,
+    imgsrc: dataBackupServiceImage,
     heading: "Protecting and Restoring Your Data",
     description: "We provide reliable backup and recovery solutions to secure your critical data and ensure quick recovery in case of any data loss.",
     button: "Read more",
@@ -2350,7 +2357,7 @@ export const maintenanceSupportPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Ensuring Stability and Security",
       contentBoxDescription: "Our maintenance and support services cover everything from regular software updates to emergency bug fixes, data recovery, and security patching. With our proactive approach, we help prevent issues before they arise and keep your business running smoothly.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: securityAndScalability,
     },
   ],
   servicesHeading: "Our Maintenance & Support Services",
