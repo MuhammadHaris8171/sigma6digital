@@ -52,6 +52,12 @@ import learningManagementSystem from '../assets/images/learning-management-syste
 import virtualClassroom from '../assets/images/virtual-classroom.webp';
 import schoolAdminSoftware from '../assets/images/school-admin-software.webp';
 
+import experLegalServices from '../assets/images/expert-legal-services.webp';
+import legalCaseManagementSystems from '../assets/images/legal-case-management-systems.webp';
+import clientPortalSolutions from '../assets/images/client-portal-solutions.webp';
+import documentManagementSystem from '../assets/images/document-management-system.webp';
+import complianceSolutions from '../assets/images/compliance-solutions.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1407,7 +1413,7 @@ export const educationIndustryServices: Service[] = [
 export const legalServicesIndustryServices: Service[] = [
   {
     name: "Legal Case Management Systems",
-    imgsrc: webDevelopmentImg,
+    imgsrc: legalCaseManagementSystems,
     heading: "Streamlining Case Management",
     description: "We provide custom case management systems to help law firms track case progress, manage client data, and collaborate effectively with legal teams.",
     button: "Read more",
@@ -1415,7 +1421,7 @@ export const legalServicesIndustryServices: Service[] = [
   },
   {
     name: "Client Portal Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: clientPortalSolutions,
     heading: "Enhancing Client Communication",
     description: "We build secure client portals that allow clients to track case updates, review documents, and communicate directly with their legal team.",
     button: "Read more",
@@ -1423,7 +1429,7 @@ export const legalServicesIndustryServices: Service[] = [
   },
   {
     name: "Document Management Systems",
-    imgsrc: webDevelopmentImg,
+    imgsrc: documentManagementSystem,
     heading: "Secure Document Storage",
     description: "Our document management systems ensure the secure storage, organization, and retrieval of legal documents, improving efficiency and compliance.",
     button: "Read more",
@@ -1431,17 +1437,9 @@ export const legalServicesIndustryServices: Service[] = [
   },
   {
     name: "Compliance Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: complianceSolutions,
     heading: "Ensuring Legal Compliance",
     description: "We design digital solutions that help law firms stay compliant with industry regulations, ensuring secure handling of sensitive client information.",
-    button: "Read more",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Legal Billing & Invoicing Solutions",
-    imgsrc: webDevelopmentImg,
-    heading: "Simplifying Legal Billing",
-    description: "Our legal billing and invoicing solutions automate the billing process, allowing law firms to manage time-tracking and invoicing efficiently.",
     button: "Read more",
     buttonSrc: "/contact",
   },
@@ -2466,7 +2464,7 @@ export const legalServicesIndustryPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Elevating Legal Services Through Innovation",
       contentBoxDescription: "From custom case management systems to secure client portals, our services are designed to improve efficiency, reduce administrative burden, and ensure compliance in the legal industry.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: experLegalServices,
     },
   ],
   servicesHeading: "Our Legal Services Industry Services",
