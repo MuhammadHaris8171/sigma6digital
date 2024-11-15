@@ -45,6 +45,13 @@ import uiuxDesignServiceImage from '../assets/images/uiux-design-service.webp';
 import motionDesignServiceImage from '../assets/images/motion-graphic-service.webp';
 import productDesignServiceImage from '../assets/images/product-design-service.webp';
 
+import educationWithTechnology from '../assets/images/education-with-technology.webp';
+import eLearningPlatform from '../assets/images/e-learning-platform.webp';
+import studentPortalSolutions from '../assets/images/student-portal-solutions.webp';
+import learningManagementSystem from '../assets/images/learning-management-system.webp';
+import virtualClassroom from '../assets/images/virtual-classroom.webp';
+import schoolAdminSoftware from '../assets/images/school-admin-software.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1358,7 +1365,7 @@ export const creativeDesignServices: Service[] = [
 export const educationIndustryServices: Service[] = [
   {
     name: "eLearning Platforms",
-    imgsrc: webDevelopmentImg,
+    imgsrc: eLearningPlatform,
     heading: "Creating Immersive Learning Experiences",
     description: "We design eLearning platforms that allow educational institutions to deliver online courses, track student progress, and engage students through interactive content.",
     button: "Read more",
@@ -1366,7 +1373,7 @@ export const educationIndustryServices: Service[] = [
   },
   {
     name: "Student Portal Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: studentPortalSolutions,
     heading: "Connecting Students with Resources",
     description: "Our student portal solutions help institutions streamline academic information, manage schedules, and provide a single access point for all student services.",
     button: "Read more",
@@ -1374,7 +1381,7 @@ export const educationIndustryServices: Service[] = [
   },
   {
     name: "Learning Management Systems (LMS)",
-    imgsrc: webDevelopmentImg,
+    imgsrc: learningManagementSystem,
     heading: "Streamlining Educational Content Delivery",
     description: "We develop custom Learning Management Systems (LMS) that allow educators to organize course materials, assess students, and track progress in a secure and scalable platform.",
     button: "Read more",
@@ -1382,7 +1389,7 @@ export const educationIndustryServices: Service[] = [
   },
   {
     name: "Virtual Classroom Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: virtualClassroom,
     heading: "Bringing Classrooms to Life Online",
     description: "We create virtual classroom solutions that enable interactive lessons, live video streaming, and collaboration, enhancing the online learning experience for both teachers and students.",
     button: "Read more",
@@ -1390,7 +1397,7 @@ export const educationIndustryServices: Service[] = [
   },
   {
     name: "School Administration Software",
-    imgsrc: webDevelopmentImg,
+    imgsrc: schoolAdminSoftware,
     heading: "Optimizing School Management",
     description: "Our administrative solutions simplify school management, including enrollment, grading, scheduling, and communication with parents, all through one centralized system.",
     button: "Read more",
@@ -2437,7 +2444,7 @@ export const educationIndustryPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Empowering Education with Technology",
       contentBoxDescription: "We offer a range of services tailored for the education sector, from eLearning platforms to student portals, designed to improve engagement, accessibility, and administration. Our solutions help educational institutions stay ahead in the digital age.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: educationWithTechnology,
     },
   ],
   servicesHeading: "Our Education Industry Services",
