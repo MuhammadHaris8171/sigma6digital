@@ -9,6 +9,21 @@ import creativeDesignServiceImage from '../assets/images/creative-design-service
 import webDevelopmentServiceImage from '../assets/images/web-development-service.webp';
 import ecommerceDevelopmentServiceImage from '../assets/images/ecommerce-development-services.webp';
 import crmDevelopmentServiceImage from '../assets/images/crm-development-service.webp';
+
+import reliableItSolutions from '../assets/images/reliable-it-solutions.webp';
+import networkManagementServiceImage from '../assets/images/network-management-service.webp';
+import cloudSolutionsServiceImage from '../assets/images/cloud-solutions-service.webp';
+import dataSecurityServiceImage from '../assets/images/data-security-service.webp';
+import itConsultingServiceImage from '../assets/images/it-consulting-service.webp';
+import virtualizationServiceImage from '../assets/images/virtualization-service.webp';
+
+import innovationWithAi from '../assets/images/innovation-with-ai.webp';
+import machineLearningModelServiceImage from '../assets/images/machine-learning-model.webp';
+import chatbotDevelopmentServiceImage from '../assets/images/chatbot-development.webp';
+import predectiveAnalyticsServiceImage from '../assets/images/predective-analytics-service.webp';
+import computerVisionServiceImage from '../assets/images/computer-vision-service.webp';
+import nlpSolutionsServiceImage from '../assets/images/nlp-solutions-image.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1112,7 +1127,7 @@ export const developmentServices: Service[] = [
 export const itSolutionsServices: Service[] = [
   {
     name: "Network Management",
-    imgsrc: webDevelopmentImg,
+    imgsrc: networkManagementServiceImage,
     heading: "Optimizing Your Network for Reliability",
     description: "We manage and maintain your network infrastructure to ensure smooth operations, minimizing downtime and maximizing performance.",
     button: "Read More",
@@ -1120,7 +1135,7 @@ export const itSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: cloudSolutionsServiceImage,
     heading: "Flexible Cloud Solutions for Modern Business",
     description: "Our cloud services provide scalable storage and computing power, making it easy for your team to collaborate and access data securely from anywhere.",
     button: "Read More",
@@ -1128,7 +1143,7 @@ export const itSolutionsServices: Service[] = [
   },
   {
     name: "Data Security",
-    imgsrc: webDevelopmentImg,
+    imgsrc: dataSecurityServiceImage,
     heading: "Protecting Your Valuable Data",
     description: "From encryption to threat monitoring, we offer comprehensive data security solutions to keep your information safe and your business compliant.",
     button: "Read More",
@@ -1136,7 +1151,7 @@ export const itSolutionsServices: Service[] = [
   },
   {
     name: "IT Consulting",
-    imgsrc: webDevelopmentImg,
+    imgsrc: itConsultingServiceImage,
     heading: "Strategic Guidance for IT Success",
     description: "Our expert consultants help you align IT strategy with business goals, ensuring technology is a driver of growth, not a roadblock.",
     button: "Read More",
@@ -1144,7 +1159,7 @@ export const itSolutionsServices: Service[] = [
   },
   {
     name: "Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: virtualizationServiceImage,
     heading: "Enhancing Efficiency with Virtualization",
     description: "We help you optimize resources and reduce costs through virtualization, enabling flexible, efficient management of your IT environment.",
     button: "Read More",
@@ -1154,7 +1169,7 @@ export const itSolutionsServices: Service[] = [
 export const aiAutomationServices: Service[] = [
   {
     name: "Machine Learning Models",
-    imgsrc: webDevelopmentImg,
+    imgsrc: machineLearningModelServiceImage,
     heading: "Transforming Data into Actionable Insights",
     description: "We build custom machine learning models that analyse complex data, helping you make informed, data-driven decisions.",
     button: "Read more",
@@ -1162,7 +1177,7 @@ export const aiAutomationServices: Service[] = [
   },
   {
     name: "Chatbot Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: chatbotDevelopmentServiceImage,
     heading: "Engage Customers with Smart Chatbots",
     description: "Our chatbots provide instant, personalized interactions, enhancing customer experience and streamlining support operations.",
     button: "Read more",
@@ -1170,7 +1185,7 @@ export const aiAutomationServices: Service[] = [
   },
   {
     name: "Predictive Analytics",
-    imgsrc: webDevelopmentImg,
+    imgsrc: predectiveAnalyticsServiceImage,
     heading: "Anticipate Trends and Plan Ahead",
     description: "Using predictive analytics, we help you forecast trends, manage risks, and stay a step ahead in your industry.",
     button: "Read more",
@@ -1178,7 +1193,7 @@ export const aiAutomationServices: Service[] = [
   },
   {
     name: "Computer Vision",
-    imgsrc: webDevelopmentImg,
+    imgsrc: computerVisionServiceImage,
     heading: "Empowering Automation with Visual Data",
     description: "Our computer vision solutions enable automated image and video analysis, enhancing efficiency and accuracy in your operations.",
     button: "Read more",
@@ -1186,7 +1201,7 @@ export const aiAutomationServices: Service[] = [
   },
   {
     name: "NLP Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: nlpSolutionsServiceImage,
     heading: "Turning Text into Insights with NLP",
     description: "From sentiment analysis to language understanding, our NLP solutions transform unstructured text into valuable insights.",
     button: "Read more",
@@ -1529,8 +1544,6 @@ export const realEstateIndustryServices: Service[] = [
     buttonSrc: "/contact",
   },
 ];
-
-
 
 export const webDevelopmentPageContent: WebDevelopmentPageContent = {
   heroSectionHeading: "Build, Engage, and Grow with Cutting-Edge Web Development",
@@ -2293,7 +2306,7 @@ export const itSolutionsPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Reliable IT Solutions for Every Challenge",
       contentBoxDescription: "Our team delivers tailored IT solutions, including network management, cloud integration, and data security, to ensure your business stays connected, secure, and efficient. With our expertise, we keep you ahead of tech challenges and ready for the future.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: reliableItSolutions,
     },
   ],
   servicesHeading: "Our IT Solutions Services",
@@ -2315,7 +2328,7 @@ export const aiAutomationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Driving Innovation with AI and Automation",
       contentBoxDescription: "Our AI & Automation services range from machine learning models to NLP solutions, enabling your business to make smarter decisions and automate complex tasks. With these cutting-edge solutions, you can reduce manual effort, increase accuracy, and gain insights that give you a competitive edge.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: innovationWithAi,
     },
   ],
   servicesHeading: "Our AI & Automation Services",
