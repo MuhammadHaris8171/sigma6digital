@@ -2,6 +2,34 @@
     border-bottom: 1px solid #f7f7f7;
 }
 
-.featureImage{
-    width: 150px;
+.featureSliderName{
+    font-family: 'Manrope';
+    font-weight: 600;
+    padding: 0.3em 1.4em;
+    font-size: 2.2em;
+}
+@media screen and (max-width: 1199px) {
+    .featureSliderName {
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .featureSliderName {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .featureSliderName {
+        font-size: 5em;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .featureSliderName {
+        font-size: 8.2em;
+    }
 }

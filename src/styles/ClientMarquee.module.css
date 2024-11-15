@@ -1,10 +1,30 @@
-.aboutClientImg{
-    width: 230px;
-    margin-right: 3em;
+.aboutClientName{
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 2.5em;
+    padding: 0.5em 1.7em;
 }
+@media screen and (max-width: 1199px) {
+    .aboutClientName {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboutClientName {
+        font-size: 3.1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aboutClientName {
+        font-size: 4em;
+    }
+}
+
 @media screen and (max-width: 575px) {
-    .aboutClientImg {
-        width: 190px;
-        margin-bottom: 0px;
+    .aboutClientName {
+        font-size: 8em;
+        font-weight: 700;
     }
 }

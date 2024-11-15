@@ -1,13 +1,14 @@
-import featureLogoDelete from '../assets/images/feature_logo_delete.webp';
 import webDevelopmentImg from '../assets/images/web-development.webp';
 import appDevelopmentImg from '../assets/images/Mobile-App-Development.webp';
 import aiSolutionsImg from '../assets/images/AI-Solutions.webp';
 import itSolutionsImg from '../assets/images/it-solutions.webp';
-import globalLocationImage from '../assets/images/260x300.webp';
 import webdevelopmentService from '../assets/images/main-service-delete.webp';
 import maintenanceServiceImage from '../assets/images/maintenance-background.webp';
 import digitalMarketingServiceImage from '../assets/images/digital-marketing-service.webp';
 import creativeDesignServiceImage from '../assets/images/creative-design-service.webp';
+import webDevelopmentServiceImage from '../assets/images/web-development-service.webp';
+import ecommerceDevelopmentServiceImage from '../assets/images/ecommerce-development-services.webp';
+import crmDevelopmentServiceImage from '../assets/images/crm-development-service.webp';
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -23,6 +24,8 @@ import unitedKingdomImg from '../assets/images/united-kingdom.webp';
 import unitedStateImg from '../assets/images/united-state.webp';
 import saudiarabiaImg from '../assets/images/saudi-arabia.webp';
 import unitedArabEmiratesImg from '../assets/images/united-arab-emirates.webp';
+import visionToLifeImg from '../assets/images/vision-to-life.webp';
+import buildTogetherImg from '../assets/images/build-together.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -31,7 +34,7 @@ export interface DevelopmentProcess {
 }
 
 export interface Feature {
-  src: string;
+  name: string;
 }
 
 export interface Service {
@@ -162,17 +165,15 @@ export  const faqs: faqsItem[] = [
   },
 ];
 export const features: Feature[] = [
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
-  { src: featureLogoDelete },
+  { name: "Osiris Solicitors" },
+  { name: "ProHomez" },
+  { name: "EcoGrant Expert" },
+  { name: "Osiris Solicitors" },
+  { name: "ProHomez" },
+  { name: "EcoGrant Expert" },
+  { name: "Osiris Solicitors" },
+  { name: "ProHomez" },
+  { name: "EcoGrant Expert" },
 ];
 export const services: Service[] = [
   {
@@ -1077,7 +1078,7 @@ export const productDesignServices: Service[] = [
 export const developmentServices: Service[] = [
   {
     name: "Web Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: webDevelopmentServiceImage,
     heading: "Building Modern, Scalable Websites",
     description: "Our web development services provide customized, responsive, and SEO-friendly websites to help you stand out in the digital world.",
     button: "Read More",
@@ -1093,7 +1094,7 @@ export const developmentServices: Service[] = [
   },
   {
     name: "E-commerce Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: ecommerceDevelopmentServiceImage,
     heading: "Crafting Profitable Online Stores",
     description: "Our e-commerce solutions are built to enhance user experience, optimize conversions, and support your business growth.",
     button: "Read More",
@@ -1101,7 +1102,7 @@ export const developmentServices: Service[] = [
   },
   {
     name: "CRM Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: crmDevelopmentServiceImage,
     heading: "Custom CRM Solutions",
     description: "From managing customer interactions to enhancing productivity, our CRM solutions are designed to streamline your operations.",
     button: "Read More",
@@ -1539,7 +1540,7 @@ export const webDevelopmentPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Let’s Build Something Amazing Together!",
       contentBoxDescription: "We don’t just offer services—we’re here to bring your boldest ideas to life. Whether you’re dreaming of a stunning website, a game-changing app, or a data-driven AI solution, our team at Sigma 6 Digital is dedicated to creating results that truly make a difference. With us, it’s not just about ticking boxes; it’s about building digital experiences that fuel growth and make an impact. Ready to turn vision into reality? Let’s start building something great together.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: buildTogetherImg,
     },
   ],
   servicesHeading: "Feature Services",
@@ -2270,7 +2271,7 @@ export const developmentPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Bringing Your Vision to Life",
       contentBoxDescription: "Our development services cover a wide range of platforms and technologies, ensuring your digital presence is both impactful and scalable. We build with your growth in mind, so your site or app stays strong as your needs evolve. Plus, we focus on making everything easy to use and reliable from day one.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: visionToLifeImg,
     },
   ],
   servicesHeading: "Our Development Services",

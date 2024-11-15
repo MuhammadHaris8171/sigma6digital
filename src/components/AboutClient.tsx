@@ -1,19 +1,8 @@
 import styles from "../styles/AboutClient.module.css";
-import logo from "../assets/images/feature_logo_delete.webp";
 import ClientMarquee from "./ClientMarquee";
+import { features } from "./data";
 
 function AboutClient() {
-    const aboutClient = [
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-        { src: logo },
-    ];
 
     return (
         <div className="container">
@@ -24,8 +13,8 @@ function AboutClient() {
                     </h2>
                 </div>
                 <div className="col-12 py-5">
-                    <ClientMarquee aboutClient={aboutClient} direction="left" speed={70}/>
-                    <ClientMarquee aboutClient={aboutClient} direction="right" speed={70} />
+                    <ClientMarquee aboutClient={features} direction="left" speed={70}/>
+                    <ClientMarquee aboutClient={features} direction="right" speed={70} />
                 </div>
             </div>
         </div>
