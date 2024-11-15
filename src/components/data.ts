@@ -38,6 +38,13 @@ import contentCreationServiceImage from '../assets/images/content-creation-servi
 import ppcCampaignServiceImage from '../assets/images/ppc-campaign-service.webp';
 import emailMarketingServiceImage from '../assets/images/email- marketing-service.webp';
 
+import craftingDesign from '../assets/images/crafting-design.webp';
+import graphicDesignServiceImage from '../assets/images/graphic-designing-service.webp';
+import logoBrandingServiceImage from '../assets/images/logo-branding-service.webp';
+import uiuxDesignServiceImage from '../assets/images/uiux-design-service.webp';
+import motionDesignServiceImage from '../assets/images/motion-graphic-service.webp';
+import productDesignServiceImage from '../assets/images/product-design-service.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1309,7 +1316,7 @@ export const digitalMarketingServices: Service[] = [
 export const creativeDesignServices: Service[] = [
   {
     name: "Graphic Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: graphicDesignServiceImage,
     heading: "Creating Visual Impact",
     description: "Our graphic design services bring your brand to life with visuals that capture attention and convey your message effectively.",
     button: "Read more",
@@ -1317,7 +1324,7 @@ export const creativeDesignServices: Service[] = [
   },
   {
     name: "Logo & Branding",
-    imgsrc: webDevelopmentImg,
+    imgsrc: logoBrandingServiceImage,
     heading: "Building Memorable Brands",
     description: "We create distinctive logos and branding elements that represent your business identity and resonate with your audience.",
     button: "Read more",
@@ -1325,7 +1332,7 @@ export const creativeDesignServices: Service[] = [
   },
   {
     name: "UI/UX Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: uiuxDesignServiceImage,
     heading: "Designing User-Centric Experiences",
     description: "Our UI/UX design services focus on crafting intuitive and engaging interfaces that provide a seamless user experience.",
     button: "Read more",
@@ -1333,7 +1340,7 @@ export const creativeDesignServices: Service[] = [
   },
   {
     name: "Motion Graphics",
-    imgsrc: webDevelopmentImg,
+    imgsrc: motionDesignServiceImage,
     heading: "Animating Your Story",
     description: "We create motion graphics that add life to your brand’s story, making complex ideas more accessible and engaging.",
     button: "Read more",
@@ -1341,7 +1348,7 @@ export const creativeDesignServices: Service[] = [
   },
   {
     name: "Product Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: productDesignServiceImage,
     heading: "Innovative Product Solutions",
     description: "Our product design services take your ideas from concept to reality, blending functionality with aesthetic appeal.",
     button: "Read more",
@@ -2408,7 +2415,7 @@ export const creativeDesignPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Crafting Designs That Speak",
       contentBoxDescription: "Our creative design services cover everything from logo and branding to UI/UX and motion graphics, helping your brand make a lasting impression. With our expertise, we transform ideas into visually engaging experiences that connect with your audience and elevate your brand.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: craftingDesign,
     },
   ],
   servicesHeading: "Our Creative Design Services",
