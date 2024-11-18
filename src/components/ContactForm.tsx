@@ -62,7 +62,7 @@ const onSubmit = async (event: React.FormEvent) => {
   setIsSubmitting(true);
   try {
     await fetch(
-      'https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec',
+      import.meta.env.VITE_GOOGLE_SHEET_URL,
       {
         method: 'POST',
         headers: {
