@@ -58,6 +58,24 @@ import clientPortalSolutions from '../assets/images/client-portal-solutions.webp
 import documentManagementSystem from '../assets/images/document-management-system.webp';
 import complianceSolutions from '../assets/images/compliance-solutions.webp';
 
+import businessWithTechnology from '../assets/images/business-with-technology.webp';
+import aiMlSolutions from '../assets/images/ai-ml-solutions.webp';
+import customSoftwareDevelopment from '../assets/images/custom-solftware-development.webp';
+import blockchainSolutions from '../assets/images/blockchain-solutions.webp';
+import cybersecuritySolutions from '../assets/images/cybersecurity-solutions.webp';
+
+import healthcareWithTechnology from '../assets/images/healthcare-with-tehnology.webp'
+import telemedicineSolutions from '../assets/images/telemedicine-solutions.webp';
+import healthcareAppDevelopment from '../assets/images/healthcare-app-development.webp';
+import electronicHealthRecord from '../assets/images/electronic-health-record.webp';
+import healthcareAnalytics from '../assets/images/healthcare-analytics.webp';
+
+import modernRealEstate from '../assets/images/modern-real-estate.webp'
+import realestateWebsiteDevelopment from '../assets/images/realestate-website-development.webp';
+import propertyManagementSolutions from '../assets/images/property-management-solutions.webp';
+import realestateCrmDevelopment from '../assets/images/realestate-crm-development.webp';
+import virtualPrivateTours from '../assets/images/virtual-private-tours.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -1447,7 +1465,7 @@ export const legalServicesIndustryServices: Service[] = [
 export const technologyIndustryServices: Service[] = [
   {
     name: "AI & Machine Learning Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: aiMlSolutions,
     heading: "Unlocking the Power of AI",
     description: "We create custom AI solutions that help businesses automate processes, gain insights from data, and enhance decision-making.",
     button: "Read more",
@@ -1455,7 +1473,7 @@ export const technologyIndustryServices: Service[] = [
   },
   {
     name: "Cloud Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: cloudSolutionsServiceImage,
     heading: "Scalable & Secure Cloud Infrastructure",
     description: "We provide cloud solutions that allow businesses to scale efficiently, reduce costs, and maintain high levels of security and performance.",
     button: "Read more",
@@ -1463,7 +1481,7 @@ export const technologyIndustryServices: Service[] = [
   },
   {
     name: "Custom Software Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: customSoftwareDevelopment,
     heading: "Tailored Software Solutions",
     description: "We develop custom software to meet your unique business needs, from CRM systems to enterprise-level applications.",
     button: "Read more",
@@ -1471,7 +1489,7 @@ export const technologyIndustryServices: Service[] = [
   },
   {
     name: "Blockchain Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: blockchainSolutions,
     heading: "Innovating with Blockchain",
     description: "Our blockchain development services help businesses implement secure, decentralized solutions for everything from payment systems to supply chain tracking.",
     button: "Read more",
@@ -1479,7 +1497,7 @@ export const technologyIndustryServices: Service[] = [
   },
   {
     name: "Cybersecurity Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: cybersecuritySolutions,
     heading: "Protecting Your Digital Assets",
     description: "We design cybersecurity solutions that protect businesses from digital threats, ensuring data security and regulatory compliance.",
     button: "Read more",
@@ -1489,7 +1507,7 @@ export const technologyIndustryServices: Service[] = [
 export const healthcareIndustryServices: Service[] = [
   {
     name: "Telemedicine Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: telemedicineSolutions,
     heading: "Connecting Doctors & Patients",
     description: "We design telemedicine platforms that allow healthcare providers to consult with patients remotely, ensuring better accessibility and timely care.",
     button: "Read more",
@@ -1497,7 +1515,7 @@ export const healthcareIndustryServices: Service[] = [
   },
   {
     name: "Healthcare App Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: healthcareAppDevelopment,
     heading: "Empowering Healthcare on the Go",
     description: "Our mobile healthcare apps help patients track their health, book appointments, and access medical resources, all from the convenience of their smartphones.",
     button: "Read more",
@@ -1505,7 +1523,7 @@ export const healthcareIndustryServices: Service[] = [
   },
   {
     name: "Electronic Health Records (EHR) Systems",
-    imgsrc: webDevelopmentImg,
+    imgsrc: electronicHealthRecord,
     heading: "Streamlining Patient Data Management",
     description: "We provide custom EHR solutions that integrate patient data securely and efficiently, making it easier for healthcare providers to deliver quality care.",
     button: "Read more",
@@ -1513,17 +1531,9 @@ export const healthcareIndustryServices: Service[] = [
   },
   {
     name: "Healthcare Analytics Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: healthcareAnalytics,
     heading: "Data-Driven Decisions for Better Care",
     description: "Our analytics solutions help healthcare organizations harness the power of data to make informed decisions, improve patient outcomes, and optimize operational efficiency.",
-    button: "Read more",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Patient Portal Solutions",
-    imgsrc: webDevelopmentImg,
-    heading: "Enhancing Patient Engagement",
-    description: "We build secure patient portals that enable easy access to medical records, appointment scheduling, and communication with healthcare providers.",
     button: "Read more",
     buttonSrc: "/contact",
   },
@@ -1531,7 +1541,7 @@ export const healthcareIndustryServices: Service[] = [
 export const realEstateIndustryServices: Service[] = [
   {
     name: "Real Estate Website Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: realestateWebsiteDevelopment,
     heading: "Building Real Estate Digital Presence",
     description: "We create user-friendly, visually appealing websites for real estate agencies, enabling easy property listings, client interactions, and market insights.",
     button: "Read more",
@@ -1539,7 +1549,7 @@ export const realEstateIndustryServices: Service[] = [
   },
   {
     name: "Property Management Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: propertyManagementSolutions,
     heading: "Streamlining Property Management",
     description: "Our property management solutions simplify tenant management, lease tracking, and maintenance requests, all through an easy-to-use digital platform.",
     button: "Read more",
@@ -1547,23 +1557,15 @@ export const realEstateIndustryServices: Service[] = [
   },
   {
     name: "Real Estate CRM Systems",
-    imgsrc: webDevelopmentImg,
+    imgsrc: realestateCrmDevelopment,
     heading: "Optimizing Client Relations",
     description: "We design custom CRM systems for real estate professionals to manage leads, clients, and property listings more effectively and increase sales.",
     button: "Read more",
     buttonSrc: "/contact",
   },
   {
-    name: "Real Estate Mobile Apps",
-    imgsrc: webDevelopmentImg,
-    heading: "Real Estate in Your Pocket",
-    description: "We develop mobile apps that allow real estate buyers, sellers, and agents to browse properties, schedule appointments, and communicate seamlessly.",
-    button: "Read more",
-    buttonSrc: "/contact",
-  },
-  {
     name: "Virtual Property Tours",
-    imgsrc: webDevelopmentImg,
+    imgsrc: virtualPrivateTours,
     heading: "Bringing Properties to Life",
     description: "Our virtual tour technology allows potential buyers and renters to explore properties from the comfort of their homes, enhancing the buying experience.",
     button: "Read more",
@@ -2486,7 +2488,7 @@ export const technologyIndustryPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Transforming Business with Technology",
       contentBoxDescription: "We create custom software solutions, from AI and machine learning applications to cloud and blockchain platforms, enabling businesses to leverage technology for competitive advantage.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: businessWithTechnology,
     },
   ],
   servicesHeading: "Our Technology Industry Services",
@@ -2508,7 +2510,7 @@ export const healthcareIndustryPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Advancing Healthcare with Technology",
       contentBoxDescription: "We help healthcare providers offer better care through telemedicine solutions, mobile health apps, and secure patient data management systems, enhancing both patient experience and operational efficiency.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: healthcareWithTechnology,
     },
   ],
   servicesHeading: "Our Healthcare Industry Services",
@@ -2530,7 +2532,7 @@ export const realEstateIndustryPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Digital Solutions for Modern Real Estate",
       contentBoxDescription: "From custom property management software to virtual property tours and CRM systems, our solutions enable real estate professionals to stay competitive and provide top-notch services to clients.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: modernRealEstate,
     },
   ],
   servicesHeading: "Our Real Estate Industry Services",
