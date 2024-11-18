@@ -4,6 +4,8 @@ import styles from '../styles/contactForm.module.css';
 import Swal from 'sweetalert2'
 
 function ContactForm(): JSX.Element {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     country: '',
@@ -57,13 +59,14 @@ const onSubmit = async (event: React.FormEvent) => {
     return;
   }
 
+  setIsSubmitting(true);
   try {
     await fetch(
-      "https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec",
+      'https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec',
       {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json'
         },
         mode: 'no-cors',
         body: JSON.stringify(formData)
@@ -71,9 +74,9 @@ const onSubmit = async (event: React.FormEvent) => {
     );
 
     Swal.fire({
-      title: "Success!",
-      text: "Your message has been saved successfully!",
-      icon: "success"
+      title: 'Success!',
+      text: 'Your message has been sent successfully!',
+      icon: 'success'
     });
 
     setFormData({
@@ -94,11 +97,13 @@ const onSubmit = async (event: React.FormEvent) => {
     });
   } catch (error) {
     Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Failed to save your message. Please try again!"
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Failed to sent your message. Please try again!'
     });
-    console.error("Error:", error);
+    console.error('Error:', error);
+  } finally {
+    setIsSubmitting(false); 
   }
 };
 
@@ -222,8 +227,14 @@ const onSubmit = async (event: React.FormEvent) => {
               {errors.message && <p className={styles.errorText}>{errors.message}</p>}
             </div>
             <div className="col-sm-12 mb-4">
-              <button type="submit" className={styles.contactFormSubmitBtn}>
-                Send a Message <BsSendFill className='ms-2' />
+              <button type="submit" className={styles.contactFormSubmitBtn} disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <div className={styles.spinner}></div> // Spinner element
+                ) : (
+                  <>
+                    Send a Message <BsSendFill className="ms-2" />
+                  </>
+                )}
               </button>
             </div>
           </div>
