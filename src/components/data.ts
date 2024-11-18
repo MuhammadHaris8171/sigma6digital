@@ -110,6 +110,13 @@ import networkSecurity from '../assets/images/network-security.webp';
 import wirelessNetwork from '../assets/images/wireless-network.webp';
 import vpnandRemoteAccess from '../assets/images/vpn-and-remote-access.webp';
 
+import cloudTechnology from '../assets/images/cloud-technology.webp';
+import protectedCloudSecurity from '../assets/images/protected-cloud-security.webp';
+import cloudInfrastructureDesign from '../assets/images/cloud-infrastructure-design.webp';
+import cloudMigration from '../assets/images/cloud-migration.webp';
+import cloudSecurity from '../assets/images/cloud-security.webp';
+import cloudBackup from '../assets/images/cloud-backup.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -128,6 +135,7 @@ import unitedArabEmiratesImg from '../assets/images/united-arab-emirates.webp';
 import visionToLifeImg from '../assets/images/vision-to-life.webp';
 import buildTogetherImg from '../assets/images/build-together.webp';
 import serviceBackgroundTemporary from '../assets/images/service-bakground-temporary.webp';
+import serviceDetailSideTemporary from '../assets/images/service-detail-side-temporary.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -612,7 +620,7 @@ export const networkManagementServices: Service[] = [
 export const cloudSolutionsServices: Service[] = [
   {
     name: "Cloud Infrastructure Setup",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: cloudInfrastructureDesign,
     heading: "Reliable & Scalable Cloud Environments",
     description: "We design and implement cloud infrastructure tailored to your business, ensuring scalability, reliability, and optimized performance.",
     button: "Book an appointment",
@@ -620,7 +628,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Migration",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: cloudMigration,
     heading: "Seamless Transition to the Cloud",
     description: "Our cloud migration services move your data and applications securely to the cloud, minimizing downtime and ensuring data integrity.",
     button: "Book an appointment",
@@ -628,7 +636,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Security",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: cloudSecurity,
     heading: "Protecting Your Cloud Assets",
     description: "We provide comprehensive cloud security solutions, from encryption to identity management, safeguarding your data in the cloud.",
     button: "Book an appointment",
@@ -636,17 +644,9 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Backup & Disaster Recovery",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: cloudBackup,
     heading: "Ensuring Business Continuity",
     description: "Our cloud backup and recovery solutions protect your data from unexpected incidents, ensuring quick recovery and minimal business disruption.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Multi-Cloud & Hybrid Solutions",
-    imgsrc: serviceBackgroundTemporary,
-    heading: "Flexible Cloud Configurations",
-    description: "We offer multi-cloud and hybrid cloud setups, allowing you to leverage the best features of multiple cloud providers or on-premise systems.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
@@ -1727,12 +1727,12 @@ export const cloudSolutionsPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Embrace the Future with Cloud Technology",
       contentBoxDescription: "Our cloud solutions allow your business to operate with flexibility, scalability, and resilience. From infrastructure setup to migration and security, we make sure your cloud environment is built to support your goals.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: cloudTechnology,
     },
     {
       contentBoxheading: "Stay Protected with Cloud Security",
       contentBoxDescription: "With our cloud security services, we safeguard your cloud infrastructure against potential threats. Our security solutions cover data encryption, access control, and compliance, ensuring your cloud environment is protected.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: protectedCloudSecurity,
     },
   ],
   servicesHeading: "Our Cloud Solutions Services",
@@ -1762,12 +1762,12 @@ export const dataSecurityPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Securing Data at Every Layer",
       contentBoxDescription: "From encryption to access control, we offer end-to-end data security solutions that protect your business data from unauthorized access and breaches. With our comprehensive approach, we ensure your data is secure wherever it resides.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
     {
       contentBoxheading: "Stay Compliant with Data Regulations",
       contentBoxDescription: "Navigating data regulations can be complex. Our team helps you meet compliance requirements, ensuring your data handling aligns with standards like GDPR and HIPAA, safeguarding your business and customer trust.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Data Security Services",
@@ -1797,12 +1797,12 @@ export const itConsultingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Customized IT Strategies for Your Business",
       contentBoxDescription: "Our IT consulting services start with understanding your business needs and challenges. We develop tailored IT strategies to align your technology investments with your goals, ensuring technology drives your business forward.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
     {
       contentBoxheading: "Transforming Operations Through Digital Innovation",
       contentBoxDescription: "With our expertise in digital transformation, we help your business leverage cutting-edge technologies to enhance productivity, streamline processes, and stay competitive in a rapidly evolving market.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our IT Consulting Services",
@@ -1828,12 +1828,12 @@ export const virtualizationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Transforming IT Infrastructure Through Virtualization",
       contentBoxDescription: "Our virtualization services help you reduce physical hardware needs, optimize resource utilization, and increase operational flexibility. From servers to desktops, we offer tailored virtualization solutions that support your business objectives.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
     {
       contentBoxheading: "Empowering Your Team with Remote Access",
       contentBoxDescription: "With desktop and application virtualization, we enable your team to securely access essential tools and resources from anywhere, enhancing productivity and collaboration.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Virtualization Services",
@@ -1885,7 +1885,7 @@ export const chatbotPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Engage Customers with Smart Chatbots",
       contentBoxDescription: "Our chatbots leverage NLP to understand and respond to user needs, providing seamless, automated assistance and enhancing customer satisfaction.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Chatbot Development Services",
@@ -1911,7 +1911,7 @@ export const predictiveAnalyticsPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Forecast with Data-Driven Insights",
       contentBoxDescription: "Our predictive analytics solutions analyze historical data to forecast trends, helping you make data-backed business decisions.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Predictive Analytics Services",
@@ -1933,7 +1933,7 @@ export const computerVisionPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Automate Visual Data Analysis",
       contentBoxDescription: "Our computer vision solutions turn images into actionable insights, from image recognition to object detection and beyond.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Computer Vision Services",
@@ -1955,7 +1955,7 @@ export const nlpPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Unlock Insights from Language Data",
       contentBoxDescription: "Our NLP solutions cover a range of applications, from sentiment detection to text analysis, providing deep insights into customer interactions.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our NLP Services",
@@ -1977,7 +1977,7 @@ export const softwareMaintenancePageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Ensuring Software Reliability",
       contentBoxDescription: "Our software maintenance services focus on keeping your applications stable and performing at their best, providing long-term value.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Software Maintenance Services",
@@ -1999,7 +1999,7 @@ export const bugFixingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Keeping Your Software Bug-Free",
       contentBoxDescription: "Our expert team ensures your software runs smoothly by identifying and fixing bugs, minimizing disruptions.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Bug Fixing Services",
@@ -2021,7 +2021,7 @@ export const securityPatchingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Preventing Security Breaches",
       contentBoxDescription: "Our security patching services keep your systems safe from cyber threats, ensuring data security and peace of mind.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Security Patching Services",
@@ -2043,7 +2043,7 @@ export const performanceOptimizationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Enhancing Application Performance",
       contentBoxDescription: "Our performance optimization services focus on speeding up applications and improving resource management.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Performance Optimization Services",
@@ -2065,7 +2065,7 @@ export const dataBackupPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Reliable Data Protection",
       contentBoxDescription: "Our data backup and recovery solutions protect your business from data loss, ensuring quick and efficient recovery.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Data Backup & Recovery Services",
@@ -2087,7 +2087,7 @@ export const seoOptimizationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Drive Organic Traffic with SEO",
       contentBoxDescription: "Our SEO services cover all aspects of optimization, from on-page adjustments to technical fixes and link building, helping you reach a wider audience.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our SEO Optimization Services",
@@ -2109,7 +2109,7 @@ export const socialMediaMarketingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Engage and Grow Your Audience",
       contentBoxDescription: "Our social media marketing strategies drive engagement, build brand loyalty, and connect you with a wider audience.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Social Media Marketing Services",
@@ -2131,7 +2131,7 @@ export const contentCreationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Captivate with Quality Content",
       contentBoxDescription: "Our content creation services cover blogs, articles, website copy, and more, helping you build a strong, relatable brand.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Content Creation Services",
@@ -2153,7 +2153,7 @@ export const ppcPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Reach Your Audience with Targeted Ads",
       contentBoxDescription: "Our PPC services provide targeted, data-driven campaigns that enhance visibility and drive conversions.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our PPC Campaign Services",
@@ -2175,7 +2175,7 @@ export const emailMarketingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Reach Your Audience Directly",
       contentBoxDescription: "Our email marketing services focus on creating targeted, engaging content that resonates with subscribers and drives conversions.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Email Marketing Services",
@@ -2197,7 +2197,7 @@ export const graphicDesignPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Designs That Capture Attention",
       contentBoxDescription: "Our graphic design services encompass custom illustrations, print materials, and digital assets, tailored to your brand’s needs.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Graphic Design Services",
@@ -2219,7 +2219,7 @@ export const logoBrandingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Crafting Distinctive Brand Identities",
       contentBoxDescription: "Our logo and branding services help you establish a strong visual identity, creating a lasting impression with your audience.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Logo & Branding Services",
@@ -2241,7 +2241,7 @@ export const uiUxDesignPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Designing for User Satisfaction",
       contentBoxDescription: "Our UI/UX services cover everything from user research to wireframing and prototyping, ensuring a design that delights users.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our UI/UX Design Services",
@@ -2263,7 +2263,7 @@ export const motionGraphicsPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Bring Your Message to Life",
       contentBoxDescription: "Our motion graphics services include explainer videos, social media animations, and more, helping you connect with your audience through engaging visuals.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Motion Graphics Services",
@@ -2285,7 +2285,7 @@ export const productDesignPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Designing Products That Stand Out",
       contentBoxDescription: "Our product design services cover concept development, 3D modeling, and prototyping, ensuring your product makes a lasting impression in the market.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: serviceDetailSideTemporary,
     },
   ],
   servicesHeading: "Our Product Design Services",
