@@ -117,6 +117,13 @@ import cloudMigration from '../assets/images/cloud-migration.webp';
 import cloudSecurity from '../assets/images/cloud-security.webp';
 import cloudBackup from '../assets/images/cloud-backup.webp';
 
+import securingData from '../assets/images/securing-data.webp';
+import dataRegulation from '../assets/images/data-regulation.webp';
+import dataEncryption from '../assets/images/data-encryption.webp';
+import identifyAndAccessManagement from '../assets/images/identify-and-access-management.webp';
+import threatDetection from '../assets/images/threat detection.webp';
+import dataLossPreventation from '../assets/images/data-loss-preventation.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -654,7 +661,7 @@ export const cloudSolutionsServices: Service[] = [
 export const dataSecurityServices: Service[] = [
   {
     name: "Data Encryption",
-    imgsrc: webDevelopmentImg,
+    imgsrc: dataEncryption,
     heading: "Protecting Data Through Encryption",
     description: "We provide advanced encryption solutions that protect sensitive data at rest and in transit, ensuring only authorized access.",
     button: "Book an appointment",
@@ -662,7 +669,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Identity & Access Management",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: identifyAndAccessManagement,
     heading: "Secure Access Control",
     description: "Our access management solutions control and monitor user access, minimizing risks and safeguarding critical data.",
     button: "Book an appointment",
@@ -670,7 +677,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Threat Detection & Prevention",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: threatDetection,
     heading: "Proactive Security Monitoring",
     description: "With advanced threat detection tools, we monitor and respond to potential security threats before they can impact your business.",
     button: "Book an appointment",
@@ -678,17 +685,9 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Data Loss Prevention (DLP)",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: dataLossPreventation,
     heading: "Preventing Unauthorized Data Exposure",
     description: "Our DLP solutions prevent unauthorized access and data leakage, keeping your information secure and compliant.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Compliance & Regulatory Support",
-    imgsrc: serviceBackgroundTemporary,
-    heading: "Ensuring Compliance with Data Regulations",
-    description: "We help your business stay compliant with regulations such as GDPR, HIPAA, and more, ensuring data handling meets industry standards.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
@@ -1762,12 +1761,12 @@ export const dataSecurityPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Securing Data at Every Layer",
       contentBoxDescription: "From encryption to access control, we offer end-to-end data security solutions that protect your business data from unauthorized access and breaches. With our comprehensive approach, we ensure your data is secure wherever it resides.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: securingData,
     },
     {
       contentBoxheading: "Stay Compliant with Data Regulations",
       contentBoxDescription: "Navigating data regulations can be complex. Our team helps you meet compliance requirements, ensuring your data handling aligns with standards like GDPR and HIPAA, safeguarding your business and customer trust.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: dataRegulation,
     },
   ],
   servicesHeading: "Our Data Security Services",
