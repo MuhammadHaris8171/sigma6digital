@@ -76,6 +76,27 @@ import propertyManagementSolutions from '../assets/images/property-management-so
 import realestateCrmDevelopment from '../assets/images/realestate-crm-development.webp';
 import virtualPrivateTours from '../assets/images/virtual-private-tours.webp';
 
+import responsiveWebDesign from '../assets/images/responsive-web-design.webp'
+import frontendDevelopment from '../assets/images/frontend-development.webp';
+import backendDevelopment from '../assets/images/backend-development.webp';
+import ecommerceSolutions from '../assets/images/ecommerce-solutions.webp';
+import websiteOptimization from '../assets/images/website-optimization.webp';
+import apiIntegration from '../assets/images/api-integration.webp';
+import websiteMaintenance from '../assets/images/website-maintenance.webp';
+
+import appIdeasToLife from '../assets/images/app-ideas-to-life.webp'
+import androidApps from '../assets/images/android-apps.webp';
+import crossPlatformDevelopment from '../assets/images/cross-platform-development.webp';
+import appUiUx from '../assets/images/app-uxux.webp';
+import appTesting from '../assets/images/app-testing.webp';
+import appMaintenance from '../assets/images/app-maintenance.webp';
+
+import storeFrontForSuccess from '../assets/images/storefront-for-success.webp';
+import customEcommerceDevelopment from '../assets/images/custom-ecommerce-development.webp';
+import cartAndCheckout from '../assets/images/cart-and-checkout.webp';
+import paymentGateway from '../assets/images/payment-gateway.webp';
+import ecommerceMaintenance from '../assets/images/ecommerce-maintenance.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -359,7 +380,7 @@ export const globalLocation: GlobalLocation[] = [
 export const WebDevelopmentServices: Service[] = [
   {
     name: "Responsive Web Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: responsiveWebDesign,
     heading: "Adaptive & Mobile-Friendly Design",
     description: "Our responsive web design services ensure that your website delivers an optimal user experience across all devices, from desktops to smartphones.",
     button: "Book an appointment",
@@ -367,7 +388,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "Front-End Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: frontendDevelopment,
     heading: "Interactive and Engaging Interfaces",
     description: "We create visually engaging and interactive front-end designs using the latest frameworks like React, Angular, and Vue to captivate and retain your users.",
     button: "Book an appointment",
@@ -375,7 +396,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "Back-End Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: backendDevelopment,
     heading: "Robust & Scalable Solutions",
     description: "Our back-end development services focus on building secure, scalable, and efficient server-side applications, ensuring smooth and fast data processing.",
     button: "Book an appointment",
@@ -383,7 +404,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "E-Commerce Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: ecommerceSolutions,
     heading: "Building High-Converting Online Stores",
     description: "We design and develop fully functional, user-friendly e-commerce websites tailored to drive sales and enhance user experience.",
     button: "Book an appointment",
@@ -391,7 +412,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "Website Optimization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: websiteOptimization,
     heading: "Enhancing Speed & Performance",
     description: "Our website optimization services improve loading times, ensure mobile responsiveness, and enhance overall site performance for better user engagement.",
     button: "Book an appointment",
@@ -399,7 +420,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "API Integration",
-    imgsrc: webDevelopmentImg,
+    imgsrc: apiIntegration,
     heading: "Seamless Third-Party Integration",
     description: "We integrate third-party APIs into your website to enhance functionality, from payment gateways to social media integrations and beyond.",
     button: "Book an appointment",
@@ -407,7 +428,7 @@ export const WebDevelopmentServices: Service[] = [
   },
   {
     name: "Website Maintenance",
-    imgsrc: webDevelopmentImg,
+    imgsrc: websiteMaintenance,
     heading: "Keeping Your Site Running Smoothly",
     description: "Our maintenance services ensure your website stays updated, secure, and performs optimally with regular updates, security patches, and support.",
     button: "Book an appointment",
@@ -417,7 +438,7 @@ export const WebDevelopmentServices: Service[] = [
 export const AppDevelopmentServices: Service[] = [
   {
     name: "iOS & Android App Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: androidApps,
     heading: "Custom Mobile App Solutions",
     description: "We build tailored mobile applications for both iOS and Android, ensuring high performance and seamless user experiences across all devices.",
     button: "Book an appointment",
@@ -425,7 +446,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "Cross-Platform Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: crossPlatformDevelopment,
     heading: "One Codebase, Multiple Platforms",
     description: "Using technologies like React Native and Flutter, we develop apps that work on multiple platforms, reducing costs and reaching more users.",
     button: "Book an appointment",
@@ -433,7 +454,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "UI/UX Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: appUiUx,
     heading: "Engaging & Intuitive User Interfaces",
     description: "Our UI/UX design services focus on creating intuitive and visually appealing app interfaces that keep users engaged and enhance their experience.",
     button: "Book an appointment",
@@ -441,7 +462,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "Backend for Mobile Apps",
-    imgsrc: webDevelopmentImg,
+    imgsrc: backendDevelopment,
     heading: "Robust Server-Side Development",
     description: "We build secure and scalable backend systems that ensure your app performs well under high demand and provides a seamless user experience.",
     button: "Book an appointment",
@@ -449,7 +470,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "App Testing & Quality Assurance",
-    imgsrc: webDevelopmentImg,
+    imgsrc: appTesting,
     heading: "Delivering Bug-Free Experiences",
     description: "Our testing and QA services identify and fix bugs, ensuring your app runs smoothly and provides a flawless experience for users.",
     button: "Book an appointment",
@@ -457,7 +478,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "App Maintenance & Support",
-    imgsrc: webDevelopmentImg,
+    imgsrc: appMaintenance,
     heading: "Keeping Your App Up-To-Date",
     description: "Our ongoing maintenance services keep your app updated, secure, and performing optimally with regular updates, security patches, and support.",
     button: "Book an appointment",
@@ -465,7 +486,7 @@ export const AppDevelopmentServices: Service[] = [
   },
   {
     name: "API & Third-Party Integrations",
-    imgsrc: webDevelopmentImg,
+    imgsrc: apiIntegration,
     heading: "Enhancing App Functionality",
     description: "We integrate third-party APIs, from payment gateways to social media, to add more functionality and improve your app's user experience.",
     button: "Book an appointment",
@@ -475,7 +496,7 @@ export const AppDevelopmentServices: Service[] = [
 export const eCommerceDevelopmentServices: Service[] = [
   {
     name: "Custom E-commerce Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: customEcommerceDevelopment,
     heading: "Tailored to Fit Your Business Needs",
     description: "We build unique e-commerce websites that align with your brand and target audience, providing a customized shopping experience.",
     button: "Book an appointment",
@@ -483,7 +504,7 @@ export const eCommerceDevelopmentServices: Service[] = [
   },
   {
     name: "Shopping Cart & Checkout",
-    imgsrc: webDevelopmentImg,
+    imgsrc: cartAndCheckout,
     heading: "Smooth and Secure Transactions",
     description: "Our optimized cart and checkout solutions ensure a secure, user-friendly checkout process to reduce cart abandonment.",
     button: "Book an appointment",
@@ -491,31 +512,15 @@ export const eCommerceDevelopmentServices: Service[] = [
   },
   {
     name: "Payment Gateway Integration",
-    imgsrc: webDevelopmentImg,
+    imgsrc: paymentGateway,
     heading: "Secure and Reliable Payment Processing",
     description: "We integrate secure payment gateways like PayPal and Stripe, offering your customers a safe and smooth checkout experience.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
   {
-    name: "Mobile-Friendly E-commerce Design",
-    imgsrc: webDevelopmentImg,
-    heading: "Optimized for All Devices",
-    description: "Our mobile-first design approach ensures your e-commerce site is user-friendly and functional on all devices.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Third-Party Integrations",
-    imgsrc: webDevelopmentImg,
-    heading: "Connecting Your Store with Essential Tools",
-    description: "We integrate essential third-party services, including CRM, ERP, and marketing tools, to enhance your e-commerce site’s functionality.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
     name: "E-commerce Maintenance & Support",
-    imgsrc: webDevelopmentImg,
+    imgsrc: ecommerceMaintenance,
     heading: "Keeping Your Store Running Smoothly",
     description: "Our team provides ongoing maintenance and support to ensure your e-commerce site is always updated, secure, and running efficiently.",
     button: "Book an appointment",
@@ -1611,7 +1616,7 @@ export const appDevelopmentPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Let’s Bring Your App Idea to Life!",
       contentBoxDescription: "We don’t just develop apps—we craft experiences. Whether you’re looking to create a user-friendly mobile app, an innovative platform, or a powerful business tool, our team at Sigma 6 Digital is here to make it happen. With our expertise and dedication, we transform concepts into seamless, functional, and impactful applications. Ready to make your app vision a reality? Let’s start building together.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: appIdeasToLife,
     },
   ],
   servicesHeading: "Our App Development Services",
@@ -1641,7 +1646,7 @@ export const eCommerceDevelopmentPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Build Your Storefront for Success!",
       contentBoxDescription: "We’re here to bring your online store vision to life. From creating a visually stunning layout to optimizing for conversions, our team ensures your e-commerce platform delivers a smooth and engaging shopping experience. Ready to start selling online with a store that truly represents your brand? Let’s build your e-commerce success together.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: storeFrontForSuccess,
     },
   ],
   servicesHeading: "Our E-commerce Development Services",

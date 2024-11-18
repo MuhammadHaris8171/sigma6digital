@@ -212,6 +212,15 @@ const onSubmit = async (event: React.FormEvent) => {
                 <option value="designing-services" className={styles.contactFormOption}>
                   Designing Services
                 </option>
+                <option value="designing-services" className={styles.contactFormOption}>
+                   Video Editing and Animation Services
+                </option>
+                <option value="designing-services" className={styles.contactFormOption}>
+                  Social Media Management
+                </option>
+                <option value="designing-services" className={styles.contactFormOption}>
+                  Digital marketing
+                </option>
                 <option value="other" className={styles.contactFormOption}>
                   Other
                 </option>
