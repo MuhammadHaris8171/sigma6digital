@@ -57,70 +57,51 @@ const onSubmit = async (event: React.FormEvent) => {
     return;
   }
 
-  const formDataToSend = {
-    ...formData,
-    access_key: "9a0f304b-6277-4a03-8ca4-802ec2634759"
-  };
-
   try {
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify(formDataToSend)
-    });
-
-    const result = await res.json();
-    if (result.success) {
-      Swal.fire({
-        title: "Good job!",
-        text: "Your message has been sent successfully!",
-        icon: "success"
-      });
-
-      await fetch("https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec", {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbxDrDdXl1UWboDHv9je8UhIRo5jActiwh8EihWorJQBbgozcbu8gQ54DsTexqXvHVpy/exec",
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
         mode: 'no-cors',
         body: JSON.stringify(formData)
-      });
+      }
+    );
 
-      setFormData({
-        name: '',
-        country: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-      setErrors({
-        name: '',
-        country: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!"
-      });
-    }
+    Swal.fire({
+      title: "Success!",
+      text: "Your message has been saved successfully!",
+      icon: "success"
+    });
+
+    setFormData({
+      name: '',
+      country: '',
+      email: '',
+      phone: '',
+      service: '',
+      message: ''
+    });
+    setErrors({
+      name: '',
+      country: '',
+      email: '',
+      phone: '',
+      service: '',
+      message: ''
+    });
   } catch (error) {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Something went wrong!"
+      text: "Failed to save your message. Please try again!"
     });
     console.error("Error:", error);
   }
 };
+
 
 
   return (
@@ -212,13 +193,13 @@ const onSubmit = async (event: React.FormEvent) => {
                 <option value="designing-services" className={styles.contactFormOption}>
                   Designing Services
                 </option>
-                <option value="designing-services" className={styles.contactFormOption}>
+                <option value="video-editing-and-animation-services" className={styles.contactFormOption}>
                    Video Editing and Animation Services
                 </option>
-                <option value="designing-services" className={styles.contactFormOption}>
+                <option value="social-media-marketing" className={styles.contactFormOption}>
                   Social Media Management
                 </option>
-                <option value="designing-services" className={styles.contactFormOption}>
+                <option value="digital-marketing" className={styles.contactFormOption}>
                   Digital marketing
                 </option>
                 <option value="other" className={styles.contactFormOption}>

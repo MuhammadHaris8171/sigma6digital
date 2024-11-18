@@ -124,6 +124,20 @@ import identifyAndAccessManagement from '../assets/images/identify-and-access-ma
 import threatDetection from '../assets/images/threat detection.webp';
 import dataLossPreventation from '../assets/images/data-loss-preventation.webp';
 
+import customizedIt from '../assets/images/customized-it.webp';
+import digitalInnovation from '../assets/images/digital-innovation.webp';
+import itStrategyandPlaning from '../assets/images/it-strategy-and-planing.webp';
+import digitalTransformation from '../assets/images/digital-transformation.webp';
+import infrastructureAssessment from '../assets/images/infrastructure-assessment.webp';
+import cloudStrategy from '../assets/images/cloud-strategy.webp';
+
+import itInfrastructureVirtualization from '../assets/images/it-infrastructure-virtualization.webp';
+import teamRemoteAccess from '../assets/images/team-remote-access.webp';
+import serverVirtualization from '../assets/images/server-virtualization.webp';
+import desktopVirtualization from '../assets/images/desktop-virtualization.webp';
+import networkVirtualization from '../assets/images/network-virtualization.webp';
+import storageVirtualization from '../assets/images/storage-virtualization.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -695,7 +709,7 @@ export const dataSecurityServices: Service[] = [
 export const itConsultingServices: Service[] = [
   {
     name: "IT Strategy & Planning",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: itStrategyandPlaning,
     heading: "Aligning IT with Business Goals",
     description: "We develop IT strategies tailored to your business objectives, ensuring technology supports your growth and operational efficiency.",
     button: "Book an appointment",
@@ -703,7 +717,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Digital Transformation",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: digitalTransformation,
     heading: "Transforming Operations with Technology",
     description: "Our consulting services guide you through digital transformation, enhancing productivity and driving business growth with innovative solutions.",
     button: "Book an appointment",
@@ -711,7 +725,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Infrastructure Assessment",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: infrastructureAssessment,
     heading: "Optimizing Your IT Infrastructure",
     description: "We assess your current IT infrastructure, identifying areas for improvement to ensure scalability, performance, and cost-effectiveness.",
     button: "Book an appointment",
@@ -719,17 +733,9 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Cloud Strategy & Migration",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: cloudStrategy,
     heading: "Navigating the Cloud with Confidence",
     description: "Our cloud consulting services provide guidance on cloud adoption, ensuring a smooth migration that meets your business needs.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "IT Risk & Compliance",
-    imgsrc: serviceBackgroundTemporary,
-    heading: "Ensuring Compliance and Mitigating Risks",
-    description: "We help you stay compliant with industry standards and manage IT risks, safeguarding your business operations and reputation.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
@@ -737,7 +743,7 @@ export const itConsultingServices: Service[] = [
 export const virtualizationServices: Service[] = [
   {
     name: "Server Virtualization",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: serverVirtualization,
     heading: "Optimize Server Resources",
     description: "We create virtual server environments that optimize resource use, increase flexibility, and reduce costs, allowing your IT infrastructure to scale efficiently.",
     button: "Book an appointment",
@@ -745,7 +751,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Desktop Virtualization",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: desktopVirtualization,
     heading: "Flexible & Secure Desktop Access",
     description: "Our desktop virtualization services provide employees with secure remote access to desktop environments, improving flexibility and mobility.",
     button: "Book an appointment",
@@ -753,7 +759,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Network Virtualization",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: networkVirtualization,
     heading: "Enhanced Network Efficiency",
     description: "We offer network virtualization solutions that simplify network management, optimize performance, and increase operational efficiency.",
     button: "Book an appointment",
@@ -761,17 +767,9 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Storage Virtualization",
-    imgsrc: serviceBackgroundTemporary,
+    imgsrc: storageVirtualization,
     heading: "Efficient Data Storage Management",
     description: "Our storage virtualization solutions consolidate storage resources, enabling seamless data access and simplified storage management.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
-    name: "Application Virtualization",
-    imgsrc: serviceBackgroundTemporary,
-    heading: "Run Applications Anywhere",
-    description: "With application virtualization, we enable you to run applications across different environments without requiring installation on each device.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
@@ -1796,12 +1794,12 @@ export const itConsultingPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Customized IT Strategies for Your Business",
       contentBoxDescription: "Our IT consulting services start with understanding your business needs and challenges. We develop tailored IT strategies to align your technology investments with your goals, ensuring technology drives your business forward.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: customizedIt,
     },
     {
       contentBoxheading: "Transforming Operations Through Digital Innovation",
       contentBoxDescription: "With our expertise in digital transformation, we help your business leverage cutting-edge technologies to enhance productivity, streamline processes, and stay competitive in a rapidly evolving market.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: digitalInnovation,
     },
   ],
   servicesHeading: "Our IT Consulting Services",
@@ -1827,12 +1825,12 @@ export const virtualizationPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Transforming IT Infrastructure Through Virtualization",
       contentBoxDescription: "Our virtualization services help you reduce physical hardware needs, optimize resource utilization, and increase operational flexibility. From servers to desktops, we offer tailored virtualization solutions that support your business objectives.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: itInfrastructureVirtualization,
     },
     {
       contentBoxheading: "Empowering Your Team with Remote Access",
       contentBoxDescription: "With desktop and application virtualization, we enable your team to securely access essential tools and resources from anywhere, enhancing productivity and collaboration.",
-      contentBoxImage: serviceDetailSideTemporary,
+      contentBoxImage: teamRemoteAccess,
     },
   ],
   servicesHeading: "Our Virtualization Services",
