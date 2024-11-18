@@ -97,6 +97,19 @@ import cartAndCheckout from '../assets/images/cart-and-checkout.webp';
 import paymentGateway from '../assets/images/payment-gateway.webp';
 import ecommerceMaintenance from '../assets/images/ecommerce-maintenance.webp';
 
+import customCRM from '../assets/images/custom-crm.webp';
+import customCRMDevelopment from '../assets/images/custom-crm-development.webp';
+import salesandMarketingAutomation from '../assets/images/sales-and-marketing-automation.webp';
+import dataAnalytics from '../assets/images/data-analytics.webp';
+import crmMaintenance from '../assets/images/crm-maintenance.webp';
+
+import networkOptimalPerformance from '../assets/images/network-optimal-performance.webp';
+import networkMonitoring from '../assets/images/network-monitoriing.webp';
+import networkDesign from '../assets/images/network-design.webp';
+import networkSecurity from '../assets/images/network-security.webp';
+import wirelessNetwork from '../assets/images/wireless-network.webp';
+import vpnandRemoteAccess from '../assets/images/vpn-and-remote-access.webp';
+
 import consultationProcessImg from '../assets/images/consultation-process.webp';
 import requirementGatheringProcessImg from '../assets/images/requirement-gathering-process.webp';
 import planningProcessImg from '../assets/images/planning-process.webp';
@@ -114,6 +127,7 @@ import saudiarabiaImg from '../assets/images/saudi-arabia.webp';
 import unitedArabEmiratesImg from '../assets/images/united-arab-emirates.webp';
 import visionToLifeImg from '../assets/images/vision-to-life.webp';
 import buildTogetherImg from '../assets/images/build-together.webp';
+import serviceBackgroundTemporary from '../assets/images/service-bakground-temporary.webp';
 
 export interface DevelopmentProcess {
   heading: string;
@@ -530,7 +544,7 @@ export const eCommerceDevelopmentServices: Service[] = [
 export const crmDevelopmentServices: Service[] = [
   {
     name: "Custom CRM Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: customCRMDevelopment,
     heading: "Tailored CRM Solutions for Your Business",
     description: "We build custom CRM systems that align with your unique business processes, helping you manage customer relationships effectively.",
     button: "Book an appointment",
@@ -538,39 +552,23 @@ export const crmDevelopmentServices: Service[] = [
   },
   {
     name: "Sales & Marketing Automation",
-    imgsrc: webDevelopmentImg,
+    imgsrc: salesandMarketingAutomation,
     heading: "Automate and Streamline Workflows",
     description: "Our CRM solutions offer powerful automation features to streamline sales and marketing efforts, making your processes more efficient.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
   {
-    name: "Customer Support Management",
-    imgsrc: webDevelopmentImg,
-    heading: "Enhanced Customer Support",
-    description: "We integrate tools for tracking customer inquiries and interactions, helping your support team respond faster and build stronger relationships.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
     name: "Data Analytics & Reporting",
-    imgsrc: webDevelopmentImg,
+    imgsrc: dataAnalytics,
     heading: "Insightful Data for Better Decisions",
     description: "Our CRM solutions come with analytics and reporting features, providing valuable insights into customer behaviors and business trends.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
   {
-    name: "Third-Party Integrations",
-    imgsrc: webDevelopmentImg,
-    heading: "Seamlessly Connect with Other Tools",
-    description: "We integrate your CRM with other essential tools like email marketing platforms, ERP systems, and more for a unified workflow.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
     name: "CRM Maintenance & Support",
-    imgsrc: webDevelopmentImg,
+    imgsrc: crmMaintenance,
     heading: "Ongoing Support for Your CRM",
     description: "Our maintenance services ensure your CRM system stays up-to-date, secure, and functioning optimally with regular support and updates.",
     button: "Book an appointment",
@@ -580,7 +578,7 @@ export const crmDevelopmentServices: Service[] = [
 export const networkManagementServices: Service[] = [
   {
     name: "Network Design & Implementation",
-    imgsrc: webDevelopmentImg,
+    imgsrc: networkDesign,
     heading: "Custom Network Solutions Tailored to Your Needs",
     description: "We design and implement network solutions that fit your unique business requirements, ensuring seamless connectivity and optimal performance.",
     button: "Book an appointment",
@@ -588,7 +586,7 @@ export const networkManagementServices: Service[] = [
   },
   {
     name: "Network Security",
-    imgsrc: webDevelopmentImg,
+    imgsrc: networkSecurity,
     heading: "Protecting Your Network from Threats",
     description: "Our network security services safeguard your infrastructure with firewalls, intrusion detection, and advanced monitoring to keep your data secure.",
     button: "Book an appointment",
@@ -596,23 +594,15 @@ export const networkManagementServices: Service[] = [
   },
   {
     name: "Wireless Network Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: wirelessNetwork,
     heading: "Reliable Wireless Connectivity",
     description: "We set up robust wireless networks for seamless, secure access across your facility, ensuring high performance and ease of use.",
     button: "Book an appointment",
     buttonSrc: "/contact",
   },
   {
-    name: "Network Monitoring & Management",
-    imgsrc: webDevelopmentImg,
-    heading: "24/7 Network Health Monitoring",
-    description: "Our monitoring solutions keep track of your network’s performance and security, identifying and resolving issues before they affect your business.",
-    button: "Book an appointment",
-    buttonSrc: "/contact",
-  },
-  {
     name: "VPN & Remote Access Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: vpnandRemoteAccess,
     heading: "Secure Remote Connections",
     description: "We provide secure VPN and remote access solutions, allowing your team to work safely from anywhere with full network access.",
     button: "Book an appointment",
@@ -622,7 +612,7 @@ export const networkManagementServices: Service[] = [
 export const cloudSolutionsServices: Service[] = [
   {
     name: "Cloud Infrastructure Setup",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Reliable & Scalable Cloud Environments",
     description: "We design and implement cloud infrastructure tailored to your business, ensuring scalability, reliability, and optimized performance.",
     button: "Book an appointment",
@@ -630,7 +620,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Migration",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Seamless Transition to the Cloud",
     description: "Our cloud migration services move your data and applications securely to the cloud, minimizing downtime and ensuring data integrity.",
     button: "Book an appointment",
@@ -638,7 +628,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Security",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Protecting Your Cloud Assets",
     description: "We provide comprehensive cloud security solutions, from encryption to identity management, safeguarding your data in the cloud.",
     button: "Book an appointment",
@@ -646,7 +636,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Cloud Backup & Disaster Recovery",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Ensuring Business Continuity",
     description: "Our cloud backup and recovery solutions protect your data from unexpected incidents, ensuring quick recovery and minimal business disruption.",
     button: "Book an appointment",
@@ -654,7 +644,7 @@ export const cloudSolutionsServices: Service[] = [
   },
   {
     name: "Multi-Cloud & Hybrid Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Flexible Cloud Configurations",
     description: "We offer multi-cloud and hybrid cloud setups, allowing you to leverage the best features of multiple cloud providers or on-premise systems.",
     button: "Book an appointment",
@@ -672,7 +662,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Identity & Access Management",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Secure Access Control",
     description: "Our access management solutions control and monitor user access, minimizing risks and safeguarding critical data.",
     button: "Book an appointment",
@@ -680,7 +670,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Threat Detection & Prevention",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Proactive Security Monitoring",
     description: "With advanced threat detection tools, we monitor and respond to potential security threats before they can impact your business.",
     button: "Book an appointment",
@@ -688,7 +678,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Data Loss Prevention (DLP)",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Preventing Unauthorized Data Exposure",
     description: "Our DLP solutions prevent unauthorized access and data leakage, keeping your information secure and compliant.",
     button: "Book an appointment",
@@ -696,7 +686,7 @@ export const dataSecurityServices: Service[] = [
   },
   {
     name: "Compliance & Regulatory Support",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Ensuring Compliance with Data Regulations",
     description: "We help your business stay compliant with regulations such as GDPR, HIPAA, and more, ensuring data handling meets industry standards.",
     button: "Book an appointment",
@@ -706,7 +696,7 @@ export const dataSecurityServices: Service[] = [
 export const itConsultingServices: Service[] = [
   {
     name: "IT Strategy & Planning",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Aligning IT with Business Goals",
     description: "We develop IT strategies tailored to your business objectives, ensuring technology supports your growth and operational efficiency.",
     button: "Book an appointment",
@@ -714,7 +704,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Digital Transformation",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Transforming Operations with Technology",
     description: "Our consulting services guide you through digital transformation, enhancing productivity and driving business growth with innovative solutions.",
     button: "Book an appointment",
@@ -722,7 +712,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Infrastructure Assessment",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Optimizing Your IT Infrastructure",
     description: "We assess your current IT infrastructure, identifying areas for improvement to ensure scalability, performance, and cost-effectiveness.",
     button: "Book an appointment",
@@ -730,7 +720,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "Cloud Strategy & Migration",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Navigating the Cloud with Confidence",
     description: "Our cloud consulting services provide guidance on cloud adoption, ensuring a smooth migration that meets your business needs.",
     button: "Book an appointment",
@@ -738,7 +728,7 @@ export const itConsultingServices: Service[] = [
   },
   {
     name: "IT Risk & Compliance",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Ensuring Compliance and Mitigating Risks",
     description: "We help you stay compliant with industry standards and manage IT risks, safeguarding your business operations and reputation.",
     button: "Book an appointment",
@@ -748,7 +738,7 @@ export const itConsultingServices: Service[] = [
 export const virtualizationServices: Service[] = [
   {
     name: "Server Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Optimize Server Resources",
     description: "We create virtual server environments that optimize resource use, increase flexibility, and reduce costs, allowing your IT infrastructure to scale efficiently.",
     button: "Book an appointment",
@@ -756,7 +746,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Desktop Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Flexible & Secure Desktop Access",
     description: "Our desktop virtualization services provide employees with secure remote access to desktop environments, improving flexibility and mobility.",
     button: "Book an appointment",
@@ -764,7 +754,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Network Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Enhanced Network Efficiency",
     description: "We offer network virtualization solutions that simplify network management, optimize performance, and increase operational efficiency.",
     button: "Book an appointment",
@@ -772,7 +762,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Storage Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Efficient Data Storage Management",
     description: "Our storage virtualization solutions consolidate storage resources, enabling seamless data access and simplified storage management.",
     button: "Book an appointment",
@@ -780,7 +770,7 @@ export const virtualizationServices: Service[] = [
   },
   {
     name: "Application Virtualization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Run Applications Anywhere",
     description: "With application virtualization, we enable you to run applications across different environments without requiring installation on each device.",
     button: "Book an appointment",
@@ -790,7 +780,7 @@ export const virtualizationServices: Service[] = [
 export const machineLearningServices: Service[] = [
   {
     name: "Custom Machine Learning Solutions",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Tailored Models for Your Needs",
     description: "We design and develop custom machine learning models that address specific business challenges, providing actionable insights and automation.",
     button: "Book an appointment",
@@ -798,7 +788,7 @@ export const machineLearningServices: Service[] = [
   },
   {
     name: "Model Training & Optimization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Enhancing Model Performance",
     description: "Our team trains and optimizes machine learning models, ensuring high accuracy and efficiency tailored to your unique data.",
     button: "Book an appointment",
@@ -806,7 +796,7 @@ export const machineLearningServices: Service[] = [
   },
   {
     name: "Data Preparation & Feature Engineering",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Preparing Data for Success",
     description: "We handle data preprocessing and feature engineering, creating high-quality input data to improve model outcomes.",
     button: "Book an appointment",
@@ -816,7 +806,7 @@ export const machineLearningServices: Service[] = [
 export const chatbotServices: Service[] = [
   {
     name: "Custom Chatbot Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Engaging & Responsive Chatbots",
     description: "We develop custom chatbots tailored to your business needs, providing automated, real-time support and engagement with users.",
     button: "Book an appointment",
@@ -824,7 +814,7 @@ export const chatbotServices: Service[] = [
   },
   {
     name: "Natural Language Processing (NLP)",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Understanding and Interacting with Users",
     description: "Our NLP-powered chatbots understand user intent and provide context-aware responses, enhancing customer interaction.",
     button: "Book an appointment",
@@ -832,7 +822,7 @@ export const chatbotServices: Service[] = [
   },
   {
     name: "Multi-Platform Integration",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Connecting Across Platforms",
     description: "We integrate chatbots across various platforms like websites, social media, and mobile apps to provide a seamless experience.",
     button: "Book an appointment",
@@ -842,7 +832,7 @@ export const chatbotServices: Service[] = [
 export const predictiveAnalyticsServices: Service[] = [
   {
     name: "Predictive Model Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Forecasting Future Trends",
     description: "We develop predictive models that analyze historical data to forecast future trends and inform decision-making.",
     button: "Book an appointment",
@@ -850,7 +840,7 @@ export const predictiveAnalyticsServices: Service[] = [
   },
   {
     name: "Customer Behavior Analysis",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Understanding Customer Patterns",
     description: "Our analytics solutions help you understand customer behavior, enabling personalized experiences and improved retention.",
     button: "Book an appointment",
@@ -860,7 +850,7 @@ export const predictiveAnalyticsServices: Service[] = [
 export const computerVisionServices: Service[] = [
   {
     name: "Image Recognition",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Identifying Objects in Images",
     description: "We build image recognition solutions that detect and identify objects, enabling automation and improved decision-making.",
     button: "Book an appointment",
@@ -868,7 +858,7 @@ export const computerVisionServices: Service[] = [
   },
   {
     name: "Facial Recognition",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Securing Access with Facial Identification",
     description: "Our facial recognition systems provide secure and efficient identification for applications across security and user authentication.",
     button: "Book an appointment",
@@ -878,7 +868,7 @@ export const computerVisionServices: Service[] = [
 export const nlpServices: Service[] = [
   {
     name: "Text Analysis & Sentiment Detection",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Understanding Customer Sentiments",
     description: "Our NLP solutions analyze text for sentiment, extracting valuable insights from customer feedback and social media.",
     button: "Book an appointment",
@@ -886,7 +876,7 @@ export const nlpServices: Service[] = [
   },
   {
     name: "Speech Recognition",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Converting Speech to Text",
     description: "We develop speech recognition solutions that convert spoken words into text, providing accessible options for various applications.",
     button: "Book an appointment",
@@ -896,7 +886,7 @@ export const nlpServices: Service[] = [
 export const softwareMaintenanceServices: Service[] = [
   {
     name: "Regular Software Updates",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Keeping Software Up-to-Date",
     description: "We ensure your software is up-to-date with the latest features and security patches, improving performance and user experience.",
     button: "Book an appointment",
@@ -904,7 +894,7 @@ export const softwareMaintenanceServices: Service[] = [
   },
   {
     name: "Version Upgrades",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Smooth Transition to New Versions",
     description: "Our team handles version upgrades seamlessly, ensuring your software continues to perform optimally.",
     button: "Book an appointment",
@@ -914,7 +904,7 @@ export const softwareMaintenanceServices: Service[] = [
 export const bugFixingServices: Service[] = [
   {
     name: "Code Debugging",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Identifying & Fixing Bugs",
     description: "Our debugging services address and resolve code issues, ensuring smooth application functionality.",
     button: "Book an appointment",
@@ -924,7 +914,7 @@ export const bugFixingServices: Service[] = [
 export const securityPatchingServices: Service[] = [
   {
     name: "Regular Security Updates",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Protecting Against Threats",
     description: "We provide regular security patches to protect your software from potential vulnerabilities and threats.",
     button: "Book an appointment",
@@ -934,7 +924,7 @@ export const securityPatchingServices: Service[] = [
 export const performanceOptimizationServices: Service[] = [
   {
     name: "Speed Optimization",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Improving Application Speed",
     description: "We optimize your application for speed, enhancing user experience and reducing load times.",
     button: "Book an appointment",
@@ -944,7 +934,7 @@ export const performanceOptimizationServices: Service[] = [
 export const dataBackupServices: Service[] = [
   {
     name: "Automated Data Backup",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Regular and Reliable Data Backup",
     description: "Our automated backup solutions ensure that your data is safely stored and readily available when needed.",
     button: "Book an appointment",
@@ -952,7 +942,7 @@ export const dataBackupServices: Service[] = [
   },
   {
     name: "Disaster Recovery Planning",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Preparing for Data Recovery",
     description: "We help you prepare for data loss scenarios with a robust disaster recovery plan, minimizing downtime and data loss.",
     button: "Book an appointment",
@@ -962,7 +952,7 @@ export const dataBackupServices: Service[] = [
 export const seoOptimizationServices: Service[] = [
   {
     name: "On-Page SEO",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Enhancing Site Content for Better Rankings",
     description: "We optimize your website content, metadata, and structure to improve search engine rankings and user engagement.",
     button: "Book an appointment",
@@ -970,7 +960,7 @@ export const seoOptimizationServices: Service[] = [
   },
   {
     name: "Technical SEO",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Improving Site Performance & Crawlability",
     description: "Our technical SEO services ensure your site is optimized for speed, security, and mobile-friendliness, making it easier for search engines to crawl.",
     button: "Book an appointment",
@@ -978,7 +968,7 @@ export const seoOptimizationServices: Service[] = [
   },
   {
     name: "Link Building",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Building High-Quality Backlinks",
     description: "We create strategies to build high-quality backlinks, improving your site's authority and search engine rankings.",
     button: "Book an appointment",
@@ -988,7 +978,7 @@ export const seoOptimizationServices: Service[] = [
 export const socialMediaMarketingServices: Service[] = [
   {
     name: "Social Media Strategy",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Building a Targeted Social Media Plan",
     description: "We develop a social media strategy aligned with your business goals, ensuring engagement and brand growth across platforms.",
     button: "Book an appointment",
@@ -996,7 +986,7 @@ export const socialMediaMarketingServices: Service[] = [
   },
   {
     name: "Content Creation & Posting",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creating Engaging Social Content",
     description: "Our team creates engaging content tailored to your audience, keeping your social media channels active and relevant.",
     button: "Book an appointment",
@@ -1006,7 +996,7 @@ export const socialMediaMarketingServices: Service[] = [
 export const contentCreationServices: Service[] = [
   {
     name: "Blog & Article Writing",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creating Valuable, Engaging Content",
     description: "We produce high-quality blog posts and articles that inform, engage, and drive traffic to your website.",
     button: "Book an appointment",
@@ -1014,7 +1004,7 @@ export const contentCreationServices: Service[] = [
   },
   {
     name: "Website Copywriting",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Optimized Content for Your Website",
     description: "Our copywriting services create compelling, SEO-friendly website content that resonates with your audience.",
     button: "Book an appointment",
@@ -1024,7 +1014,7 @@ export const contentCreationServices: Service[] = [
 export const ppcServices: Service[] = [
   {
     name: "Google Ads Management",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Targeted PPC Campaigns",
     description: "We create and manage Google Ads campaigns to drive targeted traffic to your website and maximize ROI.",
     button: "Book an appointment",
@@ -1032,7 +1022,7 @@ export const ppcServices: Service[] = [
   },
   {
     name: "Social Media Advertising",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Reaching Audiences on Social Platforms",
     description: "Our social media advertising strategies target your audience across platforms, enhancing brand visibility and engagement.",
     button: "Book an appointment",
@@ -1042,7 +1032,7 @@ export const ppcServices: Service[] = [
 export const emailMarketingServices: Service[] = [
   {
     name: "Email Campaign Management",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creating Effective Email Campaigns",
     description: "We manage and optimize email campaigns that engage customers, nurture leads, and drive conversions.",
     button: "Book an appointment",
@@ -1050,7 +1040,7 @@ export const emailMarketingServices: Service[] = [
   },
   {
     name: "Email List Building",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Growing Your Subscriber Base",
     description: "Our strategies help grow and segment your email list, ensuring messages reach the right audience.",
     button: "Book an appointment",
@@ -1060,7 +1050,7 @@ export const emailMarketingServices: Service[] = [
 export const graphicDesignServices: Service[] = [
   {
     name: "Digital Illustrations",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creative Illustrations for Your Brand",
     description: "We create custom digital illustrations that bring your brand to life, enhancing your visual identity across platforms.",
     button: "Book an appointment",
@@ -1068,7 +1058,7 @@ export const graphicDesignServices: Service[] = [
   },
   {
     name: "Print Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Designs for Marketing Collateral",
     description: "Our print design services cover everything from brochures to flyers, providing cohesive, professional designs for your brand.",
     button: "Book an appointment",
@@ -1078,7 +1068,7 @@ export const graphicDesignServices: Service[] = [
 export const logoBrandingServices: Service[] = [
   {
     name: "Logo Design",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creating Memorable Brand Identities",
     description: "We design unique, memorable logos that represent your brand and resonate with your audience.",
     button: "Book an appointment",
@@ -1086,7 +1076,7 @@ export const logoBrandingServices: Service[] = [
   },
   {
     name: "Brand Identity Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Establishing a Cohesive Brand Image",
     description: "Our branding services create a cohesive brand identity, covering everything from color schemes to typography.",
     button: "Book an appointment",
@@ -1096,7 +1086,7 @@ export const logoBrandingServices: Service[] = [
 export const uiUxDesignServices: Service[] = [
   {
     name: "User Research & Personas",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Understanding User Needs",
     description: "We conduct thorough user research and create personas to inform user-centered design solutions.",
     button: "Book an appointment",
@@ -1104,7 +1094,7 @@ export const uiUxDesignServices: Service[] = [
   },
   {
     name: "Wireframing & Prototyping",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Creating User-Friendly Interfaces",
     description: "Our wireframes and prototypes ensure a smooth user experience, providing a visual guide for the final design.",
     button: "Book an appointment",
@@ -1114,7 +1104,7 @@ export const uiUxDesignServices: Service[] = [
 export const motionGraphicsServices: Service[] = [
   {
     name: "Explainer Videos",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Engaging Animated Videos",
     description: "We create explainer videos that break down complex concepts and engage your audience with dynamic visuals.",
     button: "Book an appointment",
@@ -1122,7 +1112,7 @@ export const motionGraphicsServices: Service[] = [
   },
   {
     name: "Social Media Animations",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Boosting Engagement on Social Channels",
     description: "Our animations for social media are designed to grab attention and convey messages effectively.",
     button: "Book an appointment",
@@ -1132,7 +1122,7 @@ export const motionGraphicsServices: Service[] = [
 export const productDesignServices: Service[] = [
   {
     name: "Concept Development",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "From Idea to Realization",
     description: "We work with you to turn product concepts into reality, focusing on functionality, aesthetics, and market appeal.",
     button: "Book an appointment",
@@ -1140,7 +1130,7 @@ export const productDesignServices: Service[] = [
   },
   {
     name: "3D Modeling & Prototyping",
-    imgsrc: webDevelopmentImg,
+    imgsrc: serviceBackgroundTemporary,
     heading: "Visualizing and Testing Ideas",
     description: "Our 3D modeling and prototyping services bring ideas to life, enabling you to visualize and test products before manufacturing.",
     button: "Book an appointment",
@@ -1676,7 +1666,7 @@ export const crmDevelopmentPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Empower Your Team with a Custom CRM",
       contentBoxDescription: "We create CRM solutions tailored to fit your business needs. From tracking customer interactions to automating workflows, our CRM systems make managing customer relationships easier and more effective. Ready to enhance your customer management? Let’s build a CRM that works for you.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: customCRM,
     },
   ],
   servicesHeading: "Our CRM Development Services",
@@ -1706,12 +1696,12 @@ export const networkManagementPageContent: WebDevelopmentPageContent = {
     {
       contentBoxheading: "Designing Networks for Optimal Performance",
       contentBoxDescription: "Our network management solutions are designed to provide fast, secure, and reliable connectivity. From structured cabling to advanced network configurations, we ensure your network infrastructure meets the demands of your business.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: networkOptimalPerformance,
     },
     {
       contentBoxheading: "Proactive Network Monitoring & Security",
       contentBoxDescription: "With our proactive network monitoring and security services, we detect and address issues before they become problems. Our approach ensures uninterrupted operations and keeps your network safe from external threats.",
-      contentBoxImage: aiSolutionsImg,
+      contentBoxImage: networkMonitoring,
     },
   ],
   servicesHeading: "Our Network Management Services",
