@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../styles/Cta.module.css";
 import ContactForm from "./ContactForm";
+import ctaVideo from '../assets/videos/hero-slider-2.mp4'
 
 function Cta() {
   useEffect(() => {
@@ -44,7 +45,7 @@ function Cta() {
       <div className={`${styles.videoContainer} position-relative`}>
         <div className="container-fluid m-0 p-0">
           <video className={`${styles.ctaVideo}`} autoPlay muted loop>
-            <source src="https://sigma6digital.com/wp-content/uploads/2024/10/02-1.m4v" />
+            <source src={ctaVideo} />
           </video>
           <div
             className={`${styles.videoContentContainer} d-flex flex-column align-items-center gap-3`}
