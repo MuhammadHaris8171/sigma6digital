@@ -52,7 +52,7 @@ function Footer() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
-                      <p className={`${styles.copyrightClaim} mb-0 py-3`}><span>&copy; {new Date().getFullYear()} All Rights Reserved.</span> <span>Developed by <a href="https://linkedin.com/m-rameez/" className={`${styles.creatorLink} text-decoration-none`}>Muhammad Rameez</a></span></p>                    
+                      <p className={`${styles.copyrightClaim} mb-0 py-3`}><span>&copy; {new Date().getFullYear()} All Rights Reserved.</span></p>                    
                     </div>
                 </div>
             </div>
