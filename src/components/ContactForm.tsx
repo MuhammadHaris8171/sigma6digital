@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BsSendFill } from 'react-icons/bs';
-import styles from '../styles/contactForm.module.css';
+import styles from '../styles/ContactForm.module.css';
 import Swal from 'sweetalert2'
 
 function ContactForm(): JSX.Element {
@@ -229,7 +229,7 @@ const onSubmit = async (event: React.FormEvent) => {
             <div className="col-sm-12 mb-4">
               <button type="submit" className={styles.contactFormSubmitBtn} disabled={isSubmitting}>
                 {isSubmitting ? (
-                  <div className={styles.spinner}></div> // Spinner element
+                  <div className={styles.spinner}></div>
                 ) : (
                   <>
                     Send a Message <BsSendFill className="ms-2" />
