@@ -1,0 +1,145 @@
+.contactForm{
+    display: flex;
+    overflow: hidden;
+}
+.contactFomFirstTab, .contactFomSecondTab{
+    min-width: 100%;
+    position: relative;
+    left: 0%;
+    transition: all 0.5s ease;
+}
+.contactForm.showSecond .contactFomFirstTab, .contactForm.showSecond .contactFomSecondTab{
+    left: -100%;
+}
+.contactFormHeading{
+    font-family: 'Manrope';
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.3em;
+}
+.contactServiceBox{
+    background: var(--main-blue-color);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contactServiceName{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+.contactPageIndexing{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.contactPageIndexing span{
+    font-size: inherit;
+    font-family: inherit;
+}
+.contactFormSubHeading{
+    font-family: 'Manrope';
+    font-size: 1.15em;
+    font-weight: 800;
+}
+.subServiceCheckBox label{ 
+    gap: .5em;
+    cursor: pointer;
+}
+.subServiceCheckBox span{    
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1em;
+}
+.inputBox div {
+    align-items: flex-end;
+    border-bottom: 1px solid #000;
+    padding: 0.3em 0em;
+    margin-bottom: 1.3em;
+    font-size: 1.15em;
+}
+
+.inputLabel {
+    margin-right: 3em;
+    color: #000;
+    width: 25%;
+    font-family: 'Poppins';
+}
+
+.inputElement {
+    width: 84%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.inputElement::placeholder {
+    color: #4d4d4d;
+}
+
+.inputElement:focus::placeholder {
+    opacity: 0.5;
+}
+.inputElement[type="number"]::-webkit-outer-spin-button,
+.inputElement[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.radioQuestionHeading{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.15em;
+}
+.formButton{
+    background: var(--main-blue-color) !important;
+    color: #fff;
+    padding: 0.6em 2em;
+    font-family: 'Manrope';
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.formButton:hover{
+    background: #0f82dd !important;
+    color: #fff;
+}
+.formButton:first-child{
+    background: none !important;
+    border: 1px solid var(--main-blue-color);
+    color: var(--main-blue-color);
+}
+.formButton:first-child:hover{
+    background: var(--main-blue-color) !important;
+    color: #fff;
+}
+
+.errorText {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.spinner {
+    border: 4px solid #fff;
+    border-top: 4px solid var(--main-blue-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

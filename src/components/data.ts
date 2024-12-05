@@ -176,6 +176,10 @@ export interface Service {
   button: string;
   buttonSrc: string;
 }
+export interface FormServices {
+  heading: string;
+  service: string[];
+}
 
 export interface GlobalLocation {
   image: string;
@@ -418,6 +422,33 @@ export const globalLocation: GlobalLocation[] = [
     heading: "United Arab Emirates",
   },
 ]
+
+export const formServices: FormServices[] =[
+      {
+        heading: "Development",
+        service: ["Web Development", "App Development", "E-commerce Development", "CRM Development"]
+      },
+      {
+        heading: "IT Solutions",
+        service: ["Network Management", "Cloud Solutions", "Data Security", "IT Consulting", "Virtualization"],
+      },
+      {
+        heading: "AI & Automation",
+        service: ["Machine Learning Models", "Chatbot Development", "Predictive Analytics", "Computer Vision", "NLP Solutions"],
+      },
+      {
+        heading: "Maintenance & Support",
+        service: ["Software Maintenance", "Bug Fixing", "Security Patching", "Performance Optimization", "Data Backup & Recovery"],
+      },
+      {
+        heading: "Digital Marketing",
+        service: ["SEO Optimization", "Social Media Marketing", "Content Creation", "PPC Campaigns", "Email Marketing"],
+      },
+      {
+        heading: "Creative Design",
+        service: [ "Graphic Design", "Logo & Branding", "UI/UX Design",  "Motion Graphics", "Product Design"],
+      },
+];
 
 
 export const WebDevelopmentServices: Service[] = [
