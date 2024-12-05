@@ -8,10 +8,10 @@ import styles from './Header.module.css';
 import { IoMailSharp } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import NavDropdown from '../NavDropdown';
-import ContactForm from '../ContactForm';
 import { RxCross2 } from 'react-icons/rx';
 import { TiArrowSortedDown } from 'react-icons/ti';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import ContactFormTabs from '../ContactFormTabs';
 
 interface HeaderProps {
   theme?: string;
@@ -309,14 +309,14 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
               <div className={`${styles.formSidebar}`} style={{ left: isFormSidebarVisible ? '0%' : '100%' }}>
                 <div className="container-fluid h-100">
                   <div className="row h-100">
-                    <div className="col-5 h-100 p-0 ms-auto">
+                    <div className="col-9 h-100 p-0 ms-auto">
                       <div className={`${styles.headerFormBox} d-flex flex-column justify-content-center positon-relative`}>
                         <div className={`${styles.closeHeaderFormBox}`} onClick={() => setFormSidebarVisible(false)}>
                           <RxCross2 />
                         </div>
                         <h3 className={`${styles.headerContactHeading} px-lg-5 d-inline`}><span>Get In Touch</span></h3>
                         <div className={`${styles.headerForm} px-lg-5`}>
-                          <ContactForm />
+                          <ContactFormTabs />
                         </div>
                       </div> 
                     </div>

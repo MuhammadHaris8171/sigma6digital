@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../styles/Cta.module.css";
-import ContactForm from "./ContactForm";
 import ctaVideo from '../assets/videos/hero-slider-2.mp4'
+import ContactFormTabs from "./ContactFormTabs";
 
 function Cta() {
   useEffect(() => {
@@ -62,12 +62,12 @@ function Cta() {
       <div className={`${styles.ctaContentBox}`}>
         <div className="container">
           <div className="row">
-            <div className="col-md-7 m-auto">
+            <div className="col-md-9 m-auto">
               <h3 className={`${styles.ctaContentBoxHeading} text-center mb-5`}>
                 We're Just a Click Away!
               </h3>
               <div className={`${styles.ctaForm}`}>
-                <ContactForm />
+                <ContactFormTabs />
               </div>
             </div>
           </div>

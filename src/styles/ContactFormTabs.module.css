@@ -101,7 +101,7 @@
 }
 .formButton{
     background: var(--main-blue-color) !important;
-    color: #fff;
+    color: #fff !important;
     padding: 0.6em 2em;
     font-family: 'Manrope';
     font-weight: 600;
@@ -117,11 +117,11 @@
 .formButton:first-child{
     background: none !important;
     border: 1px solid var(--main-blue-color);
-    color: var(--main-blue-color);
+    color: var(--main-blue-color) !important;
 }
 .formButton:first-child:hover{
     background: var(--main-blue-color) !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 .errorText {
