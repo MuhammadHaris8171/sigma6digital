@@ -6,7 +6,7 @@ import PagesHero from "../../components/PagesHero"
 // import Team from "../../components/Team"
 import styles from "./About.module.css"
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
-import heroThumbnail from '../../assets/images/hero-slider-2-thumbnail.webp';
+import heroThumbnail from '../../assets/images/page-hero-thumbnail.webp';
 
 function About() {
   const points = [

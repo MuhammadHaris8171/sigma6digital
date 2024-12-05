@@ -5,7 +5,7 @@ import Industries from '../../components/Industries'
 import BelieveIn from '../../components/BelieveIn'
 import Cta from '../../components/Cta'
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
-import heroThumbnail from '../../assets/images/hero-slider-2-thumbnail.webp';
+import heroThumbnail from '../../assets/images/page-hero-thumbnail.webp';
 
 function IndustriesPage() {
   return (

@@ -8,7 +8,7 @@ import styles from './ServicesPage.module.css'
 import serviceWorkProcessImg from '../../assets/images/serviceWorkProcessImage.webp'
 import { developmentProcess, services } from "../../components/data";
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
-import heroThumbnail from '../../assets/images/hero-slider-2-thumbnail.webp';
+import heroThumbnail from '../../assets/images/page-hero-thumbnail.webp';
 
 function ServicesPage() {
   return (
