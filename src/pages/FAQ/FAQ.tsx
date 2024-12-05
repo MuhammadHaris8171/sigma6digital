@@ -4,6 +4,7 @@ import WorkProcess from '../../components/WorkProcess'
 import styles from "./FAQ.module.css"
 import { faqs } from '../../components/data';
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
+import heroThumbnail from '../../assets/images/hero-slider-2-thumbnail.webp';
 
 function FAQ() {
  
@@ -14,6 +15,7 @@ function FAQ() {
           heading="Frequently Asked Questions" 
           description="At Sigma 6 Digital, we understand that you may have questions about our services and processes. To help you make informed decisions, we’ve compiled a list of common inquiries from our clients. Explore the FAQs below to find answers and learn more about how we can support your business in the digital landscape." 
           videoLink={heroBackground1}
+          thumbnail={heroThumbnail}
         />
       </section>
       <section className={styles.faqWorkProcess}>

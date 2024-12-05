@@ -4,6 +4,7 @@ import PagesHero from '../../components/PagesHero'
 import styles from './Contact.module.css'
 import { globalLocation } from '../../components/data'
 import heroBackground1 from '../../assets/videos/hero-slider-2.mp4'
+import heroThumbnail from '../../assets/images/hero-slider-2-thumbnail.webp';
 
 interface ContactInfo {
   heading: string;
@@ -22,6 +23,7 @@ function Contact() {
             heading="Let’s Build Something Great Together" 
             description="Have questions or ready to start your digital journey with Sigma 6 Digital? Reach out to our team of experts. Simply fill out the form, give us a call, or drop an email—we’d love to connect and discuss how we can bring your vision to life." 
             videoLink={heroBackground1}
+            thumbnail={heroThumbnail}
             />
         </section>
         <section id="contactDetail" className={`${styles.contactDetailSection}`}>

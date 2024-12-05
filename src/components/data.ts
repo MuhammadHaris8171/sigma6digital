@@ -303,12 +303,10 @@ export const features: Feature[] = [
   { name: "Osiris Solicitors" },
   { name: "ProHomez" },
   { name: "EcoGrant Expert" },
-  { name: "Osiris Solicitors" },
-  { name: "ProHomez" },
-  { name: "EcoGrant Expert" },
-  { name: "Osiris Solicitors" },
-  { name: "ProHomez" },
-  { name: "EcoGrant Expert" },
+  { name: "Al Tijarah Foundation " },
+  { name: "MR Services" },
+  { name: "Green Steps Society" },
+  { name: "Black Stone" },
 ];
 export const services: Service[] = [
   {

@@ -18,21 +18,29 @@
     line-height: 1.3em;
 }
 .contactServiceBox{
-    background: var(--main-blue-color);
+    background: #fff;
     width: 200px;
-    height: 200px;
+    height: 100px;
+    box-shadow: 0 2px 4px #0003;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 12px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.contactServiceBox:hover{
+    background: var(--main-blue-color);
 }
 .contactServiceName{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.2em;
-    color: #fff;
+    color: #000;
     text-align: center;
+}
+.contactServiceBox:hover .contactServiceName{
+    color: #fff;
 }
 .contactPageIndexing{
     font-family: 'Poppins';
@@ -155,7 +163,6 @@
 @media screen and (max-width: 1399px) {
     .contactServiceBox{
         width: 185px;
-        height: 185px;
     }
     .contactFormHeading{
         font-size: 1.8em;
@@ -170,7 +177,10 @@
 @media screen and (max-width: 1199px) {
     .contactServiceBox {
         width: 160px;
-        height: 160px;
+        padding: 1em;
+    }
+    .contactServiceName{
+        font-size: 1.5em;
     }
     .contactFormHeading{
         font-size: 2.1em;
@@ -211,7 +221,6 @@
     }
     .contactServiceBox {
         width: 165px;
-        height: 165px;
     }
     .contactServiceName{
         font-size: 1.8em;
@@ -299,7 +308,9 @@
     }
     
     .formButton {
-        font-size: 3.7em;
+        font-size: 3.7em !important;
+        padding: .7em 1.4em !important;
+        border-radius: 6px !important;
         margin-left: 0.8em;
         font-weight: 700;
     }

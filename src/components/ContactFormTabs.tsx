@@ -162,7 +162,7 @@ function ContactFormTabs() {
               <span>1</span> of 2
             </p>
           </div>
-          <div className={`d-flex flex-wrap justify-content-center gap-4 pt-5 pt-lg-4`}>
+          <div className={`d-flex flex-wrap justify-content-center row-gap-5 column-gap-5 gap-sm-4 py-5 py-lg-4`}>
             {formServices.map((item, index) => (
               <div
                 className={`${styles.contactServiceBox}`}
