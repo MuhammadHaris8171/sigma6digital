@@ -162,7 +162,7 @@ function ContactFormTabs() {
               <span>1</span> of 2
             </p>
           </div>
-          <div className={`d-flex flex-wrap justify-content-center gap-4 pt-4`}>
+          <div className={`d-flex flex-wrap justify-content-center gap-4 pt-5 pt-lg-4`}>
             {formServices.map((item, index) => (
               <div
                 className={`${styles.contactServiceBox}`}
@@ -192,7 +192,7 @@ function ContactFormTabs() {
           </div>
           <div className={`${styles.subServices} pt-4 ${formServices.some(item => item.heading === selectedService) ? '' : 'd-none'}`}>
             <h5 className={`${styles.contactFormSubHeading}`}>Choose Your Service</h5>
-            <div className={`${styles.subServicesCheckBoxes} pt-2 mb-3`}>
+            <div className={`${styles.subServicesCheckBoxes} pt-3 pt-md-2 mb-4 mb-md-3`}>
                 <div className=' d-flex flex-wrap row-gap-2 column-gap-4'>
                     {formServices
                         .filter(item => item.heading === selectedService) 
