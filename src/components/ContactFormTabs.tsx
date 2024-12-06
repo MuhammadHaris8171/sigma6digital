@@ -11,6 +11,7 @@ interface FormData {
   phone: string;
   projectType: string;
   services: string[];
+  message?: string;
 }
 
 interface Errors {
@@ -42,6 +43,7 @@ function ContactFormTabs() {
     phone: '',
     projectType: '',
     services: [],
+    message: '',
   });
 
   const handleServiceClick = (serviceName: string) => {
@@ -64,87 +66,90 @@ function ContactFormTabs() {
     setFormData((prevData) => ({ ...prevData, projectType: value }));
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
 
-    const { name, companyName, email, phone, projectType, services } = formData;
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    const newErrors: Errors = {
-      name: !name ? 'Name is required' : '',
-      companyName: !companyName ? 'Company Name is required' : '',
-      email: !email ? 'Email is required' : '',
-      phone: !phone ? 'Phone is required' : '',
-    };
+  const { name, companyName, email, phone, projectType, services, message } = formData;
 
-    if (services.length === 0) {
-        newErrors.services = 'At least one service must be selected';
-    } else {
-        delete newErrors.services;
-    }
-
-    if (!projectType) {
-        newErrors.projectType = 'Please select a project type (New or Upgrade)';
-    } else {
-        delete newErrors.projectType;
-    }
-
-    setErrors(newErrors);
-
-    if (Object.values(newErrors).some((error) => error)) return;
-
-    const data = {
-      name,
-      companyName,
-      email,
-      phone,
-      projectType,
-      services: services.join(', '),
-      selectedService,
-    };
-
-    setIsSubmitting(true);
-    try {
-      await fetch(import.meta.env.VITE_GOOGLE_SHEET_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        mode: 'no-cors',
-        body: JSON.stringify(data),
-      });
-
-      Swal.fire({
-        title: 'Success!',
-        text: 'Your message has been sent successfully!',
-        icon: 'success',
-      });
-
-      setFormData({
-        name: '',
-        companyName: '',
-        email: '',
-        phone: '',
-        projectType: '',
-        services: [],
-      });
-      setSelectedService('');
-      setCurrentTab(1);
-    } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Failed to send your message. Please try again!',
-      });
-      console.error('Error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+  const newErrors: Errors = {
+    name: !name ? 'Name is required' : '',
+    companyName: !companyName ? 'Company Name is required' : '',
+    email: !email ? 'Email is required' : '',
+    phone: !phone ? 'Phone is required' : '',
   };
+
+  if (services.length === 0) {
+    newErrors.services = 'At least one service must be selected';
+  } else {
+    delete newErrors.services;
+  }
+
+  if (!projectType) {
+    newErrors.projectType = 'Please select a project type (New or Upgrade)';
+  } else {
+    delete newErrors.projectType;
+  }
+
+  setErrors(newErrors);
+
+  if (Object.values(newErrors).some((error) => error)) return;
+
+  const data = {
+    name,
+    companyName,
+    email,
+    phone,
+    projectType,
+    services: services.join(', '),
+    selectedService,
+    message,
+  };
+
+  setIsSubmitting(true);
+  try {
+    await fetch(import.meta.env.VITE_GOOGLE_SHEET_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      mode: 'no-cors',
+      body: JSON.stringify(data),
+    });
+
+    Swal.fire({
+      title: 'Success!',
+      text: 'Your message has been sent successfully!',
+      icon: 'success',
+    });
+    setFormData({
+      name: '',
+      companyName: '',
+      email: '',
+      phone: '',
+      projectType: '',
+      services: [],
+      message: '',
+    });
+    setSelectedService('');
+    setCurrentTab(1);
+  } catch (error) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Failed to send your message. Please try again!',
+    });
+    console.error('Error:', error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -333,6 +338,22 @@ function ContactFormTabs() {
                         />
                     </div>
                     {errors.phone && <p className={styles.errorText}>{errors.phone}</p>}
+                </div>
+                <div className={`${styles.inputBox}`}>
+                  <div className='d-flex'>
+                    <label htmlFor="message" className={`${styles.inputLabel}`}>
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      onChange={handleInputChange}
+                      className={`${styles.inputElement}`}
+                      placeholder="Message"
+                      value={formData.message}
+                      rows={4}
+                    ></textarea>
+                  </div>
                 </div>
               </div>
             </div>
