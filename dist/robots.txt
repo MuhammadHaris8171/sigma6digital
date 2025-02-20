@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /test/
+Disallow: /404/
+
+Sitemap: https://sigma6digital.com/sitemap.xml
