@@ -5,7 +5,7 @@ import styles from "../styles/Cta.module.css";
 import ctaVideo from '../assets/videos/hero-slider-2.mp4'
 import ContactFormTabs from "./ContactFormTabs";
 
-function Cta() {
+function Cta({ language }: { language: string }) {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const mediaQuery = window.matchMedia("(max-width: 575px)");
@@ -51,10 +51,10 @@ function Cta() {
             className={`${styles.videoContentContainer} d-flex flex-column align-items-center gap-3`}
           >
             <h2 className={`${styles.ctaVideoHeading}`}>
-              Begin your journey with us today.
+            {language === "ar" ? "ابدأ رحلتك معنا اليوم" : "Begin your journey with us today."}
             </h2>
             <button className={`btn ${styles.ctaBtn} overflow-hidden`}>
-              <span>Get Started Now</span>
+              <span>{language === "ar" ? "ابدأ الآن" : "Get Started Now"}</span>
             </button>
           </div>
         </div>
@@ -64,10 +64,10 @@ function Cta() {
           <div className="row">
             <div className="col-md-9 m-auto">
               <h3 className={`${styles.ctaContentBoxHeading} text-center mb-5`}>
-                We're Just a Click Away!
+              {language === "ar" ? "نحن على بعد نقرة واحدة فقط!" : "We're Just a Click Away!"}
               </h3>
               <div className={`${styles.ctaForm}`}>
-                <ContactFormTabs />
+                <ContactFormTabs language={language as "en" | "ar"} />
               </div>
             </div>
           </div>

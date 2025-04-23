@@ -4,13 +4,55 @@ import SecondaryHeading from '../../components/SecondaryHeading'
 import Services from '../../components/Services'
 import styles from './MainService.module.css'
 import TechnologiesWeUse from '../../components/TechnologiesWeUse'
-import { WebDevelopmentPageContent } from '../../components/data';
+// import { WebDevelopmentPageContent } from '../../components/data';
+import { useOutletContext } from 'react-router-dom'
+type ContentBoxType = {
+    contentBoxheading: string;
+    contentBoxDescription: string;
+    contentBoxImage: string;
+  };
 
-interface MainServiceProps {
-  content: WebDevelopmentPageContent;
+  interface OutletContextType {
+    language: "en" | "ar"; // Adjust based on actual values
+  }
+  
+ 
+
+interface TechnologyBoxType {
+    heading: string;
+    services: string[];
+}
+interface Service {
+    name: string;
+    imgsrc: string;
+    heading: string;
+    description: string;
+    button: string;
+    buttonSrc: string;
+}
+  interface ServiceContent {
+    heroSectionHeading: string;
+    heroSectionDescription: string;
+    heroSectionImage: string;
+    contentBoxesContent: ContentBoxType[];
+    servicesHeading: string;
+    featureServices: Service[]; // Replace `any[]` with the correct type if known
+    technologiesHeading: string;
+    technologiesDescription: string;
+    technologiesBoxes: TechnologyBoxType[];
 }
 
-const MainService: React.FC<MainServiceProps> = ({ content }) =>  {
+// Define props for MainService
+interface MainServiceProps {
+    contentEn: ServiceContent;
+    contentAr: ServiceContent;
+}
+
+
+const MainService: React.FC<MainServiceProps> = ({ contentEn, contentAr }) =>  {
+    const {language} = useOutletContext<OutletContextType>();
+    const content = language === "ar" ? contentAr : contentEn;
+    console.log(content.featureServices)
   return (
     <>
         <section className={`${styles.mainServiceHero} d-flex align-items-center`}>
@@ -31,7 +73,7 @@ const MainService: React.FC<MainServiceProps> = ({ content }) =>  {
             </div>
         </section>
         <section className={`${styles.mainServiceContentBox}`}>
-            {content.contentBoxesContent.map((contentBox, index) => (
+            {content.contentBoxesContent.map((contentBox:ContentBoxType, index:number) => (
                 <ContentBox 
                     key={index}
                     contentDirection={index % 2 === 0 ? 'left' : 'right'}
@@ -45,7 +87,7 @@ const MainService: React.FC<MainServiceProps> = ({ content }) =>  {
                     heading={content.servicesHeading}
                 />
             </div>
-            <Services services={content.featureServices} displayAmount={-1} />
+            <Services services={content.featureServices} displayAmount={-1}  />
         </section>
         <section className={`${styles.technologiesWeUse}`}>
             <TechnologiesWeUse
@@ -55,7 +97,7 @@ const MainService: React.FC<MainServiceProps> = ({ content }) =>  {
             />
         </section>
         <section>
-          <Cta />
+          <Cta language={language} />
         </section>
     </>
   )

@@ -2,14 +2,25 @@ import styles from "../styles/AboutClient.module.css";
 import ClientMarquee from "./ClientMarquee";
 import { features } from "./data";
 
-function AboutClient() {
+interface AboutClientProps {
+    language: "en" | "ar";
+}
+const AboutClient: React.FC<AboutClientProps> = ({ language }) => {
+    const translations = {
+        en: {
+            heading: "Proud to have collaborated with these clients."
+        },
+        ar: {
+            heading: "فخورون بالتعاون مع هؤلاء العملاء."
+        }
+    };
 
     return (
         <div className="container">
             <div className="row">
                 <div className="col-lg-9 col-xl-8">
                     <h2 className={`${styles.aboutClientHeading}`}>
-                        Proud to have collaborated with these clients.
+                    {translations[language as "en" | "ar"]?.heading || translations.en.heading}
                     </h2>
                 </div>
                 <div className="col-12 py-5">

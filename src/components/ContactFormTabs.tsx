@@ -4,6 +4,9 @@ import { formServices } from './data';
 import Swal from 'sweetalert2';
 import { BsSendFill } from 'react-icons/bs';
 
+interface ContactFormTabsProps {
+  language: "en" | "ar";
+}
 interface FormData {
   name: string;
   companyName: string;
@@ -23,7 +26,7 @@ interface Errors {
   projectType?: string;  
 }
 
-function ContactFormTabs() {
+function ContactFormTabs({ language }: ContactFormTabsProps) {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [currentTab, setCurrentTab] = useState(1);
     const [selectedService, setSelectedService] = useState('');
@@ -47,10 +50,10 @@ function ContactFormTabs() {
   });
 
   const handleServiceClick = (serviceName: string) => {
-    setSelectedService(serviceName);
+    setSelectedService(serviceName === 'Other' ? (language === "ar" ? "أخرى" : "Other") : serviceName);
     setCurrentTab((prevState) => (prevState === 1 ? 2 : 1));
   };
-
+  
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setFormData((prevData) => {
@@ -121,6 +124,15 @@ const handleSubmit = async (e: React.FormEvent) => {
       mode: 'no-cors',
       body: JSON.stringify(data),
     });
+    console.log("Sending this data:", data);
+
+    await fetch("https://localhost/sendMail.php", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
     Swal.fire({
       title: 'Success!',
@@ -161,10 +173,10 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className={`${styles.contactFomFirstTab}`}>
           <div className="d-flex justify-content-between align-items-center">
             <h4 className={`${styles.contactFormHeading} mb-2`}>
-              Select Your Preferred Service
+            {language === "ar" ? "اختر الخدمة المفضلة لديك" : "Select Your Preferred Service"}
             </h4>
             <p className={`${styles.contactPageIndexing} mb-2`}>
-              <span>1</span> of 2
+              <span>1</span> {language === "ar" ? "من 2" : "of 2"}
             </p>
           </div>
           <div className={`d-flex flex-wrap justify-content-center row-gap-5 column-gap-5 gap-sm-4 py-5 py-lg-4`}>
@@ -172,16 +184,17 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div
                 className={`${styles.contactServiceBox}`}
                 key={index}
-                onClick={() => handleServiceClick(item.heading)}
+                onClick={() => handleServiceClick(item.heading[language as "en" | "ar"])}
+
               >
-                <p className={`${styles.contactServiceName} mb-0`}>{item.heading}</p>
+                <p className={`${styles.contactServiceName} mb-0`}>{item.heading[language]}</p>
               </div>
             ))}
             <div
               className={`${styles.contactServiceBox}`}
               onClick={() => handleServiceClick('Other')}
             >
-              <p className={`${styles.contactServiceName} mb-0`}>Other</p>
+              <p className={`${styles.contactServiceName} mb-0`}>{language === "ar" ? "أخرى" : "Other"}</p>
             </div>
           </div>
         </div>
@@ -195,14 +208,14 @@ const handleSubmit = async (e: React.FormEvent) => {
               <span>2</span> of 2
             </p>
           </div>
-          <div className={`${styles.subServices} pt-4 ${formServices.some(item => item.heading === selectedService) ? '' : 'd-none'}`}>
-            <h5 className={`${styles.contactFormSubHeading}`}>Choose Your Service</h5>
+          <div className={`${styles.subServices} pt-4 ${formServices.some(item => item.heading[language] === selectedService) ? '' : 'd-none'}`}>
+            <h5 className={`${styles.contactFormSubHeading}`}>{language === "ar" ? "اختر خدمتك" : "Choose Your Service"}</h5>
             <div className={`${styles.subServicesCheckBoxes} pt-3 pt-md-2 mb-4 mb-md-3`}>
                 <div className=' d-flex flex-wrap row-gap-2 column-gap-4'>
                     {formServices
-                        .filter(item => item.heading === selectedService) 
+                        .filter(item => item.heading[language] === selectedService) 
                         .map((item, index) => (
-                            item.service.map((subService, subIndex) => (
+                            item.service[language].map((subService, subIndex) => (
                                 <div className={`${styles.subServiceCheckBox}`} key={`${index}-${subIndex}`}>
                                 <label className="d-flex align-items-center">
                                     <input
@@ -223,7 +236,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                             value="other"
                             onChange={handleCheckboxChange}
                             />
-                            <span>Other</span>
+                            <span>{language === "ar" ? "أخرى" : "Other"}</span>
                         </label>
                     </div>
                 </div>
@@ -234,30 +247,18 @@ const handleSubmit = async (e: React.FormEvent) => {
 
 
             <p className={`${styles.radioQuestionHeading} mb-0`}>
-              Is this a new project or an upgrade to an existing one?
-            </p>
-            <div className={`d-flex flex-wrap row-gap-2 column-gap-4 pt-2`}>
-              <div className={`${styles.subServiceCheckBox}`}>
-                <label className="d-flex align-items-center">
-                  <input
-                    type="radio"
-                    name="projectType"
-                    value="new"
-                    onChange={handleRadioChange}
-                  />
-                  <span>New</span>
-                </label>
-              </div>
-              <div className={`${styles.subServiceCheckBox}`}>
-                <label className="d-flex align-items-center">
-                  <input
-                    type="radio"
-                    name="projectType"
-                    value="upgrade"
-                    onChange={handleRadioChange}
-                  />
-                  <span>Upgrade</span>
-                </label>
+  {language === "ar" ? "هل هذا مشروع جديد أم ترقية لمشروع موجود؟" : "Is this a new project or an upgrade to an existing one?"}
+</p>
+<label className="d-flex align-items-center">
+  <input type="radio" name="projectType" value="new" onChange={handleRadioChange} />
+  <span>{language === "ar" ? "جديد" : "New"}</span>
+</label>
+<label className="d-flex align-items-center">
+  <input type="radio" name="projectType" value="upgrade" onChange={handleRadioChange} />
+  <span>{language === "ar" ? "ترقية" : "Upgrade"}</span>
+</label>
+
+
               </div>
             </div>
             <div className={`${styles.errorText}`}>
@@ -266,7 +267,9 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
 
           <div className={`${styles.clientInformation} pt-4`}>
-            <h5 className={`${styles.contactFormSubHeading}`}>Personal Information</h5>
+            <h5 className={`${styles.contactFormSubHeading}`}>{language === "en" 
+            ? "Personal Information" : "معلومات شخصية"
+          }</h5>
             <div
               className={`${styles.inputTypeBoxes} d-flex flex-wrap row-gap-2 column-gap-4 pt-2`}
             >
@@ -274,13 +277,13 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className={`${styles.inputBox}`}>
                     <div className={`d-flex ${errors.phone && "mb-1"}`}>
                         <label htmlFor="name" className={`${styles.inputLabel}`}>
-                            Name
+                        {language === "ar" ? "الاسم" : "Name"}
                         </label>
                         <input
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Name"
+                            placeholder={language === "ar" ? "الاسم" : "Name"}
                             value={formData.name}
                             onChange={handleInputChange}
                             className={`${styles.inputElement}`}
@@ -291,13 +294,13 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className={`${styles.inputBox}`}>
                     <div className={`d-flex ${errors.phone && "mb-1"}`}>
                         <label htmlFor="companyName" className={`${styles.inputLabel}`}>
-                            Company Name
+                        {language === "ar" ? "اسم الشركة" : "Company Name"}
                         </label>
                         <input
                             type="text"
                             name="companyName"
                             id="companyName"
-                            placeholder="Company Name"
+                            placeholder={language === "ar" ? "اسم الشركة" : "Company Name"}
                             value={formData.companyName}
                             onChange={handleInputChange}
                             className={`${styles.inputElement}`}
@@ -308,13 +311,13 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className={`${styles.inputBox}`}>
                     <div className={`d-flex ${errors.phone && "mb-1"}`}>
                         <label htmlFor="email" className={`${styles.inputLabel}`}>
-                            Email
+                        {language === "ar" ? "البريد الإلكتروني" : "Email"}
                         </label>
                         <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="Email"
+                            placeholder={language === "ar" ? "البريد الإلكتروني" : "Email"}
                             value={formData.email}
                             onChange={handleInputChange}
                             className={`${styles.inputElement}`}
@@ -325,13 +328,13 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className={`${styles.inputBox}`}>
                     <div className={`d-flex ${errors.phone && "mb-1"}`}>
                         <label htmlFor="phone" className={`${styles.inputLabel}`}>
-                            Phone
+                        {language === "ar" ? "رقم الهاتف" : "Phone"}
                         </label>
                         <input
                             type="number"
                             name="phone"
                             id="phone"
-                            placeholder="Phone"
+                            placeholder={language === "ar" ? "رقم الهاتف" : "Phone"}
                             value={formData.phone}
                             onChange={handleInputChange}
                             className={`${styles.inputElement}`}
@@ -342,14 +345,14 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className={`${styles.inputBox}`}>
                   <div className='d-flex'>
                     <label htmlFor="message" className={`${styles.inputLabel}`}>
-                      Message
+                    {language === "ar" ? "الرسالة" : "Message"}
                     </label>
                     <textarea
                       name="message"
                       id="message"
                       onChange={handleInputChange}
                       className={`${styles.inputElement}`}
-                      placeholder="Message"
+                      placeholder={language === "ar" ? "الرسالة" : "Message"}
                       value={formData.message}
                       rows={4}
                     ></textarea>
@@ -365,20 +368,19 @@ const handleSubmit = async (e: React.FormEvent) => {
               type="button"
               onClick={() => setCurrentTab(1)}
             >
-              Back
+              {language === "ar" ? "خلف" : "Back"}
             </button>
             <button className={`btn ${styles.formButton}`} type="submit" disabled={isSubmitting}>
               {isSubmitting ? (
                 <div className={styles.spinner}></div>
               ) : (
                 <>
-                  Send a Message <BsSendFill className="ms-2" />
+                   {language === "ar" ? "إرسال الرسالة" : "Send a Message"} <BsSendFill className="ms-2" />
                 </>
               )}
             </button>
           </div>
-        </div>
-      </div>
+        
     </form>
   );
 }

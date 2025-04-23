@@ -11,13 +11,16 @@ import NavDropdown from '../NavDropdown';
 import { RxCross2 } from 'react-icons/rx';
 import { TiArrowSortedDown } from 'react-icons/ti';
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import ContactFormTabs from '../ContactFormTabs';
+// import ContactFormTabs from '../ContactFormTabs';
+import ContactFormTabs2 from '../ContactForm2';
 
 interface HeaderProps {
   theme?: string;
+  language: string;
+  setLanguage: (lang: string) => void;
 }
 
-const Header: React.FC<HeaderProps> = ({theme}) => {
+const Header: React.FC<HeaderProps> = ({theme, language, setLanguage}) => {
   const [scrollHeader, setScrollHeader] = useState(false);
   const [isFormSidebarVisible, setFormSidebarVisible] = useState(false);
   const [isMobileSidebarVisible, setMobileSidebarVisible] = useState(false);
@@ -48,108 +51,70 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
   }, []);
 
   const serviceDropDown = {
-    heading: "Services",
+    heading: language === "en" ? "Services" : "الخدمات",
     headingSrc: "/services",
     image: dropDownServiceImage,
     description:
-      "At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena. Our expert team is dedicated to delivering high-quality solutions that cater to your specific needs. Explore our core services below.",
+      language === "en"
+        ? "At Sigma6 Digital, we provide a robust selection of services designed to help your business excel in the digital arena."
+        : "في سيجما 6 ديجيتال، نقدم مجموعة قوية من الخدمات المصممة لمساعدة عملك على النجاح في المجال الرقمي.",
     categories: [
       {
-        heading: "Development",
+        heading: language === "en" ? "Development" : "التطوير",
         headingSrc: "/development",
         service: [
-          { name: "Web Development", src: "/website-development" },
-          { name: "App Development", src: "/app-development" },
-          { name: "E-commerce Development", src: "/ecommerce-development" },
-          { name: "CRM Development", src: "/crm-development" },
+          { name: language === "en" ? "Web Development" : "تطوير الويب", src: "/website-development" },
+          { name: language === "en" ? "App Development" : "تطوير التطبيقات", src: "/app-development" },
+          { name: language === "en" ? "E-commerce Development" : "تطوير التجارة الإلكترونية", src: "/ecommerce-development" },
+          { name: language === "en" ? "CRM Development" : "تطوير CRM", src: "/crm-development" },
         ],
       },
       {
-        heading: "IT Solutions",
+        heading: language === "en" ? "IT Solutions" : "حلول تكنولوجيا المعلومات",
         headingSrc: "/it-solutions",
         service: [
-          { name: "Network Management", src: "/network-management" },
-          { name: "Cloud Solutions", src: "/cloud-solutions" },
-          { name: "Data Security", src: "/data-security" },
-          { name: "IT Consulting", src: "/it-consulting" },
-          { name: "Virtualization", src: "/virtualization" },
-        ],
-      },
-      {
-        heading: "AI & Automation",
-        headingSrc: "/ai-automation",
-        service: [
-          { name: "Machine Learning Models", src: "/machine-learning" },
-          { name: "Chatbot Development", src: "/chatbot-development" },
-          { name: "Predictive Analytics", src: "/predicitve-analytics" },
-          { name: "Computer Vision", src: "/computer-vision" },
-          { name: "NLP Solutions", src: "/nlp-solutions" },
-        ],
-      },
-      {
-        heading: "Maintenance & Support",
-        headingSrc: "/maintenance-support",
-        service: [
-          { name: "Software Maintenance", src: "/software-maintenance" },
-          { name: "Bug Fixing", src: "/bug-fixing" },
-          { name: "Security Patching", src: "/security-patching" },
-          { name: "Performance Optimization", src: "/performance-optimization" },
-          { name: "Data Backup & Recovery", src: "/data-backup" },
-        ],
-      },
-      {
-        heading: "Digital Marketing",
-        headingSrc: "/digital-marketing",
-        service: [
-          { name: "SEO Optimization", src: "/seo-optimization" },
-          { name: "Social Media Marketing", src: "/social-media-marketing" },
-          { name: "Content Creation", src: "/content-creation" },
-          { name: "PPC Campaigns", src: "/ppc-campaigns" },
-          { name: "Email Marketing", src: "/email-marketing" },
-        ],
-      },
-      {
-        heading: "Creative Design",
-        headingSrc: "/creative-design",
-        service: [
-          { name: "Graphic Design", src: "/graphic-design" },
-          { name: "Logo & Branding", src: "/logo-and-branding" },
-          { name: "UI/UX Design", src: "/ui-ux-design" },
-          { name: "Motion Graphics", src: "/motion-graphics" },
-          { name: "Product Design", src: "/product-design" },
+          { name: language === "en" ? "Network Management" : "إدارة الشبكات", src: "/network-management" },
+          { name: language === "en" ? "Cloud Solutions" : "الحلول السحابية", src: "/cloud-solutions" },
+          { name: language === "en" ? "Data Security" : "أمان البيانات", src: "/data-security" },
+          { name: language === "en" ? "IT Consulting" : "استشارات تكنولوجيا المعلومات", src: "/it-consulting" },
+          { name: language === "en" ? "Virtualization" : "الافتراضية", src: "/virtualization" },
         ],
       },
     ],
   };
+  
   const industriesDropDown = {
-    heading: "Industries",
+    heading: language === "en" ? "Industries" : "الصناعات",
     headingSrc: "/industries",
     image: dropDownIndustryeImage,
-    description: "We work with a diverse range of industries, providing customised digital solutions that address each sector’s unique challenges. Whether you’re in education, legal services, technology, healthcare, or real estate, our expert team is dedicated to delivering impactful results that drive growth, streamline operations, and enhance customer engagement.",
+    description: language === "en"
+      ? "We work with a diverse range of industries, providing customized digital solutions."
+      : "نعمل مع مجموعة متنوعة من الصناعات، ونوفر حلولًا رقمية مخصصة.",
     categories: [
-      {
-        heading: "Education",
-        headingSrc: "/education-industry",
-      },
-      {
-        heading: "Legal Services",
-        headingSrc: "/legal-industry",
-      },
-      {
-        heading: "Technology",
-        headingSrc: "/technology-industry",
-      },
-      {
-        heading: "Healthcare",
-        headingSrc: "/healthcare-industry",
-      },
-      {
-        heading: "Real Estate",
-        headingSrc: "/realestate-industry",
-      },
+      { heading: language === "en" ? "Education" : "التعليم", headingSrc: "/education-industry" },
+      { heading: language === "en" ? "Legal Services" : "الخدمات القانونية", headingSrc: "/legal-industry" },
+      { heading: language === "en" ? "Technology" : "التكنولوجيا", headingSrc: "/technology-industry" },
+      { heading: language === "en" ? "Healthcare" : "الرعاية الصحية", headingSrc: "/healthcare-industry" },
+      { heading: language === "en" ? "Real Estate" : "العقارات", headingSrc: "/realestate-industry" },
     ],
   };
-
+  // const navLinks = [
+  //   { path: "/", labelEn: "Home", labelAr: "الرئيسية" },
+  //   { path: "/services", labelEn: "Services", labelAr: "الخدمات" },
+  //   { path: "/industries", labelEn: "Industries", labelAr: "الصناعات" },
+  //   { path: "/about-us", labelEn: "About", labelAr: "من نحن" },
+  //   { path: "/faq", labelEn: "FAQ", labelAr: "الأسئلة الشائعة" },
+  //   { path: "/contact", labelEn: "Contact", labelAr: "اتصل بنا" },
+  // ];
+  
+  useEffect(() => {
+    if (isFormSidebarVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isFormSidebarVisible]);
+  
   return (
     <header className={`${theme ? styles.themeDark : ''} ${styles.head} ${
         scrollHeader ? styles.scrolled : ''
@@ -189,7 +154,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             } text-decoration-none`
                       }
                     >
-                      Home
+                      {language === "en" ? "Home" : "الرئيسية"}
                     </NavLink>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`} onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={handleMouseLeave}>
@@ -203,7 +168,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             } text-decoration-none`
                       }
                       onClick={() => setActiveDropdown(null)}
-                    > Services <TiArrowSortedDown />
+                    > {language === "en" ? "Services" : "الخدمات"} <TiArrowSortedDown />
                     </NavLink>
                     <div className={`${activeDropdown === 'services' ? styles.openDropdown : ''} ${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={serviceDropDown} onLinkClick={handleMouseLeave} />
@@ -221,13 +186,13 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                         }
                         onClick={() => setActiveDropdown(null)}
                       >
-                      Industries <TiArrowSortedDown />
+                      {language === "en" ? "Industries" : "الصناعات"} <TiArrowSortedDown />
                       </NavLink>
                     <div className={`${activeDropdown === 'industries' ? styles.openDropdown : ''} ${styles.navDropDownHeaderBox}`}>
                       <NavDropdown navDropDown={industriesDropDown} onLinkClick={handleMouseLeave} />
                     </div>
                   </li>
-                  <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>
+                  {/* <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>
                     <NavLink
                       to="/about-us"
                       className={({ isActive }) =>
@@ -244,9 +209,9 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             } text-decoration-none`
                       }
                     >
-                      About
+                      {language === "en" ? "About" : "معلومات عنا"}
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>
                     <NavLink
                       to="/faq"
@@ -264,7 +229,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             } text-decoration-none`
                       }
                     >
-                      Faq
+                       {language === "en" ? "FAQ" : "الأسئلة الشائعة"}
                     </NavLink>
                   </li>
                   <li className={`py-5 py-sm-4 py-lg-4 ${styles.navList}`}>
@@ -284,11 +249,17 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             } text-decoration-none`
                       }
                     >
-                      Contact
+                         {language === "en" ? "Contact" : "اتصل بنا"}
                     </NavLink>
+                  </li>
+                  <li>
+                  <button className={`${styles.arabicButton} ${scrollHeader ? styles.arabicButtonScrolled : ''}`} onClick={() => setLanguage(language === "en" ? "ar" : "en")}>
+            {language === "en" ? "Arabic" : "إنجليزي"}
+          </button>
                   </li>
                 </ul>
               </nav>
+              
             </div>
           </div>
           <div className={`${styles.contactDetails}`}>
@@ -304,7 +275,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                   scrollHeader ? styles.navContactBtnScrolled : ''
                 } btn`} onClick={() => setFormSidebarVisible(true)}
               >
-                Get In Touch
+                {language === "en" ? "Get In Touch" : "تواصل معنا"}
               </button>
               <div className={`${styles.formSidebar}`} style={{ left: isFormSidebarVisible ? '0%' : '100%' }}>
                 <div className="container-fluid h-100">
@@ -314,9 +285,10 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                         <div className={`${styles.closeHeaderFormBox}`} onClick={() => setFormSidebarVisible(false)}>
                           <RxCross2 />
                         </div>
-                        <h3 className={`${styles.headerContactHeading} px-lg-5 d-inline`}><span>Get In Touch</span></h3>
+                        <h3 className={`${styles.headerContactHeading} px-lg-5 d-inline`}><span>{language === "en" ? "Get In Touch" : "تواصل معنا"}</span></h3>
                         <div className={`${styles.headerForm} px-lg-5`}>
-                          <ContactFormTabs />
+                          <ContactFormTabs2 language={language as "en" | "ar"} />
+
                         </div>
                       </div> 
                     </div>
@@ -346,7 +318,7 @@ const Header: React.FC<HeaderProps> = ({theme}) => {
                             <li className={`${styles.sidebarNavList}`}><NavLink to="/" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Home</NavLink></li>
                             <li className={`${styles.sidebarNavList}`}><NavLink to="/services" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Services <MdKeyboardArrowRight /></NavLink></li>
                             <li className={`${styles.sidebarNavList}`}>Industries <MdKeyboardArrowRight /></li>
-                            <li className={`${styles.sidebarNavList}`}><NavLink to="/about-us" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>About</NavLink></li>
+                            {/* <li className={`${styles.sidebarNavList}`}><NavLink to="/about-us" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>About</NavLink></li> */}
                             <li className={`${styles.sidebarNavList}`}><NavLink to="/faq" className={({ isActive }) => isActive? `${styles.active} ${styles.sidebarNavLink} text-decoration-none` : `${styles.sidebarNavLink} text-decoration-none`} onClick={() => setMobileSidebarVisible(false)}>Faq</NavLink></li>
                           </ul>
                         </div>

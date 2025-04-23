@@ -7,7 +7,18 @@
     background: transparent;
     transition: background-color 0.3s ease-in-out;
 }
-
+.arabicButton{
+    padding: 0.3rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    left: 10%;
+    /* background-color: blue; */
+}
+.arabicButtonScrolled{
+    color: black;
+}
 .scrolled {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -103,10 +114,15 @@
     bottom: 0px;
     top: 0px;
     transition: all 0.5s;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+       
 }
 .headerFormBox{
     width: 100%;
-    height: 100%;
+    height: 140vh;
+    /* border: 2px solid blue; */
     background-color: #fff;
 }
 .headerContactHeading{
@@ -229,7 +245,7 @@
     font-size: 2.3em;
     color: #fff;
 }
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
     .navLinks{
         font-size: 1.4em;
     }
@@ -239,14 +255,17 @@
     .navContactBtn{
         font-size: 1.4em !important;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
     .headerLogo{
         width: 145px;
     }
-    .Navbar{
+    .navList {
         display: none;
+    }
+    .arabicButton {
+        display: block !important;
     }
     .contactDetails{
         display: none;
@@ -262,7 +281,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .sidebarBtn, .sidebarBtnScrolled{
         font-size: 3.2em;
     }
@@ -283,9 +302,9 @@
     .sidebarFooter button {
         padding: 0.4em 0em;
     }
-}
+} */
 
-@media screen and (max-width: 575px) {
+@media all and (max-width: 600px) {
     .head{
         padding: 3.5em 5em;
     }
@@ -323,4 +342,15 @@
         padding: 0.6em 0em;
         font-weight: 500;
     }
+    .arabicButton {
+        display: block !important;
+        margin-left: 15vw;
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+    }
+    
 }
+
+
+  

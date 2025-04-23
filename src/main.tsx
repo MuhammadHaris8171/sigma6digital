@@ -6,12 +6,73 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './pages/Home/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import About from './pages/About/About';
+// import About from './pages/About/About';
 import ServicesPage from './pages/Services/ServicesPage';
 import FAQ from './pages/FAQ/FAQ';
 import Contact from './pages/Contact/Contact';
 import MainService from './pages/MainService/MainService';
-import { aiAutomationPageContent, appDevelopmentPageContent, bugFixingPageContent, chatbotPageContent, cloudSolutionsPageContent, computerVisionPageContent, contentCreationPageContent, creativeDesignPageContent, crmDevelopmentPageContent, dataBackupPageContent, dataSecurityPageContent, developmentPageContent, digitalMarketingPageContent, eCommerceDevelopmentPageContent, educationIndustryPageContent, emailMarketingPageContent, graphicDesignPageContent, healthcareIndustryPageContent, itConsultingPageContent, itSolutionsPageContent, legalServicesIndustryPageContent, logoBrandingPageContent, machineLearningPageContent, maintenanceSupportPageContent, motionGraphicsPageContent, networkManagementPageContent, nlpPageContent, performanceOptimizationPageContent, ppcPageContent, predictiveAnalyticsPageContent, productDesignPageContent, realEstateIndustryPageContent, securityPatchingPageContent, seoOptimizationPageContent, socialMediaMarketingPageContent, softwareMaintenancePageContent, technologyIndustryPageContent, uiUxDesignPageContent, virtualizationPageContent, webDevelopmentPageContent } from './components/data';
+import { maintenanceSupportPageContentAr,maintenanceSupportPageContentEn,developmentPageContentEn,cloudSolutionsPageContentEn,cloudSolutionsPageContentAr,developmentPageContentAr,appDevelopmentPageContentAr,appDevelopmentPageContentEn, crmDevelopmentPageContentAr,crmDevelopmentPageContentEn, digitalMarketingPageContentAr,digitalMarketingPageContentEn,eCommerceDevelopmentPageContentEn,eCommerceDevelopmentPageContentAr,itConsultingPageContentEn,itConsultingPageContentAr,networkManagementPageContentAr,networkManagementPageContentEn, webDevelopmentPageContentEn,
+  webDevelopmentPageContentAr, 
+  dataSecurityPageContentAr,
+  dataSecurityPageContentEn,
+  virtualizationPageContentAr,
+  virtualizationPageContentEn,
+  educationIndustryPageContentAr,
+  educationIndustryPageContentEn,
+  legalServicesIndustryPageContentAr,
+  legalServicesIndustryPageContentEn,
+  technologyIndustryPageContentAr,
+  technologyIndustryPageContentEn,
+  healthcareIndustryPageContentAr,
+  healthcareIndustryPageContentEn,
+  realEstateIndustryPageContentAr,
+  realEstateIndustryPageContentEn,
+  aiAutomationPageContentAr,
+  aiAutomationPageContentEn,
+  machineLearningPageContentAr,
+  machineLearningPageContentEn,
+  itSolutionsPageContentAr,
+  itSolutionsPageContentEn,
+  creativeDesignPageContentAr,
+  creativeDesignPageContentEn,
+  softwareMaintenancePageContentAr,
+  softwareMaintenancePageContentEn,
+  bugFixingPageContentAr,
+  bugFixingPageContentEn,
+  securityPatchingPageContentAr,
+  securityPatchingPageContentEn,
+  performanceOptimizationPageContentAr,
+  performanceOptimizationPageContentEn,
+  dataBackupPageContentAr,
+  dataBackupPageContentEn,
+  productDesignPageContentAr,
+  productDesignPageContentEn,
+  motionGraphicsPageContentAr,
+  motionGraphicsPageContentEn,
+  uiUxDesignPageContentAr,
+  uiUxDesignPageContentEn,
+  logoBrandingPageContentAr,
+  logoBrandingPageContentEn,
+  graphicDesignPageContentAr,
+  graphicDesignPageContentEn,
+  emailMarketingPageContentAr,
+  emailMarketingPageContentEn,
+  ppcPageContentAr,
+  ppcPageContentEn,
+  contentCreationPageContentAr,
+  contentCreationPageContentEn,
+  socialMediaMarketingPageContentAr,
+  socialMediaMarketingPageContentEn,
+  seoOptimizationPageContentAr,
+  seoOptimizationPageContentEn,
+  nlpPageContentEn,
+  nlpPageContentAr,
+  computerVisionPageContentAr,
+  computerVisionPageContentEn,
+  predictiveAnalyticsPageContentAr,
+  predictiveAnalyticsPageContentEn,
+  chatbotPageContentEn,
+  chatbotPageContentAr} from './components/data';
 import IndustriesPage from './pages/Industries/IndustriesPage';
 import Notfound from './pages/404/Notfound';
 
@@ -29,10 +90,10 @@ const router = createBrowserRouter([
         path: "*",
         element: <Notfound />,
       },
-      {
-        path: "/about-us",
-        element: <About />,
-      },
+      // {
+      //   path: "/about-us",
+      //   element: <About />,
+      // },
       {
         path: "/services",
         element: <ServicesPage />,
@@ -51,163 +112,206 @@ const router = createBrowserRouter([
       },
       {
         path: "/development",
-        element: <MainService content={developmentPageContent} />,
+        element: <MainService contentEn={developmentPageContentEn} 
+      contentAr={developmentPageContentAr}  />,
       },
       {
         path: "/website-development",
-        element: <MainService content={webDevelopmentPageContent} />,
+        element: <MainService
+        contentEn={webDevelopmentPageContentEn} 
+      contentAr={webDevelopmentPageContentAr}
+        />,
       },
       {
         path: "/app-development",
-        element: <MainService content={appDevelopmentPageContent} />,
+        element: <MainService 
+        contentEn={appDevelopmentPageContentEn} 
+      contentAr={appDevelopmentPageContentAr}
+        />,
       },
       {
         path: "/ecommerce-development",
-        element: <MainService content={eCommerceDevelopmentPageContent} />,
+        element: <MainService 
+        contentEn={eCommerceDevelopmentPageContentEn} 
+        contentAr={eCommerceDevelopmentPageContentAr}
+        />,
       },
       {
         path: "/crm-development",
-        element: <MainService content={crmDevelopmentPageContent} />,
+        element: <MainService
+        contentAr={crmDevelopmentPageContentAr}
+        contentEn={crmDevelopmentPageContentEn}
+        />,
       },
       {
         path: "/it-solutions",
-        element: <MainService content={itSolutionsPageContent} />,
+        element: <MainService 
+        contentAr={itSolutionsPageContentAr}
+        contentEn={itSolutionsPageContentEn}
+        />,
       },
       {
         path: "/network-management",
-        element: <MainService content={networkManagementPageContent} />,
+        element: <MainService
+        contentAr={networkManagementPageContentAr}
+        contentEn={networkManagementPageContentEn}
+        />,
       },
       {
         path: "/cloud-solutions",
-        element: <MainService content={cloudSolutionsPageContent} />,
+        element: <MainService
+        contentAr={cloudSolutionsPageContentAr}
+        contentEn={cloudSolutionsPageContentEn}
+        />,
       },
       {
         path: "/data-security",
-        element: <MainService content={dataSecurityPageContent} />,
+        element: <MainService
+        contentAr={dataSecurityPageContentAr}
+        contentEn={dataSecurityPageContentEn}
+        />,
       },
       {
         path: "/it-consulting",
-        element: <MainService content={itConsultingPageContent} />,
+        element: <MainService
+        contentAr={itConsultingPageContentAr}
+        contentEn={itConsultingPageContentEn}
+        />,
       },
       {
         path: "/virtualization",
-        element: <MainService content={virtualizationPageContent} />,
+        element: <MainService
+        contentAr={virtualizationPageContentAr}
+        contentEn={virtualizationPageContentEn}
+        />,
       },
       {
         path: "/ai-automation",
-        element: <MainService content={aiAutomationPageContent} />,
+        element: <MainService contentAr={aiAutomationPageContentAr} contentEn={aiAutomationPageContentEn} />,
       },
       {
         path: "/machine-learning",
-        element: <MainService content={machineLearningPageContent} />,
+        element: <MainService contentAr={machineLearningPageContentAr} contentEn={machineLearningPageContentEn} />,
       },
       {
         path: "/chatbot-development",
-        element: <MainService content={chatbotPageContent} />,
+        element: <MainService contentEn={chatbotPageContentEn} contentAr={chatbotPageContentAr} />,
       },
       {
         path: "/predicitve-analytics",
-        element: <MainService content={predictiveAnalyticsPageContent} />,
+        element: <MainService contentAr={predictiveAnalyticsPageContentAr} contentEn={predictiveAnalyticsPageContentEn} />,
       },
       {
         path: "/computer-vision",
-        element: <MainService content={computerVisionPageContent} />,
+        element: <MainService contentAr={computerVisionPageContentAr} contentEn={computerVisionPageContentEn} />,
       },
       {
         path: "/nlp-solutions",
-        element: <MainService content={nlpPageContent} />,
+        element: <MainService contentEn={nlpPageContentEn} contentAr={nlpPageContentAr} />,
       },
       {
         path: "/maintenance-support",
-        element: <MainService content={maintenanceSupportPageContent} />,
+        element: <MainService
+        contentAr={maintenanceSupportPageContentAr}
+        contentEn={maintenanceSupportPageContentEn}
+        />,
       },
       {
         path: "/software-maintenance",
-        element: <MainService content={softwareMaintenancePageContent} />,
+        element: <MainService 
+        contentAr={softwareMaintenancePageContentAr}
+        contentEn={softwareMaintenancePageContentEn}
+        />,
       },
       {
         path: "/bug-fixing",
-        element: <MainService content={bugFixingPageContent} />,
+        element: <MainService contentAr={bugFixingPageContentAr} contentEn={bugFixingPageContentEn} />,
       },
       {
         path: "/security-patching",
-        element: <MainService content={securityPatchingPageContent} />,
+        element: <MainService contentAr={securityPatchingPageContentAr} contentEn={securityPatchingPageContentEn} />,
       },
       {
         path: "/performance-optimization",
-        element: <MainService content={performanceOptimizationPageContent} />,
+        element: <MainService contentAr={performanceOptimizationPageContentAr} contentEn={performanceOptimizationPageContentEn} />,
       },
       {
         path: "/data-backup",
-        element: <MainService content={dataBackupPageContent} />,
+        element: <MainService contentAr={dataBackupPageContentAr} contentEn={dataBackupPageContentEn} />,
       },
       {
         path: "/digital-marketing",
-        element: <MainService content={digitalMarketingPageContent} />,
+        element: <MainService
+        contentAr={digitalMarketingPageContentAr}
+        contentEn={digitalMarketingPageContentEn}
+        />,
       },
       {
         path: "/seo-optimization",
-        element: <MainService content={seoOptimizationPageContent} />,
+        element: <MainService contentAr={seoOptimizationPageContentAr} contentEn={seoOptimizationPageContentEn} />,
       },
       {
         path: "/social-media-marketing",
-        element: <MainService content={socialMediaMarketingPageContent} />,
+        element: <MainService contentAr={socialMediaMarketingPageContentAr} contentEn={socialMediaMarketingPageContentEn} />,
       },
       {
         path: "/content-creation",
-        element: <MainService content={contentCreationPageContent} />,
+        element: <MainService contentAr={contentCreationPageContentAr} contentEn={contentCreationPageContentEn} />,
       },
       {
         path: "/ppc-campaigns",
-        element: <MainService content={ppcPageContent} />,
+        element: <MainService contentAr={ppcPageContentAr} contentEn={ppcPageContentEn} />,
       },
       {
         path: "/email-marketing",
-        element: <MainService content={emailMarketingPageContent} />,
+        element: <MainService contentAr={emailMarketingPageContentAr} contentEn={emailMarketingPageContentEn} />,
       },
       {
         path: "/creative-design",
-        element: <MainService content={creativeDesignPageContent} />,
+        element: <MainService contentAr={creativeDesignPageContentAr} contentEn={creativeDesignPageContentEn} />,
       },
       {
         path: "/graphic-design",
-        element: <MainService content={graphicDesignPageContent} />,
+        element: <MainService contentAr={graphicDesignPageContentAr} contentEn={graphicDesignPageContentEn} />,
       },
       {
         path: "/logo-and-branding",
-        element: <MainService content={logoBrandingPageContent} />,
+        element: <MainService contentAr={logoBrandingPageContentAr} contentEn={logoBrandingPageContentEn} />,
       },
       {
         path: "/ui-ux-design",
-        element: <MainService content={uiUxDesignPageContent} />,
+        element: <MainService contentAr={uiUxDesignPageContentAr} contentEn={uiUxDesignPageContentEn} />,
       },
       {
         path: "/motion-graphics",
-        element: <MainService content={motionGraphicsPageContent} />,
+        element: <MainService contentAr={motionGraphicsPageContentAr} contentEn={motionGraphicsPageContentEn}/>,
       },
       {
         path: "/product-design",
-        element: <MainService content={productDesignPageContent} />,
+        element: <MainService contentAr={productDesignPageContentAr} contentEn={productDesignPageContentEn}  />,
       },
       {
         path: "/education-industry",
-        element: <MainService content={educationIndustryPageContent} />,
+        element: <MainService
+        contentAr={educationIndustryPageContentAr}
+        contentEn={educationIndustryPageContentEn}
+        />,
       },
       {
         path: "/legal-industry",
-        element: <MainService content={legalServicesIndustryPageContent} />,
+        element: <MainService contentAr={legalServicesIndustryPageContentAr} contentEn={legalServicesIndustryPageContentEn} />,
       },
       {
         path: "/technology-industry",
-        element: <MainService content={technologyIndustryPageContent} />,
+        element: <MainService contentAr={technologyIndustryPageContentAr} contentEn={technologyIndustryPageContentEn} />,
       },
       {
         path: "/healthcare-industry",
-        element: <MainService content={healthcareIndustryPageContent} />,
+        element: <MainService contentAr={healthcareIndustryPageContentAr} contentEn={healthcareIndustryPageContentEn} />,
       },
       {
         path: "/realestate-industry",
-        element: <MainService content={realEstateIndustryPageContent} />,
+        element: <MainService contentAr={realEstateIndustryPageContentAr} contentEn={realEstateIndustryPageContentEn} />,
       },
     ],
   },

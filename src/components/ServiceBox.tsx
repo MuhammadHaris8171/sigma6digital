@@ -9,6 +9,7 @@ interface ServiceBoxProps {
 }
 
 const ServiceBox: React.FC<ServiceBoxProps> = ({ item }) => {
+  
   return (
     <div className={`${styles.serviceBox}`}>
         <img src={item.imgsrc} alt="Sigma 6 Digital" className={`${styles.serviceImage}`} />

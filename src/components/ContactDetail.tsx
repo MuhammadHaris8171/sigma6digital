@@ -1,5 +1,6 @@
 import styles from '../styles/ContactDetail.module.css';
 import ContactFormTabs from './ContactFormTabs';
+import { useOutletContext } from 'react-router-dom';
 
 interface ContactDetailProps {
   heading: string;
@@ -7,7 +8,11 @@ interface ContactDetailProps {
   contactBox: { heading: string; description: string }[]; 
 }
 
+interface OutletContextType {
+  language: string;
+}
 function ContactDetail({ heading, description, contactBox }: ContactDetailProps) {
+  const { language } = useOutletContext<OutletContextType>();
   return (
     <div className="container">
       <div className="row">
@@ -28,7 +33,7 @@ function ContactDetail({ heading, description, contactBox }: ContactDetailProps)
           </div>
         </div>
         <div className="col-lg-7 ps-lg-5">
-          <ContactFormTabs />
+          <ContactFormTabs language={language as "en" | "ar"} />
         </div>
       </div>
     </div>

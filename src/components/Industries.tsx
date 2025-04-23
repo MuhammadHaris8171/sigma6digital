@@ -5,7 +5,10 @@ import { FaArrowLeft, FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
 import { industriesData } from "./data";
 import industriesWeServeImg from '../assets/images/industries-we-serve.webp';
 
-function Industries() {
+interface IndustriesProps{
+  language: string;
+}
+function Industries({language}:IndustriesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(2);
   const carouselRef = useRef<HTMLDivElement | null>(null);
@@ -61,14 +64,16 @@ function Industries() {
           <div className={`${styles.industriesMainContentBox} position-relative`}>
             <img src={industriesWeServeImg} alt="Sigma 6 Digital" className={`${styles.industriesMainImage} positon-absolute`} />
             <div className={`${styles.industriesMainContent} position-relative`}>
-              <h2 className={`${styles.industriesHeading} pb-2`}>Industries We Serve</h2>
+              <h2 className={`${styles.industriesHeading} pb-2`}>{language === "ar" ? "الصناعات التي نخدمها" : "Industries We Serve"}</h2>
               <p className={`${styles.industriesDescription}`}>
-                At Sigma6 Digital, we provide customized digital solutions that help businesses across various industries grow and succeed. Our expertise drives innovation and efficiency in key sectors.
-              </p>
+              {language === "ar"
+                  ? "في Sigma6 Digital، نقدم حلولاً رقمية مخصصة تساعد الشركات عبر مختلف الصناعات على النمو والنجاح. تساهم خبراتنا في الابتكار والكفاءة في القطاعات الرئيسية."
+                  : "At Sigma6 Digital, we provide customized digital solutions that help businesses across various industries grow and succeed. Our expertise drives innovation and efficiency in key sectors."
+                }</p>
             </div>
               <button className={`${styles.industriesButton} btn bg-transparent position-absolute`}>
                 <Link to="/industries" className={`${styles.industriesButtonLink} text-decoration-none`}>
-                  View More <FaLongArrowAltRight />
+                {language === "ar" ? "عرض المزيد" : "View More"} <FaLongArrowAltRight />
                 </Link>
               </button>
           </div>
@@ -80,10 +85,10 @@ function Industries() {
                 <div className={`${styles.industryBox}`}>
                   <img src={item.imgSrc} alt="Sigma6Digital Industries" className={`${styles.industryBgImg}`} />
                   <div className={`${styles.industryBoxContent} position-relative`}>
-                    <h4 className={`${styles.industryHeading}`}>{item.heading}</h4>
-                    <p className={`${styles.industryDescription} mb-5 mb-sm-3 mt-3`}>{item.description}</p>
-                    <p className={`${styles.industrypoint} mb-5 mb-sm-2`}>{item.point_1}</p>
-                    <p className={`${styles.industrypoint} `}>{item.point_2}</p>
+                    <h4 className={`${styles.industryHeading}`}>{language === "ar" ? item.headingAr : item.heading}</h4>
+                    <p className={`${styles.industryDescription} mb-5 mb-sm-3 mt-3`}> {language === "ar" ? item.descriptionAr : item.description}</p>
+                    <p className={`${styles.industrypoint} mb-5 mb-sm-2`}>{language === "ar" ? item.point_1_Ar : item.point_1}</p>
+                    <p className={`${styles.industrypoint} `}>{language === "ar" ? item.point_2_Ar : item.point_2}</p>
                   </div>
                 </div>
               </div>
